@@ -9,12 +9,15 @@ public class Usuario {
     private String email;
     private String senha;
 
+    private Boolean autenticado;
+
     public Usuario(String nome, Date dataDeNascimento, String cpf, String email, String senha) {
         this.nome = nome;
         this.dataDeNascimento = dataDeNascimento;
         this.cpf = cpf;
         this.email = email;
         this.senha = senha;
+        this.autenticado = false;
     }
 
     public Usuario() {
@@ -58,6 +61,14 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public Boolean getAutenticado() {
+        return autenticado;
+    }
+
+    public void setAutenticado(Boolean autenticado) {
+        this.autenticado = autenticado;
     }
 
     @Override

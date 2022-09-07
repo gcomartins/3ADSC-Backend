@@ -21,12 +21,9 @@ public class ControllerUsuario {
                 ((u.getDataDeNascimento().getYear() + 1900), u.getDataDeNascimento().getMonth() + 1,
                         u.getDataDeNascimento().getDate() + 1, 0, 0, 0);
         long idade = dataDeNascimento.until(hoje, ChronoUnit.YEARS);
-        if (!u.getEmail().contains("@")) System.out.println("Email invalido");
-        else if (u.getSenha().length() < 8 || u.getSenha().matches("!@#$%&*()"))
-            System.out.println("senha invalida");
-        else if (u.getCpf().length() != 11) System.out.println("cpf invalido");
-        else if (idade < 15) System.out.println("idade Invalida");
-        else {
+
+        if (u.getEmail().contains("@") && u.getSenha().length() > 8 && u.getCpf().length() == 11
+                && idade > 15) {
             usuarios.add(u);
             return u;
         }
@@ -34,14 +31,19 @@ public class ControllerUsuario {
     }
 
     @GetMapping
-    public Usuario getUsuario(@RequestBody Usuario a) {
-        for (Usuario u : usuarios) {
-            if (u.getCpf().toString().contains(a.getCpf()) && u.getSenha().equals(a.getSenha())) {
-                return u;
-                }
-            }
-
-            return null;
+    public List getUsuario( ) {
+            return usuarios;
         }
+    @PostMapping ("autenticar/{cpf}/{senha}")
+    public Usuario autenticarUsuario( @PathVariable String cpf, @PathVariable String senha) {
+        for (Usuario u : usuarios) {
+            if (u.getCpf().toString().equals(cpf) && u.getSenha().equals(senha)) {
+                u.setAutenticado(true);
+            }
+        }
+
+        return null;
     }
+}
+
 
