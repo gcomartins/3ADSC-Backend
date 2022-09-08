@@ -18,11 +18,11 @@ public class ControllerUsuario {
     @PostMapping
     public Usuario cadastrarUsuario(@RequestBody Usuario u) {
         LocalDateTime dataDeNascimento = LocalDateTime.of
-                ((u.getDataDeNascimento().getYear() + 1900), u.getDataDeNascimento().getMonth() + 1,
-                        u.getDataDeNascimento().getDate() + 1, 0, 0, 0);
+                ((u.getDataNascimento().getYear() + 1900), u.getDataNascimento().getMonth() + 1,
+                        u.getDataNascimento().getDate() + 1, 0, 0, 0);
         long idade = dataDeNascimento.until(hoje, ChronoUnit.YEARS);
 
-        if (u.getEmail().contains("@") && u.getSenha().length() > 8 && u.getCpf().length() == 11
+        if (u.getEmail().contains("@") && u.pegueSenha().length() > 8 && u.getCpf().length() == 11
                 && idade > 15) {
             usuarios.add(u);
             return u;
@@ -34,11 +34,14 @@ public class ControllerUsuario {
     public List getUsuario( ) {
             return usuarios;
         }
+
+
     @PostMapping ("autenticar/{cpf}/{senha}")
-    public Usuario autenticarUsuario( @PathVariable String cpf, @PathVariable String senha) {
+    public String autenticarUsuario( @PathVariable String cpf, @PathVariable String senha) {
         for (Usuario u : usuarios) {
-            if (u.getCpf().toString().equals(cpf) && u.getSenha().equals(senha)) {
+            if (u.getCpf().toString().equals(cpf) && u.pegueSenha().equals(senha)) {
                 u.setAutenticado(true);
+                return String.format("Login encontrado\n Bem vindo " + u.getNome());
             }
         }
 

@@ -3,24 +3,34 @@ package com.projetopi.loginlogoff;
 import java.sql.Date;
 
 public class Usuario {
+
+    private int idUsuario;
     private String nome;
-    private Date dataDeNascimento;
-    private String cpf;
     private String email;
+    private String cpf;
+    private double saldo;
     private String senha;
+    private Date dataNascimento;
+    private Boolean isAutenticado;
 
-    private Boolean autenticado;
-
-    public Usuario(String nome, Date dataDeNascimento, String cpf, String email, String senha) {
+    public Usuario(String nome, String email, String cpf,
+                   double saldo, String senha, Date dataNascimento) {
+        this.idUsuario = 1;
         this.nome = nome;
-        this.dataDeNascimento = dataDeNascimento;
-        this.cpf = cpf;
         this.email = email;
+        this.cpf = cpf;
+        this.saldo = saldo;
         this.senha = senha;
-        this.autenticado = false;
+        this.dataNascimento = dataNascimento;
+        this.isAutenticado = false;
     }
 
-    public Usuario() {
+    public int pegueIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
     public String getNome() {
@@ -31,12 +41,12 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public Date getDataDeNascimento() {
-        return dataDeNascimento;
+    public String getEmail() {
+        return email;
     }
 
-    public void setDataDeNascimento(Date dataDeNascimento) {
-        this.dataDeNascimento = dataDeNascimento;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getCpf() {
@@ -47,15 +57,15 @@ public class Usuario {
         this.cpf = cpf;
     }
 
-    public String getEmail() {
-        return email;
+    public double pegueSaldo() {
+        return saldo;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
-    public String getSenha() {
+    public String pegueSenha() {
         return senha;
     }
 
@@ -63,20 +73,32 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public Boolean getAutenticado() {
-        return autenticado;
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
     public void setAutenticado(Boolean autenticado) {
-        this.autenticado = autenticado;
+        isAutenticado = autenticado;
+    }
+
+    public Boolean pegueIsAutenticado() {
+        return isAutenticado;
     }
 
     @Override
     public String toString() {
-        return String.format("Usuario : %s \n" +
-                "Data de nascimento: %s " +
-                "\n cpf = %s \n" +
-                "email = %s \n" +
-                "senha = %s",getNome(),getDataDeNascimento(),getCpf(),getEmail(),getSenha());
+        return String.format
+                ("\n---------- Usuario ----------" +
+                        "\nidUsuario: %d" +
+                        "\nNome: %s " +
+                        "\nEmail: %s " +
+                        "\nCPF: %s " +
+                        "\nSaldo: %.2f " +
+                        "\nSenha: *** " +
+                        "\nData de Nascimento: %s", idUsuario, nome, email, cpf, saldo, dataNascimento);
     }
 }
