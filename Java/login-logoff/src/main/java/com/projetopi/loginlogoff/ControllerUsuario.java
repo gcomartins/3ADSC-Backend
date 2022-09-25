@@ -1,24 +1,22 @@
 package com.projetopi.loginlogoff;
 
-import ch.qos.logback.core.pattern.util.RegularEscapeUtil;
-import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 @RestController
 @RequestMapping("/usuarios")
 public class ControllerUsuario {
-    List<Usuario> usuarios = new ArrayList<>();
+   private List<Usuario> usuarios = new ArrayList<>();
 
-    LocalDateTime hoje = LocalDateTime.now();
+   private LocalDateTime hoje = LocalDateTime.now();
 
     @PostMapping
+
     public ResponseEntity<Usuario> cadastrarUsuario(@RequestBody Usuario u) {
         LocalDateTime dataDeNascimento = LocalDateTime.of
                 ((u.getDataNascimento().getYear() + 1900), u.getDataNascimento().getMonth() + 1,

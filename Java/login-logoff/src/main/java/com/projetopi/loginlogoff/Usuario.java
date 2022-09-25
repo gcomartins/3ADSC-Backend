@@ -1,10 +1,17 @@
 package com.projetopi.loginlogoff;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.sql.Date;
 
+@Entity
 public class Usuario {
 
-    private int idUsuario;
+    @Id // PK - chave primaria
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // auto increment
+    private Integer id;
     private String nome;
     private String email;
     private String cpf;
@@ -15,7 +22,6 @@ public class Usuario {
 
     public Usuario(String nome, String email, String cpf,
                    double saldo, String senha, Date dataNascimento) {
-        this.idUsuario = 1;
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;
@@ -25,12 +31,16 @@ public class Usuario {
         this.isAutenticado = false;
     }
 
-    public int pegueIdUsuario() {
-        return idUsuario;
+    public Usuario() {
+
+    }
+
+    public Integer pegueIdUsuario() {
+        return id;
     }
 
     public void setIdUsuario(int idUsuario) {
-        this.idUsuario = idUsuario;
+        this.id = idUsuario;
     }
 
     public String getNome() {
@@ -99,6 +109,6 @@ public class Usuario {
                         "\nCPF: %s " +
                         "\nSaldo: %.2f " +
                         "\nSenha: *** " +
-                        "\nData de Nascimento: %s", idUsuario, nome, email, cpf, saldo, dataNascimento);
+                        "\nData de Nascimento: %s", id, nome, email, cpf, saldo, dataNascimento);
     }
 }
