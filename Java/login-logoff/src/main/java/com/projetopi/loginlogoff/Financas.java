@@ -1,16 +1,23 @@
 package com.projetopi.loginlogoff;
 
+import javax.persistence.*;
 import java.util.Date;
-
+//Essa annotation faz com que essa tabela não seja persistida no jpa, porem suas classes filhas
+//que possuirem annotarion @Entity serão criadas
+@MappedSuperclass
 public abstract class Financas {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int codigo;
     private String nome;
     private String descricao;
     private double valor;
     private Date data;
     private String categoria;
-
+    //ID_USUARIO é o nome da fk
+    @ManyToOne
+    @JoinColumn(name = "FK_USUARIO")
+    private Usuario usuario;
     public Financas(int codigo, String nome, String descricao, double valor, Date data, String categoria) {
         this.codigo = codigo;
         this.nome = nome;

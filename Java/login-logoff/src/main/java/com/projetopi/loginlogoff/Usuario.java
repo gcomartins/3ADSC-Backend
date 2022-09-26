@@ -1,10 +1,8 @@
 package com.projetopi.loginlogoff;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
+import java.util.List;
 
 @Entity
 public class Usuario {
@@ -19,6 +17,17 @@ public class Usuario {
     private String senha;
     private Date dataNascimento;
     private Boolean isAutenticado;
+    //Indica que a classe Usuario(One) possuira varios objetivos(Many)
+    @OneToMany
+    @JoinColumn(name = "FK_USUARIO")
+    private List<Objetivo> objetivos;
+    @OneToMany
+    @JoinColumn(name = "FK_USUARIO")
+    private List<Despesa> despesas;
+    @OneToMany
+    @JoinColumn(name = "FK_USUARIO")
+    private List<Receita> receitas;
+
 
     public Usuario(String nome, String email, String cpf,
                    double saldo, String senha, Date dataNascimento) {
