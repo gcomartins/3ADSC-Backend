@@ -1,4 +1,6 @@
 package com.projetopi.loginlogoff;
+import com.projetopi.loginlogoff.usuario.Usuario;
+
 import java.sql.Date;
 
 

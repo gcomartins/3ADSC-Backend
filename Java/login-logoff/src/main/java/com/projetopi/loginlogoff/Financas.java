@@ -1,5 +1,7 @@
 package com.projetopi.loginlogoff;
 
+import com.projetopi.loginlogoff.usuario.Usuario;
+
 import javax.persistence.*;
 import java.util.Date;
 //Essa annotation faz com que essa tabela não seja persistida no jpa, porem suas classes filhas
@@ -25,6 +27,9 @@ public abstract class Financas {
         this.valor = valor;
         this.data = data;
         this.categoria = categoria;
+    }
+
+    public Financas() {
     }
 
     public abstract void modificaSaldo(Usuario usuario);

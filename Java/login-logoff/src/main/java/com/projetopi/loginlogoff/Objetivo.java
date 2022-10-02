@@ -1,4 +1,6 @@
 package com.projetopi.loginlogoff;
+import com.projetopi.loginlogoff.usuario.Usuario;
+
 import javax.persistence.Entity;
 import java.util.Date;
 @Entity
@@ -12,6 +14,10 @@ public class Objetivo extends Financas {
         super(codigo, nome, descricao, valor, data, categoria);
         this.valorAtual = valorAtual;
         this.dataFinal = dataFinal;
+    }
+
+    public Objetivo() {
+        super();
     }
 
     public double getValorAtual() {

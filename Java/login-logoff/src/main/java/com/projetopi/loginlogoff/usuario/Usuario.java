@@ -1,4 +1,9 @@
-package com.projetopi.loginlogoff;
+package com.projetopi.loginlogoff.usuario;
+
+import com.projetopi.loginlogoff.Despesa;
+import com.projetopi.loginlogoff.Financas;
+import com.projetopi.loginlogoff.Objetivo;
+import com.projetopi.loginlogoff.Receita;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -37,7 +42,6 @@ public class Usuario {
         this.saldo = saldo;
         this.senha = senha;
         this.dataNascimento = dataNascimento;
-        this.isAutenticado = false;
     }
 
     public Usuario() {
@@ -107,6 +111,8 @@ public class Usuario {
     public Boolean pegueIsAutenticado() {
         return isAutenticado;
     }
+
+
 
     @Override
     public String toString() {
