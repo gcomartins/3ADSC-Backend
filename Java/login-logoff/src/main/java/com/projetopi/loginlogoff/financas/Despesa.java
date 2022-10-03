@@ -1,10 +1,10 @@
-package com.projetopi.loginlogoff;
+package com.projetopi.loginlogoff.financas;
 import com.projetopi.loginlogoff.usuario.Usuario;
 
 import javax.persistence.Entity;
 import java.util.Date;
 @Entity
-public class Despesa extends Financas{
+public class Despesa extends Financas {
 
     private boolean isPago;
     private int qtdParcelas;

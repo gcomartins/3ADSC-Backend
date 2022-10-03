@@ -1,10 +1,11 @@
-package com.projetopi.loginlogoff;
+package com.projetopi.loginlogoff.financas;
+
 import com.projetopi.loginlogoff.usuario.Usuario;
 
 import javax.persistence.Entity;
 import java.util.Date;
 @Entity
-public class Receita extends Financas{
+public class Receita extends Financas {
 
     private boolean isRecorrente;
     private int frequencia;

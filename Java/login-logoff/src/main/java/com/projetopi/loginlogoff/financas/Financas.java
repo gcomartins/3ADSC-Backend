@@ -1,4 +1,4 @@
-package com.projetopi.loginlogoff;
+package com.projetopi.loginlogoff.financas;
 
 import com.projetopi.loginlogoff.usuario.Usuario;
 
@@ -9,7 +9,7 @@ import java.util.Date;
 @MappedSuperclass
 public abstract class Financas {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int codigo;
     private String nome;
     private String descricao;
@@ -18,8 +18,11 @@ public abstract class Financas {
     private String categoria;
     //ID_USUARIO é o nome da fk
     @ManyToOne
-    @JoinColumn(name = "FK_USUARIO")
+    @JoinColumn(name = "fkUsuario",insertable = true,updatable = true)
     private Usuario usuario;
+    public Financas() {
+    }
+
     public Financas(int codigo, String nome, String descricao, double valor, Date data, String categoria) {
         this.codigo = codigo;
         this.nome = nome;
@@ -27,9 +30,6 @@ public abstract class Financas {
         this.valor = valor;
         this.data = data;
         this.categoria = categoria;
-    }
-
-    public Financas() {
     }
 
     public abstract void modificaSaldo(Usuario usuario);
@@ -80,6 +80,13 @@ public abstract class Financas {
 
     public void setCategoria(String categoria) {
         this.categoria = categoria;
+    }
+
+    public int getFkUsuario(){
+        return this.usuario.pegueIdUsuario();
+    }
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 
     @Override

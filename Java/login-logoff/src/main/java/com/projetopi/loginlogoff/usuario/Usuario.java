@@ -1,9 +1,8 @@
 package com.projetopi.loginlogoff.usuario;
 
-import com.projetopi.loginlogoff.Despesa;
-import com.projetopi.loginlogoff.Financas;
-import com.projetopi.loginlogoff.Objetivo;
-import com.projetopi.loginlogoff.Receita;
+import com.projetopi.loginlogoff.financas.Despesa;
+import com.projetopi.loginlogoff.financas.Receita;
+import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -23,14 +22,11 @@ public class Usuario {
     private Date dataNascimento;
     private Boolean isAutenticado;
     //Indica que a classe Usuario(One) possuira varios objetivos(Many)
-    @OneToMany
-    @JoinColumn(name = "FK_USUARIO")
+    @OneToMany(mappedBy = "usuario")
     private List<Objetivo> objetivos;
-    @OneToMany
-    @JoinColumn(name = "FK_USUARIO")
+    @OneToMany(mappedBy = "usuario")
     private List<Despesa> despesas;
-    @OneToMany
-    @JoinColumn(name = "FK_USUARIO")
+    @OneToMany(mappedBy = "usuario")
     private List<Receita> receitas;
 
 
