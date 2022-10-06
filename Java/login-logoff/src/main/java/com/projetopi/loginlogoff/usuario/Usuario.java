@@ -3,9 +3,15 @@ package com.projetopi.loginlogoff.usuario;
 import com.projetopi.loginlogoff.financas.Despesa;
 import com.projetopi.loginlogoff.financas.Receita;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
+import org.hibernate.validator.constraints.br.CPF;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -14,12 +20,19 @@ public class Usuario {
     @Id // PK - chave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto increment
     private Integer id;
+    @NotBlank
+//    @Min(3)
+//    @Max(5)
     private String nome;
+//    @Email
+//    @Min(3)
     private String email;
+//    @CPF
     private String cpf;
     private double saldo;
+//    @NotBlank
     private String senha;
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
     private Boolean isAutenticado;
     //Indica que a classe Usuario(One) possuira varios objetivos(Many)
     @OneToMany(mappedBy = "usuario")
@@ -31,7 +44,7 @@ public class Usuario {
 
 
     public Usuario(String nome, String email, String cpf,
-                   double saldo, String senha, Date dataNascimento) {
+                   double saldo, String senha, LocalDate dataNascimento) {
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;
@@ -92,11 +105,11 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
