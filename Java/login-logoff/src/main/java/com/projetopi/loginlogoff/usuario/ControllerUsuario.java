@@ -40,6 +40,7 @@ public class ControllerUsuario {
     @PutMapping("login/{cpf}/{senha}")
     public ResponseEntity<Usuario> login(@PathVariable String cpf, @PathVariable String senha) {
         List<Usuario> usuarios = usuarioRepository.findAll();
+
         for (Usuario u : usuarios) {
             if (u.getCpf().equals(cpf) && u.pegueSenha().equals(senha)) {
                 u.setAutenticado(true);
