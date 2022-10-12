@@ -42,7 +42,7 @@ public class ObjetivoController {
         if (usuarioRepository.existsById(idUsuario) && objetivoRepository.existsById(idObjetivo)) {
             List<Objetivo> todosObjetivos = objetivoRepository.findAll();
             for (Objetivo objetivoAtual : todosObjetivos) {
-                if (objetivoAtual.getFkUsuario() == idUsuario) {
+                if (objetivoAtual.getFkUsuario() == idUsuario && objetivoAtual.getCodigo() == idObjetivo) {
                     return ResponseEntity.status(200).body(objetivoAtual);
                 }
             }
@@ -65,9 +65,19 @@ public class ObjetivoController {
     public ResponseEntity<Objetivo> atualizarObjetivo(@PathVariable int idUsuario, @PathVariable int idObjetivo,
                                                       @RequestBody Objetivo objetivo) {
         if (usuarioRepository.existsById(idUsuario) && objetivoRepository.existsById(idObjetivo)) {
+            Objetivo objetivoAtualizado = new Objetivo(
+                    idObjetivo,
+                    objetivo.getNome(),
+                    objetivo.getDescricao(),
+                    objetivo.getValor(),
+                    objetivo.getData(),
+                    objetivo.getCategoria(),
+                    objetivo.getValorAtual(),
+                    objetivo.getDataFinal()
+            );
             Optional<Usuario> usuario = usuarioRepository.findById(idUsuario);
-            objetivo.setUsuario(usuario.get());
-            return ResponseEntity.status(200).body(objetivoRepository.save(objetivo));
+            objetivoAtualizado.setUsuario(usuario.get());
+            return ResponseEntity.status(200).body(objetivoRepository.save(objetivoAtualizado));
         }
         return ResponseEntity.status(404).build();
     }

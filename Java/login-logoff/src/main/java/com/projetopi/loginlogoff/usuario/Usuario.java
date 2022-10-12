@@ -1,7 +1,7 @@
 package com.projetopi.loginlogoff.usuario;
 
 import com.projetopi.loginlogoff.financas.Despesa;
-import com.projetopi.loginlogoff.financas.Receita;
+import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 
 import javax.persistence.*;

@@ -1,9 +1,11 @@
-package com.projetopi.loginlogoff.financas;
+package com.projetopi.loginlogoff.financas.receita;
 
+import com.projetopi.loginlogoff.financas.Financas;
 import com.projetopi.loginlogoff.usuario.Usuario;
 
 import javax.persistence.Entity;
 import java.util.Date;
+
 @Entity
 public class Receita extends Financas {
 
@@ -15,6 +17,9 @@ public class Receita extends Financas {
         super(codigo, nome, descricao, valor, data, categoria);
         this.isRecorrente = isRecorrente;
         this.frequencia = frequencia;
+    }
+
+    public Receita() {
     }
 
     public boolean isRecorrente() {
