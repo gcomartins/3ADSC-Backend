@@ -83,7 +83,7 @@ public abstract class Financas {
     }
 
     public int getFkUsuario(){
-        return this.usuario.pegueIdUsuario();
+        return this.usuario.getIdUsuario();
     }
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;

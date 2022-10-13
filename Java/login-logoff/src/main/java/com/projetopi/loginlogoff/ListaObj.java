@@ -2,6 +2,7 @@ package com.projetopi.loginlogoff;
 
 import ch.qos.logback.core.read.ListAppender;
 import com.projetopi.loginlogoff.financas.Financas;
+import com.projetopi.loginlogoff.financas.Receita;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import net.bytebuddy.asm.Advice;
 
@@ -127,7 +128,8 @@ public class ListaObj <T> {
     public T[] getVetor() {
         return vetor;
     }
-    public  String gravaArquivoCsvObjetivo(ListaObj<Objetivo> lista, String nomeArq) {
+    public  String gravaArquivoCsvObjetivo(ListaObj<Objetivo> listaObj,
+                                           String nomeArq) {
         FileWriter arq = null; // objeto que representa o arquivo de gravação
         Formatter saida = null; // objeto usado para escrever no arquivo
         Boolean deuRuim = false;
@@ -144,12 +146,13 @@ public class ListaObj <T> {
         // bloco que grava o arquivo
         try{
 
-            for (int i = 0;i < lista.getTamanho(); i++){
-                Objetivo o = lista.getElemento(i);
+            for (int i = 0;i < listaObj.getTamanho(); i++){
+                Objetivo o = listaObj.getElemento(i);
                 saida.format("%d;%s;%s;%.2f;%s;%s;%s;\n",o.getCodigo(),o.getNome(),o.getDescricao(),
                         o.getValor(),o.getData(),o.getDataFinal(), o.getCategoria());
 
             }
+
         } catch(FormatterClosedException e){
             return"erro ao gravar arquivo";
 

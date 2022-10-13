@@ -22,7 +22,7 @@ public class Usuario {
     private String nome;
     @Email
     private String email;
-//    @CPF
+   @CPF
     private String cpf;
     private double saldo;
     @NotBlank
@@ -54,7 +54,7 @@ public class Usuario {
 
     }
 
-    public Integer pegueIdUsuario() {
+    public Integer getIdUsuario() {
         return id;
     }
 
@@ -94,7 +94,7 @@ public class Usuario {
         this.saldo = saldo;
     }
 
-    public String pegueSenha() {
+    public String getSenha() {
         return senha;
     }
 

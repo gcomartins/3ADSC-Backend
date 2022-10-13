@@ -16,9 +16,9 @@ import java.util.Optional;
 public class ObjetivoController {
     //get, post,put,delete TEM QUE SER PARA O USUÁRIO QUE ESTÁ RELACIONADO
     @Autowired
-    ObjetivoRepository objetivoRepository;
-    @Autowired
     UsuarioRepository usuarioRepository;
+    @Autowired
+    ObjetivoRepository objetivoRepository;
 
     @GetMapping("/{idUsuario}")
     public ResponseEntity<List<Objetivo>> listarTodosObjetivosDoUsuario(@PathVariable int idUsuario) {
@@ -100,19 +100,5 @@ public class ObjetivoController {
             return ResponseEntity.status(200).body(todosObjetivosDeletados);
         }
         return ResponseEntity.status(404).build();
-    }
-
-    // endPoint de teste
-    @PostMapping("/gerar/csv")
-    public ResponseEntity<String> gerarCsv(){
-        List<Objetivo> objetivos = objetivoRepository.findAll();
-        int qtdObj = objetivos.size();
-        ListaObj listaObjetos = new ListaObj<>(qtdObj);
-        for (Objetivo objetivoAtual : objetivos){
-            listaObjetos.adiciona(objetivoAtual);
-        }
-        listaObjetos.gravaArquivoCsvObjetivo(listaObjetos, "csvaa");
-        return ResponseEntity.status(200).body(listaObjetos.gravaArquivoCsvObjetivo(listaObjetos, "csvaa"));
-//        return null;
     }
 }

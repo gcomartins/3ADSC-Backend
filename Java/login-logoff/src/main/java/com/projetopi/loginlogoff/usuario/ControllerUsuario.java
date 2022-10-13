@@ -1,5 +1,8 @@
 package com.projetopi.loginlogoff.usuario;
 
+import com.projetopi.loginlogoff.ListaObj;
+import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
+import com.projetopi.loginlogoff.financas.objetivo.ObjetivoRepository;
 import net.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,13 +21,15 @@ import java.util.List;
 public class ControllerUsuario {
     @Autowired
     private UsuarioRepository usuarioRepository;
+    @Autowired
+    private ObjetivoRepository objetivoRepository;
 
     @PostMapping
     public ResponseEntity<Usuario> cadastrar( @Valid  @RequestBody Usuario usuarioNovo) {
 
         usuarioNovo.setAutenticado(false);
         Usuario usuarioCadastrado = this.usuarioRepository.save(usuarioNovo);
-        return ResponseEntity.status(202).body(usuarioCadastrado);
+        return ResponseEntity.status(201).body(usuarioCadastrado);
     }
 
     @GetMapping
@@ -42,7 +47,7 @@ public class ControllerUsuario {
         List<Usuario> usuarios = usuarioRepository.findAll();
 
         for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.pegueSenha().equals(senha)) {
+            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
                 u.setAutenticado(true);
                 this.usuarioRepository.save(u);
                 return ResponseEntity.status(202).body(u);
@@ -56,10 +61,10 @@ public class ControllerUsuario {
     public ResponseEntity<Usuario> logoff(@PathVariable String cpf, @PathVariable String senha) {
         List<Usuario> usuarios = usuarioRepository.findAll();
         for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.pegueSenha().equals(senha)) {
+            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
                 u.setAutenticado(false);
                 this.usuarioRepository.save(u);
-                return ResponseEntity.status(201).body(u);
+                return ResponseEntity.status(200).body(u);
             }
         }
         return ResponseEntity.status(404).build();
@@ -70,25 +75,25 @@ public class ControllerUsuario {
                                                  @PathVariable String senhaNova) {
         List<Usuario> usuarios = usuarioRepository.findAll();
         for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.pegueSenha().equals(senha)) {
+            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
                 if (senhaNova.length() >= 8) u.setSenha(senhaNova);
                 this.usuarioRepository.save(u);
-                return ResponseEntity.status(201).body(u);
+                return ResponseEntity.status(200).body(u);
             }
         }
         return ResponseEntity.status(400).build();
     }
 
     @PutMapping("/nome/{cpf}/{senha}/{nome}")
-    public ResponseEntity<Usuario> atualizarNome(@PathVariable String cpf, @PathVariable String senha,
+    public ResponseEntity<Usuario> atualizarNome(@PathVariable String cpf,  @PathVariable String senha,
                                                 @PathVariable String nome) {
         List<Usuario> usuarios = usuarioRepository.findAll();
         for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.pegueSenha().equals(senha)) {
+            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
                 if (!nome.equals(u.getNome())) {
                     u.setNome(nome);
                     usuarioRepository.save(u);
-                    return ResponseEntity.status(201).body(u);
+                    return ResponseEntity.status(200).body(u);
                 } else return ResponseEntity.status(400).build();
             }
         }
@@ -101,12 +106,12 @@ public class ControllerUsuario {
         List<Usuario> usuarios = usuarioRepository.findAll();
         Boolean isAtualizado = false;
         for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.pegueSenha().equals(senha)) {
+            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
                 if (!email.equals(u.getEmail())) {
                     u.setEmail(email);
                     isAtualizado = true;
                     usuarioRepository.save(u);
-                    return ResponseEntity.status(201).body(u);
+                    return ResponseEntity.status(200).body(u);
                 } else return ResponseEntity.status(400).build();
             }
         }
@@ -116,14 +121,25 @@ public class ControllerUsuario {
     public ResponseEntity<Usuario> atualizarEmail(@PathVariable String cpf, @PathVariable String senha) {
         List<Usuario> usuarios = usuarioRepository.findAll();
         for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.pegueSenha().equals(senha)) {
-            int id = u.pegueIdUsuario();
+            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
+            int id = u.getIdUsuario();
             usuarioRepository.delete(u);
-            return ResponseEntity.status(202).body(u);
+            return ResponseEntity.status(200).body(u);
             }
         }
 
             return ResponseEntity.status(404).build();
+    }
+    @PostMapping("/gerarCsv/{idUsuario}/{nomeArquivo}")
+    public ResponseEntity<String> gerarCsv(@PathVariable Integer idUsuario,@PathVariable  String nomeArquivo){
+        List<Objetivo> objetivos = objetivoRepository.findAll();
+        int qtdObj = objetivos.size();
+        ListaObj listaObjetos = new ListaObj<>(qtdObj);
+        for (Objetivo objetivoAtual : objetivos){
+            listaObjetos.adiciona(objetivoAtual);
+        }
+        listaObjetos.gravaArquivoCsvObjetivo(listaObjetos, nomeArquivo);
+        return ResponseEntity.status(200).body(listaObjetos.gravaArquivoCsvObjetivo(listaObjetos, nomeArquivo));
     }
 }
 
