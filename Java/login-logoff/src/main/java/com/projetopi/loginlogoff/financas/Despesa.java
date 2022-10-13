@@ -9,6 +9,9 @@ public class Despesa extends Financas {
     private boolean isPago;
     private int qtdParcelas;
 
+    public Despesa() {
+    }
+
     public Despesa(int codigo, String nome, String descricao, double valor, Date data,
                    String categoria, boolean isPago, int qtdParcelas) {
         super(codigo, nome, descricao, valor, data, categoria);

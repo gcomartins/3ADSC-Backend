@@ -20,17 +20,16 @@ public class Usuario {
     @Id // PK - chave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto increment
     private Integer id;
-    @NotBlank
-    @Min(3)
-    @Max(5)
+//    @NotBlank
+//    @Min(3)
     private String nome;
-    @Email
-    @Min(3)
+//    @Email
+//    @Min(3)
     private String email;
-    @CPF
+//    @CPF
     private String cpf;
     private double saldo;
-    @NotBlank
+//    @NotBlank
     private String senha;
     private LocalDate dataNascimento;
     private Boolean isAutenticado;

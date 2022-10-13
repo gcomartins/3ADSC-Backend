@@ -1,5 +1,6 @@
 package com.projetopi.loginlogoff.financas.objetivo;
 
+import com.projetopi.loginlogoff.ListaObj;
 import com.projetopi.loginlogoff.usuario.Usuario;
 import com.projetopi.loginlogoff.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -99,5 +100,19 @@ public class ObjetivoController {
             return ResponseEntity.status(200).body(todosObjetivosDeletados);
         }
         return ResponseEntity.status(404).build();
+    }
+
+    // endPoint de teste
+    @PostMapping("/gerar/csv")
+    public ResponseEntity<String> gerarCsv(){
+        List<Objetivo> objetivos = objetivoRepository.findAll();
+        int qtdObj = objetivos.size();
+        ListaObj listaObjetos = new ListaObj<>(qtdObj);
+        for (Objetivo objetivoAtual : objetivos){
+            listaObjetos.adiciona(objetivoAtual);
+        }
+        listaObjetos.gravaArquivoCsvObjetivo(listaObjetos, "csvaa");
+        return ResponseEntity.status(200).body(listaObjetos.gravaArquivoCsvObjetivo(listaObjetos, "csvaa"));
+//        return null;
     }
 }
