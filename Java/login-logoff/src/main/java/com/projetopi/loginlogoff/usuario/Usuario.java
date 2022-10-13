@@ -6,10 +6,7 @@ import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import org.hibernate.validator.constraints.br.CPF;
 
 import javax.persistence.*;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.*;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
@@ -20,17 +17,18 @@ public class Usuario {
     @Id // PK - chave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto increment
     private Integer id;
-//    @NotBlank
-//    @Min(3)
+    @NotBlank
+    @Size(min = 3, max = 100)
     private String nome;
-//    @Email
-//    @Min(3)
+    @Email
     private String email;
 //    @CPF
     private String cpf;
     private double saldo;
-//    @NotBlank
+    @NotBlank
+    @Size(min = 3, max = 100)
     private String senha;
+    @PastOrPresent
     private LocalDate dataNascimento;
     private Boolean isAutenticado;
     //Indica que a classe Usuario(One) possuira varios objetivos(Many)
