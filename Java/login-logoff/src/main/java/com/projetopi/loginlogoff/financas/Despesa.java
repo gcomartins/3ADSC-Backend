@@ -2,11 +2,15 @@ package com.projetopi.loginlogoff.financas;
 import com.projetopi.loginlogoff.usuario.Usuario;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import java.util.Date;
 @Entity
 public class Despesa extends Financas {
 
     private boolean isPago;
+    @Min(1)
+    @Max(480)
     private int qtdParcelas;
 
     public Despesa(int codigo, String nome, String descricao, double valor, Date data,

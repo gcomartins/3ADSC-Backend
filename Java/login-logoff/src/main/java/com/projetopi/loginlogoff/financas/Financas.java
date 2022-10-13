@@ -3,6 +3,10 @@ package com.projetopi.loginlogoff.financas;
 import com.projetopi.loginlogoff.usuario.Usuario;
 
 import javax.persistence.*;
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.FutureOrPresent;
+import javax.validation.constraints.Size;
 import java.util.Date;
 //Essa annotation faz com que essa tabela não seja persistida no jpa, porem suas classes filhas
 //que possuirem annotarion @Entity serão criadas
@@ -11,10 +15,16 @@ public abstract class Financas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int codigo;
+    @Size(min = 3,max = 50)
     private String nome;
+    @Size(min = 3,max = 100)
     private String descricao;
+    @DecimalMin("0.1")
+    @DecimalMax("100000000")
     private double valor;
+    @FutureOrPresent
     private Date data;
+    @Size(min = 3, max = 20)
     private String categoria;
     //ID_USUARIO é o nome da fk
     @ManyToOne
