@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -52,7 +53,7 @@ public class ObjetivoController {
     }
 
     @PostMapping("/{idUsuario}")
-    public ResponseEntity<Objetivo> criarObjetivo(@PathVariable int idUsuario, @RequestBody Objetivo objetivo) {
+    public ResponseEntity<Objetivo> criarObjetivo(@Valid @PathVariable int idUsuario, @RequestBody Objetivo objetivo) {
         if (usuarioRepository.existsById(idUsuario)) {
             Optional<Usuario> usuario = usuarioRepository.findById(idUsuario);
             objetivo.setUsuario(usuario.get());
@@ -62,7 +63,7 @@ public class ObjetivoController {
     }
 
     @PutMapping("/{idUsuario}/{idObjetivo}")
-    public ResponseEntity<Objetivo> atualizarObjetivo(@PathVariable int idUsuario, @PathVariable int idObjetivo,
+    public ResponseEntity<Objetivo> atualizarObjetivo(@Valid @PathVariable int idUsuario, @PathVariable int idObjetivo,
                                                       @RequestBody Objetivo objetivo) {
         if (usuarioRepository.existsById(idUsuario) && objetivoRepository.existsById(idObjetivo)) {
             Objetivo objetivoAtualizado = new Objetivo(

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -53,7 +54,7 @@ public class ReceitaController {
     }
 
     @PostMapping("/{idUsuario}")
-    public ResponseEntity<Receita> criarReceita(@PathVariable int idUsuario, @RequestBody Receita receita) {
+    public ResponseEntity<Receita> criarReceita(@Valid @PathVariable int idUsuario, @RequestBody Receita receita) {
         if (usuarioRepository.existsById(idUsuario)) {
             Optional<Usuario> usuario = usuarioRepository.findById(idUsuario);
             receita.setUsuario(usuario.get());
@@ -63,7 +64,7 @@ public class ReceitaController {
     }
 
     @PutMapping("/{idUsuario}/{idReceita}")
-    public ResponseEntity<Receita> atualizarReceita(@PathVariable int idUsuario, @PathVariable int idReceita,
+    public ResponseEntity<Receita> atualizarReceita(@Valid @PathVariable int idUsuario, @PathVariable int idReceita,
                                                       @RequestBody Receita receita) {
         if (usuarioRepository.existsById(idUsuario) && receitaRepository.existsById(idReceita)) {
             Receita receitaAtualizada = new Receita(
