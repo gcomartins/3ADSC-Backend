@@ -1,0 +1,35 @@
+request de post para geração de Usuario
+{
+  "nome": "eduardo",
+  "email": "eduardo@gmail.com",
+  "cpf": "50422211826",
+  "senha": "eduardo1234",
+  "dataNascimento": "2002-10-16"
+}
+
+
+Request de post para geração de receita
+
+{
+  "nome": "receita",
+  "descricao": "receita",
+  "valor": 1000,
+  "data": "2024-10-20T03:19:35.999Z",
+  "categoria": "receitaCategoria",
+  "frequencia": 30,
+  "recorrente": true
+}
+
+request de post para geração de objetivo
+
+
+{
+  "codigo": 0,
+  "nome": "Objetivo",
+  "descricao": "objetivoDescricao",
+  "valor": 1000,
+  "data": "2024-10-16T03:24:08.045Z",
+  "categoria": "objetivoCategoria",
+  "valorAtual": 100,
+  "dataFinal": "2024-10-16T03:24:08.045Z"
+}

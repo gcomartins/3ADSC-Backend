@@ -2,7 +2,7 @@ package com.projetopi.loginlogoff;
 
 import ch.qos.logback.core.read.ListAppender;
 import com.projetopi.loginlogoff.financas.Financas;
-import com.projetopi.loginlogoff.financas.Receita;
+import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import net.bytebuddy.asm.Advice;
 
@@ -128,7 +128,8 @@ public class ListaObj <T> {
     public T[] getVetor() {
         return vetor;
     }
-    public  String gravaArquivoCsvObjetivo(ListaObj<Objetivo> listaObj,
+    public  String gravaArquivoCsvObjetivo(ListaObj<Objetivo> listaObjetivo,
+                                           ListaObj<Receita> listaReceita,
                                            String nomeArq) {
         FileWriter arq = null; // objeto que representa o arquivo de gravação
         Formatter saida = null; // objeto usado para escrever no arquivo
@@ -145,12 +146,21 @@ public class ListaObj <T> {
 
         // bloco que grava o arquivo
         try{
-
-            for (int i = 0;i < listaObj.getTamanho(); i++){
-                Objetivo o = listaObj.getElemento(i);
+            // aqui nesse saida .format colocar o nome dos campos do objetivo
+            saida.format("%s;\n","codigo");
+            for (int i = 0;i < listaObjetivo.getTamanho(); i++){
+                Objetivo o = listaObjetivo.getElemento(i);
+                //aqui colocar o que do objeto vai ser exibido
                 saida.format("%d;%s;%s;%.2f;%s;%s;%s;\n",o.getCodigo(),o.getNome(),o.getDescricao(),
                         o.getValor(),o.getData(),o.getDataFinal(), o.getCategoria());
-
+            }
+            // aqui nesse saida .format colocar o nome dos campos do receita
+            saida.format("%s \n","codigo");
+            for (int i = 0;i < listaReceita.getTamanho(); i++){
+                Receita r = listaReceita.getElemento(i);
+                //aqui colocar o que da receita  vai ser exibido
+                saida.format("%d;%s;%s;%.2f;%s;%s;\n",r.getCodigo(),r.getNome(),r.getDescricao(),
+                        r.getValor(),r.getData(), r.getCategoria());
             }
 
         } catch(FormatterClosedException e){

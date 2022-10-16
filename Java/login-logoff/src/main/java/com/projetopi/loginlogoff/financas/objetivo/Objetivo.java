@@ -4,16 +4,14 @@ import com.projetopi.loginlogoff.financas.Financas;
 import com.projetopi.loginlogoff.usuario.Usuario;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.DecimalMax;
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.Future;
+import javax.validation.constraints.*;
 import java.util.Date;
 @Entity
 public class Objetivo extends Financas {
     @DecimalMin("0.1")
     @DecimalMax("100000000")
     private double valorAtual;
-    @Future()
+    @FutureOrPresent
     private Date dataFinal;
 
     public Objetivo(int codigo, String nome, String descricao, double valor,

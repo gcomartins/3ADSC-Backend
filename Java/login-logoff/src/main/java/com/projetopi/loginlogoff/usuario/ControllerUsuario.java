@@ -3,6 +3,8 @@ package com.projetopi.loginlogoff.usuario;
 import com.projetopi.loginlogoff.ListaObj;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import com.projetopi.loginlogoff.financas.objetivo.ObjetivoRepository;
+import com.projetopi.loginlogoff.financas.receita.Receita;
+import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
 import net.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +25,8 @@ public class ControllerUsuario {
     private UsuarioRepository usuarioRepository;
     @Autowired
     private ObjetivoRepository objetivoRepository;
+    @Autowired
+    private  ReceitaRepository receitaRepository;
 
     @PostMapping
     public ResponseEntity<Usuario> cadastrar( @Valid  @RequestBody Usuario usuarioNovo) {
@@ -132,14 +136,29 @@ public class ControllerUsuario {
     }
     @PostMapping("/gerarCsv/{idUsuario}/{nomeArquivo}")
     public ResponseEntity<String> gerarCsv(@PathVariable Integer idUsuario,@PathVariable  String nomeArquivo){
+        // pegando tudo o que precisa do banco
         List<Objetivo> objetivos = objetivoRepository.findAll();
+        List<Receita> receitas = receitaRepository.findAll();
+        // aqui pegando o tamanho dos itens para passar como parametro quando transforma-los em vetor
+        int qtdReceita = receitas.size();
         int qtdObj = objetivos.size();
+        // criando objetos do tipo ListObj
+        ListaObj listaReceitas = new ListaObj<>(qtdReceita);
         ListaObj listaObjetos = new ListaObj<>(qtdObj);
+        // adicionando valores a eles
+        for (Receita receitaAtual: receitas){
+            if (receitaAtual.getFkUsuario() == idUsuario)
+            listaReceitas.adiciona(receitaAtual);
+        }
+
+//        }
         for (Objetivo objetivoAtual : objetivos){
+            if (objetivoAtual.getValorAtual() == idUsuario)
             listaObjetos.adiciona(objetivoAtual);
         }
-        listaObjetos.gravaArquivoCsvObjetivo(listaObjetos, nomeArquivo);
-        return ResponseEntity.status(200).body(listaObjetos.gravaArquivoCsvObjetivo(listaObjetos, nomeArquivo));
+        // gravando as informações nos arquivos
+        listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas, nomeArquivo);
+        return ResponseEntity.status(201).body(listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas, nomeArquivo));
     }
 }
 
