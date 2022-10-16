@@ -158,7 +158,7 @@ public class ControllerUsuario {
         }
         // gravando as informações nos arquivos
         listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas, nomeArquivo);
-        return ResponseEntity.status(201).body(listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas, nomeArquivo));
+        return listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas, nomeArquivo);
     }
 }
 

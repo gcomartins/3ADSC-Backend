@@ -5,11 +5,17 @@ import com.projetopi.loginlogoff.financas.Financas;
 import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import net.bytebuddy.asm.Advice;
+import org.apache.coyote.Response;
+import org.springframework.http.ResponseEntity;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Formatter;
 import java.util.FormatterClosedException;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 public class ListaObj <T> {
 
@@ -37,8 +43,7 @@ public class ListaObj <T> {
     public void adiciona(T elemento) {
         if (nroElem >= vetor.length) {
             throw new IllegalStateException();
-        }
-        else {
+        } else {
             vetor[nroElem++] = elemento;
         }
     }
@@ -60,7 +65,7 @@ public class ListaObj <T> {
     // Recebe o índice do elemento a ser removido
     // Se o índice for inválido, retorna false
     // Se removeu, retorna true
-    public boolean removePeloIndice (int indice) {
+    public boolean removePeloIndice(int indice) {
         if (indice < 0 || indice >= nroElem) {
             System.out.println("\nÍndice inválido!");
             return false;
@@ -68,8 +73,8 @@ public class ListaObj <T> {
 
         // Loop para "deslocar para a esquerda" os elementos do vetor
         // sobrescrevendo o elemento removido
-        for (int i = indice; i < nroElem-1; i++) {
-            vetor[i] = vetor[i+1];
+        for (int i = indice; i < nroElem - 1; i++) {
+            vetor[i] = vetor[i + 1];
         }
 
         nroElem--;
@@ -97,8 +102,7 @@ public class ListaObj <T> {
     public T getElemento(int indice) {
         if (indice < 0 || indice >= nroElem) {
             return null;
-        }
-        else {
+        } else {
             return vetor[indice];
         }
     }
@@ -114,8 +118,7 @@ public class ListaObj <T> {
     public void exibe() {
         if (nroElem == 0) {
             System.out.println("\nA lista está vazia.");
-        }
-        else {
+        } else {
             System.out.println("\nElementos da lista:");
             for (int i = 0; i < nroElem; i++) {
                 System.out.println(vetor[i]);
@@ -128,58 +131,55 @@ public class ListaObj <T> {
     public T[] getVetor() {
         return vetor;
     }
-    public  String gravaArquivoCsvObjetivo(ListaObj<Objetivo> listaObjetivo,
-                                           ListaObj<Receita> listaReceita,
-                                           String nomeArq) {
+
+    public ResponseEntity<String> gravaArquivoCsvObjetivo(ListaObj<Objetivo> listaObjetivo,
+                                                          ListaObj<Receita> listaReceita,
+                                                          String nomeArq) {
         FileWriter arq = null; // objeto que representa o arquivo de gravação
         Formatter saida = null; // objeto usado para escrever no arquivo
         Boolean deuRuim = false;
-        nomeArq+= ".csv";
+        nomeArq += ".csv";
         // Bloco que abre o arquivo ;
-        try{
+        try {
             arq = new FileWriter(nomeArq); // abrindo arquivo
             saida = new Formatter(arq); // cria objeto saida associando ao arquivo
-        }
-        catch (IOException e){
-            return  "Erro ao abrir o arquivo";
+        } catch (IOException e) {
+            return ResponseEntity.status(400).body("Erro ao abrir o arquivo");
         }
 
         // bloco que grava o arquivo
-        try{
+        try {
             // aqui nesse saida .format colocar o nome dos campos do objetivo
-            saida.format("%s;\n","codigo");
-            for (int i = 0;i < listaObjetivo.getTamanho(); i++){
+            saida.format("%s;\n", "codigo");
+            for (int i = 0; i < listaObjetivo.getTamanho(); i++) {
                 Objetivo o = listaObjetivo.getElemento(i);
                 //aqui colocar o que do objeto vai ser exibido
-                saida.format("%d;%s;%s;%.2f;%s;%s;%s;\n",o.getCodigo(),o.getNome(),o.getDescricao(),
-                        o.getValor(),o.getData(),o.getDataFinal(), o.getCategoria());
+                saida.format("%d;%s;%s;%.2f;%s;%s;%s;\n", o.getCodigo(), o.getNome(), o.getDescricao(),
+                        o.getValor(), o.getData(), o.getDataFinal(), o.getCategoria());
             }
             // aqui nesse saida .format colocar o nome dos campos do receita
-            saida.format("%s \n","codigo");
-            for (int i = 0;i < listaReceita.getTamanho(); i++){
+            saida.format("%s \n", "codigo");
+            for (int i = 0; i < listaReceita.getTamanho(); i++) {
                 Receita r = listaReceita.getElemento(i);
                 //aqui colocar o que da receita  vai ser exibido
-                saida.format("%d;%s;%s;%.2f;%s;%s;\n",r.getCodigo(),r.getNome(),r.getDescricao(),
-                        r.getValor(),r.getData(), r.getCategoria());
+                saida.format("%d;%s;%s;%.2f;%s;%s;\n", r.getCodigo(), r.getNome(), r.getDescricao(),
+                        r.getValor(), r.getData(), r.getCategoria());
             }
 
-        } catch(FormatterClosedException e){
-            return"erro ao gravar arquivo";
+        } catch (FormatterClosedException e) {
+            return ResponseEntity.status(400).body("erro ao gravar arquivo");
 
-        }
-        finally {
+        } finally {
             saida.close();
             try {
                 arq.close();
-                return "arquivo gerado com sucesso";
-            }catch (IOException e){
-                return"Erro ao fechar o arquivo";
+                return ResponseEntity.status(200).body("arquivo gerado com sucesso");
+            } catch (IOException e) {
+                return ResponseEntity.status(400).body("Erro ao fechar o arquivo");
 
             }
         }
     }
-
-
 }
 
 
