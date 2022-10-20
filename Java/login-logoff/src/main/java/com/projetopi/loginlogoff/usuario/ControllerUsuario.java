@@ -142,6 +142,7 @@ public class ControllerUsuario {
         // aqui pegando o tamanho dos itens para passar como parametro quando transforma-los em vetor
         int qtdReceita = receitas.size();
         int qtdObj = objetivos.size();
+        System.out.println(qtdObj);
         // criando objetos do tipo ListObj
         ListaObj listaReceitas = new ListaObj<>(qtdReceita);
         ListaObj listaObjetos = new ListaObj<>(qtdObj);
@@ -153,7 +154,7 @@ public class ControllerUsuario {
 
 //        }
         for (Objetivo objetivoAtual : objetivos){
-            if (objetivoAtual.getValorAtual() == idUsuario)
+            if (objetivoAtual.getFkUsuario() == idUsuario)
             listaObjetos.adiciona(objetivoAtual);
         }
         // gravando as informações nos arquivos

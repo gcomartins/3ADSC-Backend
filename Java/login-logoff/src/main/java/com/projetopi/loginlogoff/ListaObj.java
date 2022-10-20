@@ -150,20 +150,21 @@ public class ListaObj <T> {
         // bloco que grava o arquivo
         try {
             // aqui nesse saida .format colocar o nome dos campos do objetivo
-            saida.format("%s;\n", "codigo");
+            saida.format("%s\n%s;%s;%s;%s;%s;%s;%s;%s\n","Objetivo","codigo","nome","categoria","descricao","valor","valor atual","data criacao","data final");
             for (int i = 0; i < listaObjetivo.getTamanho(); i++) {
                 Objetivo o = listaObjetivo.getElemento(i);
                 //aqui colocar o que do objeto vai ser exibido
-                saida.format("%d;%s;%s;%.2f;%s;%s;%s;\n", o.getCodigo(), o.getNome(), o.getDescricao(),
-                        o.getValor(), o.getData(), o.getDataFinal(), o.getCategoria());
+                saida.format("%d;%s;%s;%s;%.2f;%.2f;%s\n",o.getCodigo(),o.getNome(),o.getCategoria(),
+                        o.getDescricao(),o.getValor(),o.getValorAtual(),o.getData());
             }
             // aqui nesse saida .format colocar o nome dos campos do receita
-            saida.format("%s \n", "codigo");
+            saida.format("%s\n%s;%s;%s;%s;%s;%s;%s;%s\n", "Receita","codigo","nome","categoria","descricao",
+                    "valor","recorrente","frequencia","data criacao");
             for (int i = 0; i < listaReceita.getTamanho(); i++) {
                 Receita r = listaReceita.getElemento(i);
                 //aqui colocar o que da receita  vai ser exibido
-                saida.format("%d;%s;%s;%.2f;%s;%s;\n", r.getCodigo(), r.getNome(), r.getDescricao(),
-                        r.getValor(), r.getData(), r.getCategoria());
+                saida.format("%d;%s;%s;%s;%.2f;%b;%d;%s\n", r.getCodigo(), r.getNome(), r.getCategoria(),
+                        r.getDescricao(), r.getValor(), r.isRecorrente(),r.getFrequencia(),r.getData());
             }
 
         } catch (FormatterClosedException e) {
