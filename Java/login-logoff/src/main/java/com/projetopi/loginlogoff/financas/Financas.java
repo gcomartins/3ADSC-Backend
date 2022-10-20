@@ -102,7 +102,7 @@ public abstract class Financas {
     @Override
     public String toString() {
         return String.format
-                ("\n---------- Finanças ----------" +
+                ("\n---------- Informações ----------" +
                         "\nCódigo: %d" +
                         "\nNome: %s" +
                         "\nDescrição: %s" +

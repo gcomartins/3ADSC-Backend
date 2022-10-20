@@ -51,7 +51,8 @@ public class Receita extends Financas {
     public String toString() {
         return String.format
                 ("\n---------- Receita ----------" +
+                        "\n%s " +
                         "\nisRecorrente: %s " +
-                        "\nFrequência: %d",isRecorrente, frequencia);
+                        "\nFrequência: %d", super.toString(),isRecorrente, frequencia);
     }
 }

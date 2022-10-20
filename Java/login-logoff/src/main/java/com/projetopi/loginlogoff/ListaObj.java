@@ -4,18 +4,17 @@ import ch.qos.logback.core.read.ListAppender;
 import com.projetopi.loginlogoff.financas.Financas;
 import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
+import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
 import net.bytebuddy.asm.Advice;
 import org.apache.coyote.Response;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Formatter;
-import java.util.FormatterClosedException;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
+import java.util.*;
 
 public class ListaObj <T> {
 
@@ -178,6 +177,23 @@ public class ListaObj <T> {
                 return ResponseEntity.status(400).body("Erro ao fechar o arquivo");
 
             }
+        }
+    }
+
+    public void selectionSortOtimizado(ListaObj<Receita> listaReceitas) {
+        int indMenor;
+
+        for (int i = 0; i < listaReceitas.getTamanho() - 1; i++) {
+            indMenor = i;
+            for (int j = i + 1; j < listaReceitas.getTamanho(); j++) {
+                if (listaReceitas.getElemento(j).getValor() < listaReceitas.getElemento(indMenor).getValor()) {
+                    indMenor = j;
+                }
+            }
+            double aux;
+            aux = listaReceitas.getElemento(i).getValor();
+            listaReceitas.getElemento(i).setValor(listaReceitas.getElemento(indMenor).getValor());
+            listaReceitas.getElemento(indMenor).setValor(aux);
         }
     }
 }
