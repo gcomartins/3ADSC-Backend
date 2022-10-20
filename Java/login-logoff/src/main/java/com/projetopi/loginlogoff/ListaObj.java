@@ -153,8 +153,8 @@ public class ListaObj <T> {
             for (int i = 0; i < listaObjetivo.getTamanho(); i++) {
                 Objetivo o = listaObjetivo.getElemento(i);
                 //aqui colocar o que do objeto vai ser exibido
-                saida.format("%d;%s;%s;%s;%.2f;%.2f;%s\n",o.getCodigo(),o.getNome(),o.getCategoria(),
-                        o.getDescricao(),o.getValor(),o.getValorAtual(),o.getData());
+                saida.format("%d;%s;%s;%s;%.2f;%.2f;%s;%s\n",o.getCodigo(),o.getNome(),o.getCategoria(),
+                        o.getDescricao(),o.getValor(),o.getValorAtual(),o.getData(),o.getDataFinal());
             }
             // aqui nesse saida .format colocar o nome dos campos do receita
             saida.format("%s\n%s;%s;%s;%s;%s;%s;%s;%s\n", "Receita","codigo","nome","categoria","descricao",
