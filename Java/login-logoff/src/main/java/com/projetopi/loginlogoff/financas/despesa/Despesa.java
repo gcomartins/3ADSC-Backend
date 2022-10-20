@@ -1,4 +1,5 @@
-package com.projetopi.loginlogoff.financas;
+package com.projetopi.loginlogoff.financas.despesa;
+import com.projetopi.loginlogoff.financas.Financas;
 import com.projetopi.loginlogoff.usuario.Usuario;
 
 import javax.persistence.Entity;
