@@ -3,7 +3,10 @@ package com.projetopi.loginlogoff.financas.objetivo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface ObjetivoRepository extends JpaRepository<Objetivo,Integer> {
-
+    List<Objetivo> findByUsuarioIdOrderByData(int idUsuario);
+    int countByUsuarioId(int idUsuario);
 }

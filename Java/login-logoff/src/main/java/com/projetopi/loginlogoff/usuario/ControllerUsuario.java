@@ -1,6 +1,8 @@
 package com.projetopi.loginlogoff.usuario;
 
 import com.projetopi.loginlogoff.ListaObj;
+import com.projetopi.loginlogoff.financas.despesa.Despesa;
+import com.projetopi.loginlogoff.financas.despesa.DespesaRepository;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import com.projetopi.loginlogoff.financas.objetivo.ObjetivoRepository;
 import com.projetopi.loginlogoff.financas.receita.Receita;
@@ -27,6 +29,8 @@ public class ControllerUsuario {
     private ObjetivoRepository objetivoRepository;
     @Autowired
     private  ReceitaRepository receitaRepository;
+    @Autowired
+    private DespesaRepository despesaRepository;
 
     @PostMapping
     public ResponseEntity<Usuario> cadastrar( @Valid  @RequestBody Usuario usuarioNovo) {
@@ -137,29 +141,51 @@ public class ControllerUsuario {
     @PostMapping("/gerarCsv/{idUsuario}/{nomeArquivo}")
     public ResponseEntity<String> gerarCsv(@PathVariable Integer idUsuario,@PathVariable  String nomeArquivo){
         // pegando tudo o que precisa do banco
-        List<Objetivo> objetivos = objetivoRepository.findAll();
-        List<Receita> receitas = receitaRepository.findAll();
+        List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByData(idUsuario);
+        List<Receita> receitas = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
+        List<Despesa> despesas = despesaRepository.findByUsuarioIdOrderByData(idUsuario);
         // aqui pegando o tamanho dos itens para passar como parametro quando transforma-los em vetor
-        int qtdReceita = receitas.size();
-        int qtdObj = objetivos.size();
-        System.out.println(qtdObj);
         // criando objetos do tipo ListObj
-        ListaObj listaReceitas = new ListaObj<>(qtdReceita);
-        ListaObj listaObjetos = new ListaObj<>(qtdObj);
+        ListaObj listaReceitas = new ListaObj<>(receitaRepository.countByUsuarioId(idUsuario));
+        ListaObj listaObjetos = new ListaObj<>(objetivoRepository.countByUsuarioId(idUsuario));
+        ListaObj listaDespesa = new ListaObj<>(despesaRepository.countByUsuarioId(idUsuario));
+
         // adicionando valores a eles
         for (Receita receitaAtual: receitas){
-            if (receitaAtual.getFkUsuario() == idUsuario)
             listaReceitas.adiciona(receitaAtual);
         }
-
-//        }
         for (Objetivo objetivoAtual : objetivos){
-            if (objetivoAtual.getFkUsuario() == idUsuario)
             listaObjetos.adiciona(objetivoAtual);
         }
+
+        for (Despesa despesaAtual: despesas ){
+            listaDespesa.adiciona(despesaAtual);
+        }
         // gravando as informações nos arquivos
-        listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas, nomeArquivo);
-        return listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas, nomeArquivo);
+        listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas,listaDespesa, nomeArquivo);
+        return listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas,listaDespesa, nomeArquivo);
+    }
+
+    @PostMapping("/gerarTxt/{idUsuario}/{nomeArquivo}")
+    public ResponseEntity<String> gerarTxt(@PathVariable Integer idUsuario,@PathVariable  String nomeArquivo){
+        List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByData(idUsuario);
+        ListaObj listaObjetivos = new ListaObj<>(objetivoRepository.countByUsuarioId(idUsuario));
+        for (Objetivo objetivoAtual: objetivos){
+            listaObjetivos.adiciona(objetivoAtual);
+        }
+        List<Receita> receitas = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
+        ListaObj listaReceitas = new ListaObj<>(receitaRepository.countByUsuarioId(idUsuario));
+        for (Receita receitaAtual: receitas){
+            listaReceitas.adiciona(receitaAtual);
+        }
+        List<Despesa> despesas = despesaRepository.findByUsuarioIdOrderByData(idUsuario);
+        ListaObj listaDespesas = new ListaObj<>(despesaRepository.countByUsuarioId(idUsuario));
+        for (Despesa despesaAtual: despesas ){
+            listaDespesas.adiciona(despesaAtual);
+        }
+        return ResponseEntity.status(201).body(listaObjetivos.gravaArquivoTxt(listaObjetivos,listaReceitas,listaDespesas, nomeArquivo));
+
+
     }
 }
 

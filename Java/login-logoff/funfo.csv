@@ -1,0 +1,10 @@
+Objetivos
+codigo;nome;categoria;descricao;valor;valor atual;data criacao;data final
+2;Semifinal da champions 2024;viagem2;viagem para a europa;8000,00;500,00;2024-07-19 00:00:00.0;2024-07-19 00:00:00.0
+1;Final da champions 2024;viagem;viagem para a europa;10000,00;1000,00;2024-07-27 00:00:00.0;2024-07-27 00:00:00.0
+Receitas
+codigo;nome;categoria;descricao;valor;recorrente;frequencia;data criacao
+1;Salario;Salario;Salario do emprego fixo;5000,00;true;1;2024-01-01 00:00:00.0
+Despesas
+Codigo;nome;Categoria;Descricao;Valor;Está Pago?;Quantidade de parcelas;Data
+1;golf;automoveis;parcela do carro;545,50;false;10;2024-10-27 00:00:00.0

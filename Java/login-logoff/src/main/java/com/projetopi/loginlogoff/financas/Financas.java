@@ -28,7 +28,6 @@ public abstract class Financas {
     private String categoria;
     //ID_USUARIO é o nome da fk
     @ManyToOne
-    @JoinColumn(name = "fkUsuario",insertable = true,updatable = true)
     private Usuario usuario;
     public Financas() {
     }
