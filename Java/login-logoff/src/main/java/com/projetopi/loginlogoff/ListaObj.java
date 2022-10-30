@@ -295,7 +295,6 @@ public class ListaObj <T> {
         trailer += String.format("%010d", contaRegDados);
         return gravaRegistro(trailer, nomeArq);
     }
-
 }
 
 
