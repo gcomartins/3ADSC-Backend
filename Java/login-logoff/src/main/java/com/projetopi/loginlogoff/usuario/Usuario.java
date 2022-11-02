@@ -30,13 +30,6 @@ public class Usuario {
     @PastOrPresent
     private LocalDate dataNascimento;
     private Boolean isAutenticado;
-    //Indica que a classe Usuario(One) possuira varios objetivos(Many)
-    @OneToMany(mappedBy = "usuario")
-    private List<Objetivo> objetivos;
-    @OneToMany(mappedBy = "usuario")
-    private List<Despesa> despesas;
-    @OneToMany(mappedBy = "usuario")
-    private List<Receita> receitas;
 
 
     public Usuario(String nome, String email, String cpf,
