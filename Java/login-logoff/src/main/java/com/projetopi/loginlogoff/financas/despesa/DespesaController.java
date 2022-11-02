@@ -54,7 +54,7 @@ public class DespesaController {
     }
 
     @PostMapping("/{idUsuario}")
-    public ResponseEntity<Despesa> criarDespesa(@PathVariable int idUsuario,@Valid @RequestBody Despesa despesa) {
+    public ResponseEntity<Despesa> criarDespesa(@PathVariable int idUsuario, @Valid @RequestBody Despesa despesa) {
         if (usuarioRepository.existsById(idUsuario)) {
             Optional<Usuario> usuario = usuarioRepository.findById(idUsuario);
             despesa.setUsuario(usuario.get());
@@ -89,10 +89,17 @@ public class DespesaController {
         if (usuarioRepository.existsById(idUsuario) && despesaRepository.existsById(idDespesa)) {
             Optional<Despesa> despesa = despesaRepository.findById(idDespesa);
             despesaRepository.deleteById(idDespesa);
-            return ResponseEntity.status(200).body(despesa.get());
+            ResponseEntity resposta = ResponseEntity.status(200).body(despesa.get());
+            String erro = resposta.getStatusCode().getReasonPhrase();
+            System.out.println(erro);
+            return resposta;
         }
-        return ResponseEntity.status(404).build();
+        ResponseEntity resposta2 = ResponseEntity.status(404).build();
+        String erro2 = resposta2.getStatusCode().getReasonPhrase();
+        System.out.printf("SOUT AQUI: %s IDUSUARIO: %d", erro2, idUsuario);
+        return resposta2;
     }
+
     @DeleteMapping("/deletarTodas/{idDespesa}")
     public ResponseEntity<List<Despesa>> deletarTodasDespesas(@PathVariable int idDespesa) {
         if (usuarioRepository.existsById(idDespesa)) {

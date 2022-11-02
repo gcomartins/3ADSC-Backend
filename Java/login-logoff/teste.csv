@@ -1,0 +1,7 @@
+Objetivo
+codigo;nome;categoria;descricao;valor;valor atual;data criacao;data final
+1;Comprar meu carro;Compra;Inicio de um sonho;35000,00;500,00;2022-10-21 16:26:30.21;2023-10-20 16:26:30.21
+2;Casamento;Sonho;Casar com o amor da minha vida;50000,00;1699,00;2022-10-21 16:26:30.21;2024-10-20 16:26:30.21
+Receita
+codigo;nome;categoria;descricao;valor;recorrente;frequencia;data criacao
+1;Aluguel;Empreendimento;Aluguel de casas;3500,00;true;3;2022-10-21 16:23:27.529
