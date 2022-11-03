@@ -1,5 +1,6 @@
 package com.projetopi.loginlogoff.financas.receita;
 
+import com.projetopi.loginlogoff.Log;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import com.projetopi.loginlogoff.usuario.Usuario;
 import com.projetopi.loginlogoff.usuario.UsuarioRepository;
@@ -20,6 +21,7 @@ public class ReceitaController {
 
     @Autowired
     UsuarioRepository usuarioRepository;
+    Log log = new Log();
 
     @GetMapping("/{idUsuario}")
     public ResponseEntity<List<Receita>> listarTodasReceitasDoUsuario(@PathVariable int idUsuario) {
@@ -32,11 +34,26 @@ public class ReceitaController {
                 }
             }
             if (todasReceitasDoUsuario.isEmpty()) {
-                return ResponseEntity.status(204).build();
+                ResponseEntity respostaVazio = ResponseEntity.status(204).build();
+                String statusCode = respostaVazio.getStatusCode().toString();
+                String logResposta = respostaVazio.getStatusCode().series().toString();
+                String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuario: " + idUsuario;
+                log.gravaLog(textoLog);
+                return respostaVazio;
             }
-            return ResponseEntity.status(200).body(todasReceitasDoUsuario);
+            ResponseEntity respostaOk = ResponseEntity.status(200).body(todasReceitasDoUsuario);
+            String statusCode = respostaOk.getStatusCode().toString();
+            String logResposta = respostaOk.getStatusCode().series().toString();
+            String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+            log.gravaLog(textoLog);
+            return respostaOk;
         }
-        return ResponseEntity.status(404).build();
+        ResponseEntity respostaErro = ResponseEntity.status(404).build();
+        String statusCode = respostaErro.getStatusCode().toString();
+        String logResposta = respostaErro.getStatusCode().series().toString();
+        String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        log.gravaLog(textoLog);
+        return respostaErro;
     }
 
     @GetMapping("/{idUsuario}/{idReceita}")
@@ -45,12 +62,27 @@ public class ReceitaController {
             List<Receita> todasReceitas = receitaRepository.findAll();
             for (Receita receitaAtual : todasReceitas) {
                 if (receitaAtual.getFkUsuario() == idUsuario && receitaAtual.getCodigo() == idReceita) {
-                    return ResponseEntity.status(200).body(receitaAtual);
+                    ResponseEntity respostaOk = ResponseEntity.status(200).body(receitaAtual);
+                    String statusCode = respostaOk.getStatusCode().toString();
+                    String logResposta = respostaOk.getStatusCode().series().toString();
+                    String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+                    log.gravaLog(textoLog);
+                    return respostaOk;
                 }
             }
-            return ResponseEntity.status(204).build();
+            ResponseEntity respostaVazio = ResponseEntity.status(204).build();
+            String statusCode = respostaVazio.getStatusCode().toString();
+            String logResposta = respostaVazio.getStatusCode().series().toString();
+            String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuario: " + idUsuario;
+            log.gravaLog(textoLog);
+            return respostaVazio;
         }
-        return ResponseEntity.status(404).build();
+        ResponseEntity respostaErro = ResponseEntity.status(404).build();
+        String statusCode = respostaErro.getStatusCode().toString();
+        String logResposta = respostaErro.getStatusCode().series().toString();
+        String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        log.gravaLog(textoLog);
+        return respostaErro;
     }
 
     @PostMapping("/{idUsuario}")
@@ -58,14 +90,24 @@ public class ReceitaController {
         if (usuarioRepository.existsById(idUsuario)) {
             Optional<Usuario> usuario = usuarioRepository.findById(idUsuario);
             receita.setUsuario(usuario.get());
-            return ResponseEntity.status(201).body(receitaRepository.save(receita));
+            ResponseEntity respostaOk = ResponseEntity.status(201).body(receitaRepository.save(receita));
+            String statusCode = respostaOk.getStatusCode().toString();
+            String logResposta = respostaOk.getStatusCode().series().toString();
+            String textoLog = "\n-------------------- \nENDPOINT: criarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+            log.gravaLog(textoLog);
+            return respostaOk;
         }
-        return ResponseEntity.status(404).build();
+        ResponseEntity respostaErro = ResponseEntity.status(404).build();
+        String statusCode = respostaErro.getStatusCode().toString();
+        String logResposta = respostaErro.getStatusCode().series().toString();
+        String textoLog = "\n-------------------- \nENDPOINT: criarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        log.gravaLog(textoLog);
+        return respostaErro;
     }
 
     @PutMapping("/{idUsuario}/{idReceita}")
     public ResponseEntity<Receita> atualizarReceita(@Valid @PathVariable int idUsuario, @PathVariable int idReceita,
-                                                      @RequestBody Receita receita) {
+                                                    @RequestBody Receita receita) {
         if (usuarioRepository.existsById(idUsuario) && receitaRepository.existsById(idReceita)) {
             Receita receitaAtualizada = new Receita(
                     idReceita,
@@ -79,9 +121,19 @@ public class ReceitaController {
             );
             Optional<Usuario> usuario = usuarioRepository.findById(idUsuario);
             receitaAtualizada.setUsuario(usuario.get());
-            return ResponseEntity.status(200).body(receitaRepository.save(receitaAtualizada));
+            ResponseEntity respostaOk = ResponseEntity.status(200).body(receitaRepository.save(receitaAtualizada));
+            String statusCode = respostaOk.getStatusCode().toString();
+            String logResposta = respostaOk.getStatusCode().series().toString();
+            String textoLog = "\n-------------------- \nENDPOINT: atualizarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+            log.gravaLog(textoLog);
+            return respostaOk;
         }
-        return ResponseEntity.status(404).build();
+        ResponseEntity respostaErro = ResponseEntity.status(404).build();
+        String statusCode = respostaErro.getStatusCode().toString();
+        String logResposta = respostaErro.getStatusCode().series().toString();
+        String textoLog = "\n-------------------- \nENDPOINT: atualizarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        log.gravaLog(textoLog);
+        return respostaErro;
     }
 
     @DeleteMapping("/{idUsuario}/{idReceita}")
@@ -89,10 +141,21 @@ public class ReceitaController {
         if (usuarioRepository.existsById(idUsuario) && receitaRepository.existsById(idReceita)) {
             Optional<Receita> receita = receitaRepository.findById(idReceita);
             receitaRepository.deleteById(idReceita);
-            return ResponseEntity.status(200).body(receita.get());
+            ResponseEntity respostaOk = ResponseEntity.status(200).body(receita.get());
+            String statusCode = respostaOk.getStatusCode().toString();
+            String logResposta = respostaOk.getStatusCode().series().toString();
+            String textoLog = "\n-------------------- \nENDPOINT: deletarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+            log.gravaLog(textoLog);
+            return respostaOk;
         }
-        return ResponseEntity.status(404).build();
+        ResponseEntity respostaErro = ResponseEntity.status(404).build();
+        String statusCode = respostaErro.getStatusCode().toString();
+        String logResposta = respostaErro.getStatusCode().series().toString();
+        String textoLog = "\n-------------------- \nENDPOINT: deletarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        log.gravaLog(textoLog);
+        return respostaErro;
     }
+
     @DeleteMapping("/deletarTodas/{idReceita}")
     public ResponseEntity<List<Receita>> deletarTodasReceitas(@PathVariable int idReceita) {
         if (usuarioRepository.existsById(idReceita)) {
@@ -105,11 +168,26 @@ public class ReceitaController {
                 }
             }
             if (todasReceitassDeletadas.size() == 0) {
-                return ResponseEntity.status(202).build();
+                ResponseEntity respostaVazio = ResponseEntity.status(202).build();
+                String statusCode = respostaVazio.getStatusCode().toString();
+                String logResposta = respostaVazio.getStatusCode().series().toString();
+                String textoLog = "\n-------------------- \nENDPOINT: deletarTodasReceitas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
+                log.gravaLog(textoLog);
+                return respostaVazio;
             }
-            return ResponseEntity.status(200).body(todasReceitassDeletadas);
+            ResponseEntity respostaOk = ResponseEntity.status(200).body(todasReceitassDeletadas);
+            String statusCode = respostaOk.getStatusCode().toString();
+            String logResposta = respostaOk.getStatusCode().series().toString();
+            String textoLog = "\n-------------------- \nENDPOINT: deletarTodasReceitas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
+            log.gravaLog(textoLog);
+            return respostaOk;
         }
-        return ResponseEntity.status(404).build();
+        ResponseEntity respostaErro = ResponseEntity.status(404).build();
+        String statusCode = respostaErro.getStatusCode().toString();
+        String logResposta = respostaErro.getStatusCode().series().toString();
+        String textoLog = "\n-------------------- \nENDPOINT: deletarTodasReceitas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
+        log.gravaLog(textoLog);
+        return respostaErro;
     }
 
 }

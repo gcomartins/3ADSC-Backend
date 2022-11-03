@@ -41,21 +41,21 @@ public class DespesaController {
                 ResponseEntity respostaVazio = ResponseEntity.status(204).build();
                 String statusCode = respostaVazio.getStatusCode().toString();
                 String logResposta = respostaVazio.getStatusCode().series().toString();
-                String textoLog = "\nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuario: " + idUsuario;
+                String textoLog = "\n-------------------- \nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuario: " + idUsuario;
                 log.gravaLog(textoLog);
                 return respostaVazio;
             }
             ResponseEntity respostaOk = ResponseEntity.status(200).body(todasDespesasDoUsuario);
             String statusCode = respostaOk.getStatusCode().toString();
             String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+            String textoLog = "\n-------------------- \nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
             log.gravaLog(textoLog);
             return respostaOk;
         }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
         String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        String textoLog = "\n-------------------- \nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
         log.gravaLog(textoLog);
         return respostaErro;
     }
@@ -69,7 +69,7 @@ public class DespesaController {
                     ResponseEntity respostaOk = ResponseEntity.status(200).body(despesaAtual);
                     String statusCode = respostaOk.getStatusCode().toString();
                     String logResposta = respostaOk.getStatusCode().series().toString();
-                    String textoLog = "\nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+                    String textoLog = "\n-------------------- \nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
                     log.gravaLog(textoLog);
                     return respostaOk;
                 }
@@ -77,14 +77,14 @@ public class DespesaController {
             ResponseEntity respostaVazio = ResponseEntity.status(204).build();
             String statusCode = respostaVazio.getStatusCode().toString();
             String logResposta = respostaVazio.getStatusCode().series().toString();
-            String textoLog = "\nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "idUsuario: " + idUsuario;
+            String textoLog = "\n-------------------- \nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "idUsuario: " + idUsuario;
             log.gravaLog(textoLog);
             return respostaVazio;
         }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
         String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        String textoLog = "\n-------------------- \nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
         log.gravaLog(textoLog);
         return respostaErro;
     }
@@ -97,14 +97,14 @@ public class DespesaController {
             ResponseEntity respostaOk = ResponseEntity.status(201).body(despesaRepository.save(despesa));
             String statusCode = respostaOk.getStatusCode().toString();
             String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\nENDPOINT: criarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+            String textoLog = "\n-------------------- \nENDPOINT: criarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
             log.gravaLog(textoLog);
             return respostaOk;
         }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
         String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\nENDPOINT: criarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        String textoLog = "\n-------------------- \nENDPOINT: criarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
         log.gravaLog(textoLog);
         return respostaErro;
     }
@@ -128,14 +128,14 @@ public class DespesaController {
             ResponseEntity respostaOk = ResponseEntity.status(200).body(despesaRepository.save(despesaAtualizada));
             String statusCode = respostaOk.getStatusCode().toString();
             String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\nENDPOINT: atualizarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+            String textoLog = "\n-------------------- \nENDPOINT: atualizarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
             log.gravaLog(textoLog);
             return respostaOk;
         }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
         String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\nENDPOINT: atualizarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        String textoLog = "\n-------------------- \nENDPOINT: atualizarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
         log.gravaLog(textoLog);
         return respostaErro;
     }
@@ -148,14 +148,14 @@ public class DespesaController {
             ResponseEntity respostaOk = ResponseEntity.status(200).body(despesa.get());
             String statusCode = respostaOk.getStatusCode().toString();
             String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\nENDPOINT: deletarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+            String textoLog = "\n-------------------- \nENDPOINT: deletarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
             log.gravaLog(textoLog);
             return respostaOk;
         }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
         String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\nENDPOINT: deletarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        String textoLog = "\n-------------------- \nENDPOINT: deletarDespesa \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
         log.gravaLog(textoLog);
         return respostaErro;
     }
@@ -175,21 +175,21 @@ public class DespesaController {
                 ResponseEntity respostaVazio = ResponseEntity.status(202).build();
                 String statusCode = respostaVazio.getStatusCode().toString();
                 String logResposta = respostaVazio.getStatusCode().series().toString();
-                String textoLog = "\nENDPOINT: deletarTodasDespesas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
+                String textoLog = "\n-------------------- \nENDPOINT: deletarTodasDespesas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
                 log.gravaLog(textoLog);
                 return respostaVazio;
             }
             ResponseEntity respostaOk = ResponseEntity.status(200).body(todasDespesassDeletadas);
             String statusCode = respostaOk.getStatusCode().toString();
             String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\nENDPOINT: deletarTodasDespesas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
+            String textoLog = "\n-------------------- \nENDPOINT: deletarTodasDespesas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
             log.gravaLog(textoLog);
             return respostaOk;
         }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
         String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\nENDPOINT: deletarTodasDespesas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
+        String textoLog = "\n-------------------- \nENDPOINT: deletarTodasDespesas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
         log.gravaLog(textoLog);
         return respostaErro;
     }
