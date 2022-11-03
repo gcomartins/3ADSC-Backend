@@ -1,6 +1,7 @@
 package com.projetopi.loginlogoff.financas.objetivo;
 
 import com.projetopi.loginlogoff.ListaObj;
+import com.projetopi.loginlogoff.Log;
 import com.projetopi.loginlogoff.usuario.Usuario;
 import com.projetopi.loginlogoff.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ public class ObjetivoController {
     @Autowired
     ObjetivoRepository objetivoRepository;
 
+    Log log = new Log();
     @GetMapping("/{idUsuario}")
     public ResponseEntity<List<Objetivo>> listarTodosObjetivosDoUsuario(@PathVariable int idUsuario) {
         if (usuarioRepository.existsById(idUsuario)) {
@@ -36,11 +38,12 @@ public class ObjetivoController {
             }
             return ResponseEntity.status(200).body(todosObjetivosDoUsuario);
         }
+        log.gravaLog("Listar objetivo do usuário: Usuário não identificado");
         return ResponseEntity.status(404).build();
     }
-
+//
     @GetMapping("/{idUsuario}/{idObjetivo}")
-    public ResponseEntity<Objetivo> listarTodosObjetivosDoUsuario(@PathVariable int idUsuario, @PathVariable int idObjetivo) {
+    public ResponseEntity<Objetivo> exibirObjetivoDoUsuario(@PathVariable int idUsuario, @PathVariable int idObjetivo) {
         if (usuarioRepository.existsById(idUsuario) && objetivoRepository.existsById(idObjetivo)) {
             List<Objetivo> todosObjetivos = objetivoRepository.findAll();
             for (Objetivo objetivoAtual : todosObjetivos) {
@@ -48,24 +51,29 @@ public class ObjetivoController {
                     return ResponseEntity.status(200).body(objetivoAtual);
                 }
             }
+            log.gravaLog("Exibir objetivo do suário: Objetivo não identificado");
             return ResponseEntity.status(204).build();
         }
+        log.gravaLog("Exibir objetivo do usuário: Usuário não identificado");
         return ResponseEntity.status(404).build();
     }
 
     @PostMapping("/{idUsuario}")
-    public ResponseEntity<Objetivo> criarObjetivo(@Valid @PathVariable int idUsuario, @RequestBody Objetivo objetivo) {
+    public ResponseEntity<Objetivo> criarObjetivo(@PathVariable int idUsuario,@Valid @RequestBody Objetivo objetivo) {
         if (usuarioRepository.existsById(idUsuario)) {
+            int qtdObjs = objetivoRepository.countByUsuarioId(idUsuario);
             Optional<Usuario> usuario = usuarioRepository.findById(idUsuario);
             objetivo.setUsuario(usuario.get());
-            return ResponseEntity.status(201).body(objetivoRepository.save(objetivo));
+            objetivoRepository.save(objetivo);
+            return ResponseEntity.status(201).body(objetivo);
         }
+        log.gravaLog("Criar objetivo para o usuário: Usuário não identificado");
         return ResponseEntity.status(404).build();
     }
 
     @PutMapping("/{idUsuario}/{idObjetivo}")
-    public ResponseEntity<Objetivo> atualizarObjetivo(@Valid @PathVariable int idUsuario, @PathVariable int idObjetivo,
-                                                      @RequestBody Objetivo objetivo) {
+    public ResponseEntity<Objetivo> atualizarObjetivo(@PathVariable int idUsuario, @PathVariable int idObjetivo,
+                                                      @Valid @RequestBody Objetivo objetivo) {
         if (usuarioRepository.existsById(idUsuario) && objetivoRepository.existsById(idObjetivo)) {
             Objetivo objetivoAtualizado = new Objetivo(
                     idObjetivo,
@@ -81,6 +89,15 @@ public class ObjetivoController {
             objetivoAtualizado.setUsuario(usuario.get());
             return ResponseEntity.status(200).body(objetivoRepository.save(objetivoAtualizado));
         }
+        if (!usuarioRepository.existsById(idUsuario) && !objetivoRepository.existsById(idObjetivo)){
+            log.gravaLog("Atualizar objetivo para o usuário: Usuário e Objetivo não identificados");
+        }
+        if (!usuarioRepository.existsById(idUsuario)){
+            log.gravaLog("Atualizar objetivo para o usuário: Usuário não identificado");
+        }
+        if (!objetivoRepository.existsById(idObjetivo)){
+            log.gravaLog("Atualizar objetivo para o usuário: Objetivo não identificado");
+        }
         return ResponseEntity.status(404).build();
     }
 
@@ -90,6 +107,15 @@ public class ObjetivoController {
             Optional<Objetivo> objetivo = objetivoRepository.findById(idObjetivo);
             objetivoRepository.deleteById(idObjetivo);
             return ResponseEntity.status(200).body(objetivo.get());
+        }
+        if (!usuarioRepository.existsById(idUsuario) && !objetivoRepository.existsById(idObjetivo)){
+            log.gravaLog("Deletar objetivo para o usuário: Usuário e Objetivo não identificados");
+        }
+        if (!usuarioRepository.existsById(idUsuario)){
+            log.gravaLog("Deletar objetivo para o usuário: Usuário não identificado");
+        }
+        if (!objetivoRepository.existsById(idObjetivo)){
+            log.gravaLog("Deletar objetivo para o usuário: Objetivo não identificado");
         }
         return ResponseEntity.status(404).build();
     }
@@ -110,6 +136,7 @@ public class ObjetivoController {
             }
             return ResponseEntity.status(200).body(todosObjetivosDeletados);
         }
+        log.gravaLog("Deletar todos objetivo do usuário: Usuário não encontrado");
         return ResponseEntity.status(404).build();
     }
 }

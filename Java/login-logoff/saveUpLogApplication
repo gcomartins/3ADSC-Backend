@@ -1,0 +1,39 @@
+Status Code: 200 OK Log: SUCCESSFUL idUsuário: 1 - 02-11-2022 21:22:19
+ENDPOINT: deletarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 02-11-2022 21:33:46
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 02-11-2022 21:47:48
+
+-------------------- 
+ENDPOINT: deletarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 03-11-2022 20:21:26
+
+-------------------- 
+ENDPOINT: deletarDespesa 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 03-11-2022 20:21:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 03-11-2022 20:22:29
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 03-11-2022 20:40:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 03-11-2022 20:40:33
