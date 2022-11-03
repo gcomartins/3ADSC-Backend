@@ -1,0 +1,9 @@
+Status Code: 200 OK Log: SUCCESSFUL idUsuário: 1 - 02-11-2022 21:22:19
+ENDPOINT: deletarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 02-11-2022 21:33:46
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 02-11-2022 21:47:48
