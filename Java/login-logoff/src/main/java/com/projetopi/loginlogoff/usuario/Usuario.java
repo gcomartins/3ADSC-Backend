@@ -11,6 +11,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Entity
+@Table
 public class Usuario {
 
     @Id // PK - chave primaria
