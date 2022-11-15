@@ -1,6 +1,7 @@
 package com.projetopi.loginlogoff.financas.despesa;
 
 import com.projetopi.loginlogoff.Log;
+import com.projetopi.loginlogoff.financas.despesa.dto.DespesaDto;
 import com.projetopi.loginlogoff.usuario.Usuario;
 import com.projetopi.loginlogoff.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -192,5 +193,17 @@ public class DespesaController {
         String textoLog = "\n-------------------- \nENDPOINT: deletarTodasDespesas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
         log.gravaLog(textoLog);
         return respostaErro;
+    }
+
+    @GetMapping("/despesaSimplificada/{idUsuario}")
+    public ResponseEntity<List<DespesaDto>> listarTodasDespesasDtoDoUsuario(@PathVariable int idUsuario){
+        if (usuarioRepository.existsById(idUsuario)) {
+            List<DespesaDto> despesasDto = despesaRepository.getDespesaDto(idUsuario);
+            if (despesasDto.isEmpty()){
+                return ResponseEntity.status(204).build();
+            }
+            return ResponseEntity.status(200).body(despesasDto);
+        }
+        return ResponseEntity.status(404).build();
     }
 }

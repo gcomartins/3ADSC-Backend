@@ -9,4 +9,6 @@ import java.util.List;
 public interface ObjetivoRepository extends JpaRepository<Objetivo,Integer> {
     List<Objetivo> findByUsuarioIdOrderByData(int idUsuario);
     int countByUsuarioId(int idUsuario);
+
+    List<Objetivo> findByUsuarioIdAndCodigoOrderByData(int usuarioId, int codigo);
 }
