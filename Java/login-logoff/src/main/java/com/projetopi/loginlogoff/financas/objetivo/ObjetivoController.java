@@ -2,6 +2,7 @@ package com.projetopi.loginlogoff.financas.objetivo;
 
 import com.projetopi.loginlogoff.ListaObj;
 import com.projetopi.loginlogoff.Log;
+import com.projetopi.loginlogoff.PilhaObj;
 import com.projetopi.loginlogoff.usuario.Usuario;
 import com.projetopi.loginlogoff.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -202,5 +203,15 @@ public class ObjetivoController {
         String textoLog = "\n-------------------- \nENDPOINT: deletarTodosObjetivos \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
         log.gravaLog(textoLog);
         return respostaErro;
+    }
+    @DeleteMapping("/pilha/{idUsuario}")
+    public ResponseEntity<Objetivo> deletarObjetivo(@PathVariable int idUsuario) {
+        List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByCodigo(idUsuario);
+        PilhaObj<Objetivo> pilhaDeObjetivo= new PilhaObj<Objetivo>(objetivos.size());
+        for (int i = 0; i<objetivos.size();i++){
+            pilhaDeObjetivo.push(objetivos.get(i));
+        }
+        objetivoRepository.deleteById(pilhaDeObjetivo.peek().getCodigo());
+        return ResponseEntity.status(200).body(pilhaDeObjetivo.pop());
     }
 }
