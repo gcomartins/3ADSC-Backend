@@ -31,10 +31,16 @@ public class ControllerUsuario {
     private  ReceitaRepository receitaRepository;
     @Autowired
     private DespesaRepository despesaRepository;
+    private ServiceUsuario serviceUsuario = new ServiceUsuario();
 
     @PostMapping
     public ResponseEntity<Usuario> cadastrar( @Valid  @RequestBody Usuario usuarioNovo) {
-
+        Usuario usuario = usuarioRepository.findByCpf(usuarioNovo.getCpf());
+        Usuario usuario1 = usuarioRepository.findByEmail(usuarioNovo.getEmail());
+        if (usuario != null || usuario1 != null){
+            System.out.println("Cpf ou Email ja utilizados");
+            return ResponseEntity.status(400).build();
+        }
         usuarioNovo.setAutenticado(false);
         Usuario usuarioCadastrado = this.usuarioRepository.save(usuarioNovo);
         return ResponseEntity.status(201).body(usuarioCadastrado);
@@ -48,94 +54,56 @@ public class ControllerUsuario {
     }
 
 
-    @PutMapping("login/{cpf}/{senha}")
-    public ResponseEntity<Usuario> login(@PathVariable String cpf, @PathVariable String senha) {
-        List<Usuario> usuarios = usuarioRepository.findAll();
+    @PutMapping("login/{email}/{senha}")
+    public ResponseEntity<Usuario> login(@PathVariable String email, @PathVariable String senha) {
+        Usuario usuario = usuarioRepository.findByEmailAndSenha(email,senha);
 
-        for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
-                u.setAutenticado(true);
-                this.usuarioRepository.save(u);
-                return ResponseEntity.status(202).body(u);
-            }
-        }
-
-        return ResponseEntity.status(404).build();
-    }
-
-    @PutMapping("logoff/{cpf}/{senha}")
-    public ResponseEntity<Usuario> logoff(@PathVariable String cpf, @PathVariable String senha) {
-        List<Usuario> usuarios = usuarioRepository.findAll();
-        for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
-                u.setAutenticado(false);
-                this.usuarioRepository.save(u);
-                return ResponseEntity.status(200).body(u);
-            }
+        if(usuario != null) {
+            usuario.setAutenticado(true);
+            usuarioRepository.save(usuario);
+            return ResponseEntity.status(200).body(usuario);
         }
         return ResponseEntity.status(404).build();
     }
 
-    @PutMapping("senha/{cpf}/{senha}/{senhaNova}")
-    public ResponseEntity<Usuario> atualizarSenha(@PathVariable String cpf, @PathVariable String senha,
-                                                 @PathVariable String senhaNova) {
-        List<Usuario> usuarios = usuarioRepository.findAll();
-        for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
-                if (senhaNova.length() >= 8) u.setSenha(senhaNova);
-                this.usuarioRepository.save(u);
-                return ResponseEntity.status(200).body(u);
-            }
+    @PutMapping("logoff/{email}/{senha}")
+    public ResponseEntity<Usuario> logoff(@PathVariable String email, @PathVariable String senha) {
+        Usuario usuario = usuarioRepository.findByEmailAndSenha(email,senha);
+        if (usuario == null) return ResponseEntity.status(404).build();
+        if(usuario.getAutenticado()) {
+            usuario.setAutenticado(false);
+            usuarioRepository.save(usuario);
+            return ResponseEntity.status(200).body(usuario);
+        } else if (!usuario.getAutenticado()) {
+            return ResponseEntity.status(401).build();
         }
-        return ResponseEntity.status(400).build();
+        return ResponseEntity.status(404).build();
     }
 
-    @PutMapping("/nome/{cpf}/{senha}/{nome}")
-    public ResponseEntity<Usuario> atualizarNome(@PathVariable String cpf,  @PathVariable String senha,
-                                                @PathVariable String nome) {
-        List<Usuario> usuarios = usuarioRepository.findAll();
-        for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
-                if (!nome.equals(u.getNome())) {
-                    u.setNome(nome);
-                    usuarioRepository.save(u);
-                    return ResponseEntity.status(200).body(u);
-                } else return ResponseEntity.status(400).build();
-            }
-        }
-        return ResponseEntity.status(400).build();
-    }
+    @PutMapping("/{senhaAntiga}/{emailAntigo}")
+    public ResponseEntity<Usuario> atualizarUsuario(@PathVariable String emailAntigo, @PathVariable String senhaAntiga,
+                                                   @Valid @RequestBody Usuario usuarioAtualizado ) {
+        // endpoint para atualizar senha,email e nome (os 3 juntos ou separados);
+        // precisa passar os 3 parametros no body da request por conta dos @valid
+        //pelo menos um dos 3 precisa ser diferente para dar o resultado 200
+//        return serviceUsuario.atualizarUsuario(emailAntigo,senhaAntiga,usuarioAtualizado);
+            return serviceUsuario.atualizarUsuario(emailAntigo,senhaAntiga,usuarioAtualizado);
 
-    @PutMapping("email/{cpf}/{senha}/{email}")
-    public ResponseEntity<Usuario> atualizarEmail(@PathVariable String cpf, @PathVariable String senha,
-                                                 @PathVariable String email) {
-        List<Usuario> usuarios = usuarioRepository.findAll();
-        Boolean isAtualizado = false;
-        for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
-                if (!email.equals(u.getEmail())) {
-                    u.setEmail(email);
-                    isAtualizado = true;
-                    usuarioRepository.save(u);
-                    return ResponseEntity.status(200).body(u);
-                } else return ResponseEntity.status(400).build();
-            }
-        }
-        return ResponseEntity.status(400).build();
-    }
-    @DeleteMapping("{cpf}/{senha}")
-    public ResponseEntity<Usuario> atualizarEmail(@PathVariable String cpf, @PathVariable String senha) {
-        List<Usuario> usuarios = usuarioRepository.findAll();
-        for (Usuario u : usuarios) {
-            if (u.getCpf().equals(cpf) && u.getSenha().equals(senha)) {
-            int id = u.getIdUsuario();
-            usuarioRepository.delete(u);
-            return ResponseEntity.status(200).body(u);
-            }
-        }
 
-            return ResponseEntity.status(404).build();
-    }
+//        Usuario usuario =usuarioRepository.findByEmailAndSenha(emailAntigo, senhaAntiga);
+//        if (usuario == null) return ResponseEntity.status(400).build();
+//        if (usuarioAtualizado.getSenha().equals(senhaAntiga) &&
+//            usuarioAtualizado.getEmail().equals(emailAntigo) &&
+//             usuarioAtualizado.getNome().equals(usuario.getNome()) ) {
+//            return ResponseEntity.status(400).build();
+//        }
+//
+//                usuario.setSenha(usuarioAtualizado.getSenha());
+//                usuario.setEmail(usuarioAtualizado.getEmail());
+//                usuario.setNome(usuarioAtualizado.getNome());
+//                usuarioRepository.save(usuario);
+//            return ResponseEntity.status(202).body(usuario);
+        }
     @PostMapping("/gerarCsv/{idUsuario}/{nomeArquivo}")
     public ResponseEntity<String> gerarCsv(@PathVariable Integer idUsuario,@PathVariable  String nomeArquivo){
         // pegando tudo o que precisa do banco

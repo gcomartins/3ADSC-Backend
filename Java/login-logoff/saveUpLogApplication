@@ -37,3 +37,28 @@ ENDPOINT: listarTodasReceitasDoUsuario
 Status Code: 404 NOT_FOUND
 Log: CLIENT_ERROR
 idUsuário: 1 - 03-11-2022 20:40:33
+
+-------------------- 
+ENDPOINT: criarObjetivo 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 17-11-2022 21:32:23
+
+-------------------- 
+ENDPOINT: criarObjetivo 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 17-11-2022 21:32:33
+
+-------------------- 
+ENDPOINT: criarObjetivo 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 17-11-2022 22:08:02
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 1 - 17-11-2022 22:10:22

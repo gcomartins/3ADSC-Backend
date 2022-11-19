@@ -41,10 +41,7 @@ public class Objetivo extends Financas {
         this.dataFinal = dataFinal;
     }
 
-    @Override
-    public void modificaSaldo(Usuario usuario) {
-        usuario.setSaldo(usuario.pegueSaldo() + valorAtual);
-    }
+
 
     @Override
     public String toString() {
