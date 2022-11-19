@@ -7,17 +7,12 @@ import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import com.projetopi.loginlogoff.financas.objetivo.ObjetivoRepository;
 import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
-import net.bytebuddy.asm.Advice;
+import com.projetopi.loginlogoff.usuario.ServiceUsuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import javax.validation.constraints.DecimalMax;
-import javax.validation.constraints.NotBlank;
-import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -31,7 +26,9 @@ public class ControllerUsuario {
     private  ReceitaRepository receitaRepository;
     @Autowired
     private DespesaRepository despesaRepository;
-    private ServiceUsuario serviceUsuario = new ServiceUsuario();
+    @Autowired
+    private ServiceUsuario serviceUsuario;
+
 
     @PostMapping
     public ResponseEntity<Usuario> cadastrar( @Valid  @RequestBody Usuario usuarioNovo) {
@@ -81,28 +78,11 @@ public class ControllerUsuario {
     }
 
     @PutMapping("/{senhaAntiga}/{emailAntigo}")
-    public ResponseEntity<Usuario> atualizarUsuario(@PathVariable String emailAntigo, @PathVariable String senhaAntiga,
+    public ResponseEntity<Usuario> put(@PathVariable String emailAntigo, @PathVariable String senhaAntiga,
                                                    @Valid @RequestBody Usuario usuarioAtualizado ) {
-        // endpoint para atualizar senha,email e nome (os 3 juntos ou separados);
-        // precisa passar os 3 parametros no body da request por conta dos @valid
-        //pelo menos um dos 3 precisa ser diferente para dar o resultado 200
-//        return serviceUsuario.atualizarUsuario(emailAntigo,senhaAntiga,usuarioAtualizado);
-            return serviceUsuario.atualizarUsuario(emailAntigo,senhaAntiga,usuarioAtualizado);
-
-
-//        Usuario usuario =usuarioRepository.findByEmailAndSenha(emailAntigo, senhaAntiga);
-//        if (usuario == null) return ResponseEntity.status(400).build();
-//        if (usuarioAtualizado.getSenha().equals(senhaAntiga) &&
-//            usuarioAtualizado.getEmail().equals(emailAntigo) &&
-//             usuarioAtualizado.getNome().equals(usuario.getNome()) ) {
-//            return ResponseEntity.status(400).build();
-//        }
-//
-//                usuario.setSenha(usuarioAtualizado.getSenha());
-//                usuario.setEmail(usuarioAtualizado.getEmail());
-//                usuario.setNome(usuarioAtualizado.getNome());
-//                usuarioRepository.save(usuario);
-//            return ResponseEntity.status(202).body(usuario);
+           Boolean isAtualizado = serviceUsuario.atualizarUsuario(emailAntigo,senhaAntiga,usuarioAtualizado);
+           if(isAtualizado) return ResponseEntity.status(202).body(usuarioAtualizado);
+            return ResponseEntity.status(400).build();
         }
     @PostMapping("/gerarCsv/{idUsuario}/{nomeArquivo}")
     public ResponseEntity<String> gerarCsv(@PathVariable Integer idUsuario,@PathVariable  String nomeArquivo){
