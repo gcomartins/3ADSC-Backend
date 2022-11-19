@@ -24,7 +24,6 @@ public class Usuario {
     private String email;
    @CPF
     private String cpf;
-    private double saldo;
     @NotBlank
     @Size(min = 3, max = 100)
     private String senha;
@@ -34,11 +33,10 @@ public class Usuario {
 
 
     public Usuario(String nome, String email, String cpf,
-                   double saldo, String senha, LocalDate dataNascimento) {
+                   String senha, LocalDate dataNascimento) {
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;
-        this.saldo = saldo;
         this.senha = senha;
         this.dataNascimento = dataNascimento;
     }
@@ -79,14 +77,6 @@ public class Usuario {
         this.cpf = cpf;
     }
 
-    public double pegueSaldo() {
-        return saldo;
-    }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-
     public String getSenha() {
         return senha;
     }
@@ -121,8 +111,7 @@ public class Usuario {
                         "\nNome: %s " +
                         "\nEmail: %s " +
                         "\nCPF: %s " +
-                        "\nSaldo: %.2f " +
                         "\nSenha: *** " +
-                        "\nData de Nascimento: %s", id, nome, email, cpf, saldo, dataNascimento);
+                        "\nData de Nascimento: %s", id, nome, email, cpf, dataNascimento);
     }
 }

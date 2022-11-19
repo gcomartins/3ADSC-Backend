@@ -1,7 +1,7 @@
 insert into usuario
-(nome, email, is_autenticado, cpf, saldo,senha,data_nascimento)
+(nome, email, is_autenticado, cpf,senha,data_nascimento)
 values
-('eduardo', 'eduardo@test.com',false, '50422211826',0.0,'eduardo123456','20020603');
+('eduardo', 'eduardo@test.com',false, '50422211826','eduardo123456','20020603');
 
 insert into objetivo
 (categoria, data, descricao,nome,valor,data_final,valor_atual,usuario_id)

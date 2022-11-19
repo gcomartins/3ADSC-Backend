@@ -41,8 +41,6 @@ public abstract class Financas {
         this.categoria = categoria;
     }
 
-    public abstract void modificaSaldo(Usuario usuario);
-
     public int getCodigo() {
         return codigo;
     }

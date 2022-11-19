@@ -40,10 +40,6 @@ public class Despesa extends Financas {
         this.qtdParcelas = qtdParcelas;
     }
 
-    @Override
-    public void modificaSaldo(Usuario usuario) {
-        usuario.setSaldo(usuario.pegueSaldo() - getValor());
-    }
 
     @Override
     public String toString() {
