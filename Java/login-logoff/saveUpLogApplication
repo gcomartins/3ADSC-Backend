@@ -62,3 +62,84 @@ Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuario: 1
 idUObjetivo: 1 - 17-11-2022 22:10:22
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 20-11-2022 18:11:02
+
+-------------------- 
+ENDPOINT: criarObjetivo 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 20-11-2022 18:11:17
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 20-11-2022 18:11:21
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1
+idObjetivo: 1 - 20-11-2022 18:17:33
+
+-------------------- 
+ENDPOINT: criarObjetivo 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 20-11-2022 18:23:15
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 20-11-2022 18:23:19
+
+-------------------- 
+ENDPOINT: deletarReceita 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 20-11-2022 18:28:07
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 20-11-2022 18:43:58
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1
+idObjetivo: 1 - 20-11-2022 18:44:03
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 20-11-2022 18:44:10
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1
+idObjetivo: 2 - 20-11-2022 18:44:17
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 20-11-2022 18:44:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 20-11-2022 18:44:29

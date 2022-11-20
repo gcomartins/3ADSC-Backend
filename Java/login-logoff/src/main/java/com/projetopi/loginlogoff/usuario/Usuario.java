@@ -33,7 +33,7 @@ public class Usuario {
 
 
     public Usuario(String nome, String email, String cpf,
-                   double saldo, String senha, LocalDate dataNascimento) {
+                    String senha, LocalDate dataNascimento) {
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;

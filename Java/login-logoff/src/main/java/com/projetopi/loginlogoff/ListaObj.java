@@ -131,59 +131,72 @@ public class ListaObj <T> {
         return vetor;
     }
 
-    public ResponseEntity<String> gravaArquivoCsvObjetivo(ListaObj<Objetivo> listaObjetivo,
+    public String gravaArquivoCsvObjetivo(ListaObj<Objetivo> listaObjetivo,
                                                           ListaObj<Receita> listaReceita,
                                                           ListaObj<Despesa>listaDespesa,
                                                           String nomeArq) {
+        if (listaDespesa.getTamanho() <= 0 && listaReceita.getTamanho() <= 0 && listaObjetivo.getTamanho() <= 0)
+            return "Nenhuma informacao a colocar no arquivo";
         FileWriter arq = null; // objeto que representa o arquivo de gravação
         Formatter saida = null; // objeto usado para escrever no arquivo
         Boolean deuRuim = false;
         nomeArq += ".csv";
+        Boolean gravouAlgo = false;
         // Bloco que abre o arquivo ;
         try {
             arq = new FileWriter(nomeArq); // abrindo arquivo
             saida = new Formatter(arq); // cria objeto saida associando ao arquivo
         } catch (IOException e) {
-            return ResponseEntity.status(400).body("Erro ao abrir o arquivo");
+            return "Erro ao abrir o arquivo";
         }
 
         // bloco que grava o arquivo
         try {
             // aqui nesse saida .format colocar o nome dos campos do objetivo
-            saida.format("%s\n%s;%s;%s;%s;%s;%s;%s;%s\n","Objetivos","codigo","nome","categoria","descricao","valor","valor atual","data criacao","data final");
-            for (int i = 0; i < listaObjetivo.getTamanho(); i++) {
-                Objetivo o = listaObjetivo.getElemento(i);
-                //aqui colocar o que do objeto vai ser exibido
-                saida.format("%d;%s;%s;%s;%.2f;%.2f;%s;%s\n",o.getCodigo(),o.getNome(),o.getCategoria(),
-                        o.getDescricao(),o.getValor(),o.getValorAtual(),o.getData(),o.getDataFinal());
+            if (listaObjetivo.getTamanho() > 0) {
+                saida.format("%s\n%s;%s;%s;%s;%s;%s;%s;%s\n", "Objetivos", "codigo", "nome", "categoria", "descricao", "valor", "valor atual", "data criacao", "data final");
+                for (int i = 0; i < listaObjetivo.getTamanho(); i++) {
+                    Objetivo o = listaObjetivo.getElemento(i);
+                    //aqui colocar o que do objeto vai ser exibido
+                    saida.format("%d;%s;%s;%s;%.2f;%.2f;%s;%s\n", o.getCodigo(), o.getNome(), o.getCategoria(),
+                            o.getDescricao(), o.getValor(), o.getValorAtual(), o.getData(), o.getDataFinal());
+                }
+                gravouAlgo = true;
             }
             // aqui nesse saida .format colocar o nome dos campos do receita
-            saida.format("%s\n%s;%s;%s;%s;%s;%s;%s;%s\n", "Receitas","codigo","nome","categoria","descricao",
-                    "valor","recorrente","frequencia","data criacao");
-            for (int i = 0; i < listaReceita.getTamanho(); i++) {
-                Receita r = listaReceita.getElemento(i);
-                //aqui colocar o que da receita  vai ser exibido
-                saida.format("%d;%s;%s;%s;%.2f;%b;%d;%s\n", r.getCodigo(), r.getNome(), r.getCategoria(),
-                        r.getDescricao(), r.getValor(), r.isRecorrente(),r.getFrequencia(),r.getData());
+            if (listaReceita.getTamanho() > 0) {
+                saida.format("%s\n%s;%s;%s;%s;%s;%s;%s;%s\n", "Receitas", "codigo", "nome", "categoria", "descricao",
+                        "valor", "recorrente", "frequencia", "data criacao");
+                for (int i = 0; i < listaReceita.getTamanho(); i++) {
+                    Receita r = listaReceita.getElemento(i);
+                    //aqui colocar o que da receita  vai ser exibido
+                    saida.format("%d;%s;%s;%s;%.2f;%b;%d;%s\n", r.getCodigo(), r.getNome(), r.getCategoria(),
+                            r.getDescricao(), r.getValor(), r.isRecorrente(), r.getFrequencia(), r.getData());
+                }
+                gravouAlgo = true;
             }
-            saida.format("Despesas\n%s;%s;%s;%s;%s;%s;%s;%s\n","Codigo","nome","Categoria","Descricao","Valor","Esta Pago?",
-                    "Quantidade de parcelas","Data");
-            for (int i = 0; i < listaDespesa.getTamanho(); i++){
-                Despesa d = listaDespesa.getElemento(i);
-             saida.format("%d;%s;%s;%s;%.2f;%b;%d;%s\n", d.getCodigo(), d.getNome(), d.getCategoria(),
-                        d.getDescricao(), d.getValor(), d.isPago(),d.getQtdParcelas(),d.getData());
+            if (listaDespesa.getTamanho() > 0) {
+                saida.format("Despesas\n%s;%s;%s;%s;%s;%s;%s;%s\n", "Codigo", "nome", "Categoria", "Descricao", "Valor", "Esta Pago?",
+                        "Quantidade de parcelas", "Data");
+                for (int i = 0; i < listaDespesa.getTamanho(); i++) {
+                    Despesa d = listaDespesa.getElemento(i);
+                    saida.format("%d;%s;%s;%s;%.2f;%b;%d;%s\n", d.getCodigo(), d.getNome(), d.getCategoria(),
+                            d.getDescricao(), d.getValor(), d.isPago(), d.getQtdParcelas(), d.getData());
+                }
+                gravouAlgo = true;
             }
 
         } catch (FormatterClosedException e) {
-            return ResponseEntity.status(400).body("erro ao gravar arquivo");
+            return "erro ao gravar arquivo";
 
         } finally {
             saida.close();
             try {
                 arq.close();
-                return ResponseEntity.status(200).body("arquivo gerado com sucesso");
+                if (!gravouAlgo) return "arquivo sem informacoes";
+                return "arquivo gerado com sucesso";
             } catch (IOException e) {
-                return ResponseEntity.status(400).body("Erro ao fechar o arquivo");
+                return "Erro ao fechar o arquivo";
 
             }
         }
@@ -238,6 +251,8 @@ public class ListaObj <T> {
                                    ListaObj<Despesa> listaDespesa,
                                    String nomeArq) {
         int contaRegDados = 0;
+        if (listaDespesa.getTamanho() <= 0 && listaReceita.getTamanho() <= 0 && listaObjetivo.getTamanho() <= 0)
+            return "Nenhuma informacao a colocar no arquivo";
 
         // Monta o registro de header
         String header = "00FINANCAS";
@@ -248,6 +263,7 @@ public class ListaObj <T> {
 
         // Monta e grava os registros de corpo
         String corpo;
+
         for (int i =0; i < listaObjetivo.getTamanho(); i++) {
             Objetivo objetivoAtual = listaObjetivo.getElemento(i);
             corpo = "02";

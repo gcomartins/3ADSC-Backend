@@ -78,7 +78,7 @@ public class ControllerUsuario {
     }
 
     @PutMapping("/{senhaAntiga}/{emailAntigo}")
-    public ResponseEntity<Usuario> put(@PathVariable String emailAntigo, @PathVariable String senhaAntiga,
+    public ResponseEntity<Usuario> atualizarUsuario(@PathVariable String emailAntigo, @PathVariable String senhaAntiga,
                                                    @Valid @RequestBody Usuario usuarioAtualizado ) {
            Boolean isAtualizado = serviceUsuario.atualizarUsuario(emailAntigo,senhaAntiga,usuarioAtualizado);
            if(isAtualizado) return ResponseEntity.status(202).body(usuarioAtualizado);
@@ -86,50 +86,18 @@ public class ControllerUsuario {
         }
     @PostMapping("/gerarCsv/{idUsuario}/{nomeArquivo}")
     public ResponseEntity<String> gerarCsv(@PathVariable Integer idUsuario,@PathVariable  String nomeArquivo){
-        // pegando tudo o que precisa do banco
-        List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByData(idUsuario);
-        List<Receita> receitas = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
-        List<Despesa> despesas = despesaRepository.findByUsuarioIdOrderByData(idUsuario);
-        // aqui pegando o tamanho dos itens para passar como parametro quando transforma-los em vetor
-        // criando objetos do tipo ListObj
-        ListaObj listaReceitas = new ListaObj<>(receitaRepository.countByUsuarioId(idUsuario));
-        ListaObj listaObjetos = new ListaObj<>(objetivoRepository.countByUsuarioId(idUsuario));
-        ListaObj listaDespesa = new ListaObj<>(despesaRepository.countByUsuarioId(idUsuario));
-
-        // adicionando valores a eles
-        for (Receita receitaAtual: receitas){
-            listaReceitas.adiciona(receitaAtual);
-        }
-        for (Objetivo objetivoAtual : objetivos){
-            listaObjetos.adiciona(objetivoAtual);
-        }
-
-        for (Despesa despesaAtual: despesas ){
-            listaDespesa.adiciona(despesaAtual);
-        }
-        // gravando as informações nos arquivos
-        listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas,listaDespesa, nomeArquivo);
-        return listaObjetos.gravaArquivoCsvObjetivo(listaObjetos,listaReceitas,listaDespesa, nomeArquivo);
+        String retorno = serviceUsuario.gerarCsv(idUsuario,nomeArquivo);
+        if (retorno.contains("arquivo gerado com sucesso")) return ResponseEntity.status(200).body(retorno);
+           return ResponseEntity.status(400).body(retorno);
     }
 
     @PostMapping("/gerarTxt/{idUsuario}/{nomeArquivo}")
     public ResponseEntity<String> gerarTxt(@PathVariable Integer idUsuario,@PathVariable  String nomeArquivo){
-        List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByData(idUsuario);
-        ListaObj listaObjetivos = new ListaObj<>(objetivoRepository.countByUsuarioId(idUsuario));
-        for (Objetivo objetivoAtual: objetivos){
-            listaObjetivos.adiciona(objetivoAtual);
-        }
-        List<Receita> receitas = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
-        ListaObj listaReceitas = new ListaObj<>(receitaRepository.countByUsuarioId(idUsuario));
-        for (Receita receitaAtual: receitas){
-            listaReceitas.adiciona(receitaAtual);
-        }
-        List<Despesa> despesas = despesaRepository.findByUsuarioIdOrderByData(idUsuario);
-        ListaObj listaDespesas = new ListaObj<>(despesaRepository.countByUsuarioId(idUsuario));
-        for (Despesa despesaAtual: despesas ){
-            listaDespesas.adiciona(despesaAtual);
-        }
-        return ResponseEntity.status(201).body(listaObjetivos.gravaArquivoTxt(listaObjetivos,listaReceitas,listaDespesas, nomeArquivo));
+        String retorno = serviceUsuario.gerarTxt(idUsuario,nomeArquivo);
+        if (retorno.contains("arquivo gravado com sucesso"))
+            return ResponseEntity.status(201).body(retorno);
+        return ResponseEntity.status(400).body(retorno);
+
 
 
     }
