@@ -97,10 +97,15 @@ public class ControllerUsuario {
         if (retorno.contains("arquivo gravado com sucesso"))
             return ResponseEntity.status(201).body(retorno);
         return ResponseEntity.status(400).body(retorno);
+    }
+    @PostMapping("/lerTxt/{idUsuario}/{nomeArquivo}")
+    public ResponseEntity<String> lerTxt(@PathVariable Integer idUsuario, @PathVariable String nomeArquivo){
+        String retorno = serviceUsuario.leArquivoTxt(nomeArquivo,idUsuario);
 
-
+      return   ResponseEntity.status(200).body(retorno);
 
     }
+
 }
 
 

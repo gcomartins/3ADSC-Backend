@@ -6,12 +6,14 @@ import com.projetopi.loginlogoff.financas.despesa.Despesa;
 import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
+import com.projetopi.loginlogoff.usuario.Usuario;
 import net.bytebuddy.asm.Advice;
 import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
 import java.io.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -131,186 +133,5 @@ public class ListaObj <T> {
         return vetor;
     }
 
-    public String gravaArquivoCsvObjetivo(ListaObj<Objetivo> listaObjetivo,
-                                                          ListaObj<Receita> listaReceita,
-                                                          ListaObj<Despesa>listaDespesa,
-                                                          String nomeArq) {
-        if (listaDespesa.getTamanho() <= 0 && listaReceita.getTamanho() <= 0 && listaObjetivo.getTamanho() <= 0)
-            return "Nenhuma informacao a colocar no arquivo";
-        FileWriter arq = null; // objeto que representa o arquivo de gravação
-        Formatter saida = null; // objeto usado para escrever no arquivo
-        Boolean deuRuim = false;
-        nomeArq += ".csv";
-        Boolean gravouAlgo = false;
-        // Bloco que abre o arquivo ;
-        try {
-            arq = new FileWriter(nomeArq); // abrindo arquivo
-            saida = new Formatter(arq); // cria objeto saida associando ao arquivo
-        } catch (IOException e) {
-            return "Erro ao abrir o arquivo";
-        }
-
-        // bloco que grava o arquivo
-        try {
-            // aqui nesse saida .format colocar o nome dos campos do objetivo
-            if (listaObjetivo.getTamanho() > 0) {
-                saida.format("%s\n%s;%s;%s;%s;%s;%s;%s;%s\n", "Objetivos", "codigo", "nome", "categoria", "descricao", "valor", "valor atual", "data criacao", "data final");
-                for (int i = 0; i < listaObjetivo.getTamanho(); i++) {
-                    Objetivo o = listaObjetivo.getElemento(i);
-                    //aqui colocar o que do objeto vai ser exibido
-                    saida.format("%d;%s;%s;%s;%.2f;%.2f;%s;%s\n", o.getCodigo(), o.getNome(), o.getCategoria(),
-                            o.getDescricao(), o.getValor(), o.getValorAtual(), o.getData(), o.getDataFinal());
-                }
-                gravouAlgo = true;
-            }
-            // aqui nesse saida .format colocar o nome dos campos do receita
-            if (listaReceita.getTamanho() > 0) {
-                saida.format("%s\n%s;%s;%s;%s;%s;%s;%s;%s\n", "Receitas", "codigo", "nome", "categoria", "descricao",
-                        "valor", "recorrente", "frequencia", "data criacao");
-                for (int i = 0; i < listaReceita.getTamanho(); i++) {
-                    Receita r = listaReceita.getElemento(i);
-                    //aqui colocar o que da receita  vai ser exibido
-                    saida.format("%d;%s;%s;%s;%.2f;%b;%d;%s\n", r.getCodigo(), r.getNome(), r.getCategoria(),
-                            r.getDescricao(), r.getValor(), r.isRecorrente(), r.getFrequencia(), r.getData());
-                }
-                gravouAlgo = true;
-            }
-            if (listaDespesa.getTamanho() > 0) {
-                saida.format("Despesas\n%s;%s;%s;%s;%s;%s;%s;%s\n", "Codigo", "nome", "Categoria", "Descricao", "Valor", "Esta Pago?",
-                        "Quantidade de parcelas", "Data");
-                for (int i = 0; i < listaDespesa.getTamanho(); i++) {
-                    Despesa d = listaDespesa.getElemento(i);
-                    saida.format("%d;%s;%s;%s;%.2f;%b;%d;%s\n", d.getCodigo(), d.getNome(), d.getCategoria(),
-                            d.getDescricao(), d.getValor(), d.isPago(), d.getQtdParcelas(), d.getData());
-                }
-                gravouAlgo = true;
-            }
-
-        } catch (FormatterClosedException e) {
-            return "erro ao gravar arquivo";
-
-        } finally {
-            saida.close();
-            try {
-                arq.close();
-                if (!gravouAlgo) return "arquivo sem informacoes";
-                return "arquivo gerado com sucesso";
-            } catch (IOException e) {
-                return "Erro ao fechar o arquivo";
-
-            }
-        }
-    }
-
-    public void selectionSortOtimizado(ListaObj<Receita> listaReceitas) {
-        int indMenor;
-
-        for (int i = 0; i < listaReceitas.getTamanho() - 1; i++) {
-            indMenor = i;
-            for (int j = i + 1; j < listaReceitas.getTamanho(); j++) {
-                if (listaReceitas.getElemento(j).getValor() < listaReceitas.getElemento(indMenor).getValor()) {
-                    indMenor = j;
-                }
-            }
-            double aux;
-            aux = listaReceitas.getElemento(i).getValor();
-            listaReceitas.getElemento(i).setValor(listaReceitas.getElemento(indMenor).getValor());
-            listaReceitas.getElemento(indMenor).setValor(aux);
-        }
-    }
-
-
-    public   String gravaRegistro(String registro, String nomeArq) {
-        BufferedWriter saida = null;
-
-        // try-catch para abrir o arquivo
-        try {
-            saida = new BufferedWriter(new FileWriter(nomeArq, true));
-        }
-        catch (IOException erro) {
-            System.out.println("Erro ao abrir o arquivo");
-            erro.printStackTrace();
-        }
-
-        // try-catch para gravar e fechar o arquivo
-        try {
-            saida.append(registro + "\n");
-            saida.close();
-        }
-        catch (IOException erro) {
-            erro.printStackTrace();
-            return  "Erro ao gravar o arquivo";
-
-        }
-        return "arquivo gravado com sucesso";
-    }
-
-
-    public  String gravaArquivoTxt(ListaObj<Objetivo> listaObjetivo,
-                                   ListaObj<Receita> listaReceita,
-                                   ListaObj<Despesa> listaDespesa,
-                                   String nomeArq) {
-        int contaRegDados = 0;
-        if (listaDespesa.getTamanho() <= 0 && listaReceita.getTamanho() <= 0 && listaObjetivo.getTamanho() <= 0)
-            return "Nenhuma informacao a colocar no arquivo";
-
-        // Monta o registro de header
-        String header = "00FINANCAS";
-        header += LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
-        header += "01";
-        // Grava o registro de header
-        gravaRegistro(header, nomeArq);
-
-        // Monta e grava os registros de corpo
-        String corpo;
-
-        for (int i =0; i < listaObjetivo.getTamanho(); i++) {
-            Objetivo objetivoAtual = listaObjetivo.getElemento(i);
-            corpo = "02";
-            corpo += String.format("%-50.50s", objetivoAtual.getNome());
-            corpo += String.format("%-100.100s", objetivoAtual.getDescricao());
-            corpo += String.format("%011.2f", objetivoAtual.getValor());
-            corpo += String.format("%-10.10s", objetivoAtual.getData());
-            // valor numérico não se coloca o -, para alinhar para a direita
-            // e é recomendável preencher o valor com zeros à esquerda
-            corpo += String.format("%05.2f", objetivoAtual.getValorAtual());
-            corpo += String.format("%-10.10s", objetivoAtual.getDataFinal());
-//            corpo += String.format("%-40.40s", objetivoAtual.getDataFinal());
-            contaRegDados++;
-            gravaRegistro(corpo, nomeArq);
-        }
-        for (int i = 0; i < listaReceita.getTamanho(); i++){
-            Receita receitaAtual = listaReceita.getElemento(i);
-            corpo = "03";
-            corpo += String.format("%-50.50s", receitaAtual.getNome());
-            corpo += String.format("%-100.100s", receitaAtual.getDescricao());
-            corpo += String.format("%011.2f", receitaAtual.getValor());
-            corpo += String.format("%-10.10s", receitaAtual.getData());
-            corpo += String.format("%-20.20s",receitaAtual.getCategoria());
-            corpo += String.format("%-5.5s",receitaAtual.isRecorrente());
-            corpo += String.format("%01d",receitaAtual.getFrequencia());
-            contaRegDados++;
-            gravaRegistro(corpo,nomeArq);
-        }
-
-        for (int i =0; i < listaDespesa.getTamanho(); i ++){
-            Despesa despesaAtual = listaDespesa.getElemento(i);
-            corpo = "04";
-            corpo += String.format("%-50.50s", despesaAtual.getNome());
-            corpo += String.format("%-100.100s", despesaAtual.getDescricao());
-            corpo += String.format("%011.2f", despesaAtual.getValor());
-            corpo += String.format("%-10.10s", despesaAtual.getData());
-            corpo += String.format("%-20.20s",despesaAtual.getCategoria());
-            corpo += String.format("%-5.5s",despesaAtual.isPago());
-            corpo += String.format("%05d",despesaAtual.getQtdParcelas());
-            gravaRegistro(corpo,nomeArq);
-        }
-
-        // Monta e grava o registro de trailer
-        String trailer = "01";
-        trailer += String.format("%010d", contaRegDados);
-        return gravaRegistro(trailer, nomeArq);
-    }
 }
-
 

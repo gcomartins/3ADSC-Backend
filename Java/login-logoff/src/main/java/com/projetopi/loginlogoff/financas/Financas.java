@@ -1,12 +1,14 @@
 package com.projetopi.loginlogoff.financas;
 
 import com.projetopi.loginlogoff.usuario.Usuario;
+import net.bytebuddy.asm.Advice;
 
 import javax.persistence.*;
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.Size;
+import java.time.LocalDate;
 import java.util.Date;
 //Essa annotation faz com que essa tabela não seja persistida no jpa, porem suas classes filhas
 //que possuirem annotarion @Entity serão criadas
@@ -23,7 +25,7 @@ public abstract class Financas {
     @DecimalMax("100000000")
     private double valor;
     @FutureOrPresent
-    private Date data;
+    private LocalDate data;
     @Size(min = 3, max = 20)
     private String categoria;
     //ID_USUARIO é o nome da fk
@@ -32,7 +34,7 @@ public abstract class Financas {
     public Financas() {
     }
 
-    public Financas(int codigo, String nome, String descricao, double valor, Date data, String categoria) {
+    public Financas(int codigo, String nome, String descricao, double valor, LocalDate data, String categoria) {
         this.codigo = codigo;
         this.nome = nome;
         this.descricao = descricao;
@@ -41,6 +43,13 @@ public abstract class Financas {
         this.categoria = categoria;
     }
 
+    public Financas(String nome, String descricao, double valor, LocalDate data, String categoria) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.valor = valor;
+        this.data = data;
+        this.categoria = categoria;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -74,11 +83,11 @@ public abstract class Financas {
         this.valor = valor;
     }
 
-    public Date getData() {
+    public LocalDate getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(LocalDate data) {
         this.data = data;
     }
 
