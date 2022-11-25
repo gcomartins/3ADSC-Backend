@@ -1,41 +1,39 @@
 package com.projetopi.loginlogoff.usuario;
 
-import com.projetopi.loginlogoff.financas.Despesa;
-import com.projetopi.loginlogoff.financas.Receita;
+import com.projetopi.loginlogoff.financas.despesa.Despesa;
+import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
+import org.hibernate.validator.constraints.br.CPF;
 
 import javax.persistence.*;
-import java.sql.Date;
+import javax.validation.constraints.*;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
+@Table
 public class Usuario {
 
     @Id // PK - chave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto increment
     private Integer id;
+    @NotBlank
+    @Size(min = 3, max = 100)
     private String nome;
+    @Email
     private String email;
-    private String cpf;
-    private double saldo;
+    @NotBlank
+    @Size(min = 3, max = 100)
     private String senha;
-    private Date dataNascimento;
+    @PastOrPresent
+    private LocalDate dataNascimento;
     private Boolean isAutenticado;
-    //Indica que a classe Usuario(One) possuira varios objetivos(Many)
-    @OneToMany(mappedBy = "usuario")
-    private List<Objetivo> objetivos;
-    @OneToMany(mappedBy = "usuario")
-    private List<Despesa> despesas;
-    @OneToMany(mappedBy = "usuario")
-    private List<Receita> receitas;
 
 
-    public Usuario(String nome, String email, String cpf,
-                   double saldo, String senha, Date dataNascimento) {
+    public Usuario(String nome, String email,
+                    String senha, LocalDate dataNascimento) {
         this.nome = nome;
         this.email = email;
-        this.cpf = cpf;
-        this.saldo = saldo;
         this.senha = senha;
         this.dataNascimento = dataNascimento;
     }
@@ -44,7 +42,7 @@ public class Usuario {
 
     }
 
-    public Integer pegueIdUsuario() {
+    public Integer getIdUsuario() {
         return id;
     }
 
@@ -68,23 +66,8 @@ public class Usuario {
         this.email = email;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public double pegueSaldo() {
-        return saldo;
-    }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-
-    public String pegueSenha() {
+    public String getSenha() {
         return senha;
     }
 
@@ -92,16 +75,24 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
     public void setAutenticado(Boolean autenticado) {
         isAutenticado = autenticado;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Boolean getAutenticado() {
+        return isAutenticado;
     }
 
     public Boolean pegueIsAutenticado() {
@@ -117,9 +108,7 @@ public class Usuario {
                         "\nidUsuario: %d" +
                         "\nNome: %s " +
                         "\nEmail: %s " +
-                        "\nCPF: %s " +
-                        "\nSaldo: %.2f " +
                         "\nSenha: *** " +
-                        "\nData de Nascimento: %s", id, nome, email, cpf, saldo, dataNascimento);
+                        "\nData de Nascimento: %s", id, nome, email, dataNascimento);
     }
 }
