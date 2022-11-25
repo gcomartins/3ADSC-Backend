@@ -21,7 +21,7 @@ public class Despesa extends Financas {
     public Despesa(int codigo, String nome, String descricao, double valor, LocalDate data,
                    String categoria, boolean isPago, int qtdParcelas) {
         super(codigo, nome, descricao, valor, data, categoria);
-        this.isPago = isPago;
+        this.isPago = true;
         this.qtdParcelas = qtdParcelas;
     }
     public Despesa(String nome, String descricao, double valor, LocalDate data,

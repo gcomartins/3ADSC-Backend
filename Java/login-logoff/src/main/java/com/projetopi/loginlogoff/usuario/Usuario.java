@@ -22,8 +22,6 @@ public class Usuario {
     private String nome;
     @Email
     private String email;
-   @CPF
-    private String cpf;
     @NotBlank
     @Size(min = 3, max = 100)
     private String senha;
@@ -32,11 +30,10 @@ public class Usuario {
     private Boolean isAutenticado;
 
 
-    public Usuario(String nome, String email, String cpf,
+    public Usuario(String nome, String email,
                     String senha, LocalDate dataNascimento) {
         this.nome = nome;
         this.email = email;
-        this.cpf = cpf;
         this.senha = senha;
         this.dataNascimento = dataNascimento;
     }
@@ -68,15 +65,6 @@ public class Usuario {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
 
 
     public String getSenha() {
@@ -120,8 +108,7 @@ public class Usuario {
                         "\nidUsuario: %d" +
                         "\nNome: %s " +
                         "\nEmail: %s " +
-                        "\nCPF: %s " +
                         "\nSenha: *** " +
-                        "\nData de Nascimento: %s", id, nome, email, cpf, dataNascimento);
+                        "\nData de Nascimento: %s", id, nome, email, dataNascimento);
     }
 }

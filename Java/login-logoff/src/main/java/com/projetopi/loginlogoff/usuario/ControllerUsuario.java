@@ -13,8 +13,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.time.LocalDate;
+import java.time.temporal.TemporalAdjusters;
 import java.util.List;
-
+@CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
 @RequestMapping("/usuarios")
 public class ControllerUsuario {
@@ -32,9 +34,8 @@ public class ControllerUsuario {
 
     @PostMapping
     public ResponseEntity<Usuario> cadastrar( @Valid  @RequestBody Usuario usuarioNovo) {
-        Usuario usuario = usuarioRepository.findByCpf(usuarioNovo.getCpf());
-        Usuario usuario1 = usuarioRepository.findByEmail(usuarioNovo.getEmail());
-        if (usuario != null || usuario1 != null){
+        Usuario usuario = usuarioRepository.findByEmail(usuarioNovo.getEmail());
+        if (usuario != null){
             System.out.println("Cpf ou Email ja utilizados");
             return ResponseEntity.status(400).build();
         }
@@ -49,7 +50,6 @@ public class ControllerUsuario {
         if (usuarios.isEmpty()) return ResponseEntity.status(404).build();
         return ResponseEntity.status(200).body(usuarios);
     }
-
 
     @PutMapping("login/{email}/{senha}")
     public ResponseEntity<Usuario> login(@PathVariable String email, @PathVariable String senha) {
@@ -104,6 +104,25 @@ public class ControllerUsuario {
 
       return   ResponseEntity.status(200).body(retorno);
 
+    }
+    @GetMapping("/historicoReceitasMensal/{idUsuario}")
+    public ResponseEntity<List<Receita>> historicoReceita(@PathVariable Integer idUsuario,
+                                                          @RequestParam(required = false) Integer mes,
+                                                          @RequestParam(required = false) Integer ano){
+        List<Receita> receitas = serviceUsuario.getHistoricoReceita(idUsuario,mes,ano);
+        if (!receitas.isEmpty())
+            return ResponseEntity.status(200).body(receitas);
+        return ResponseEntity.status(400).build();
+    }
+
+    @GetMapping("/historicoDespesasMensal/{idUsuario}")
+    public ResponseEntity<List<Despesa>> historicoDespesa(@PathVariable Integer idUsuario,
+                                                          @RequestParam(required = false) Integer mes,
+                                                          @RequestParam(required = false) Integer ano){
+        List<Despesa> despesas = serviceUsuario.getHistoricoDespesa(idUsuario,mes,ano);
+        if (!despesas.isEmpty())
+            return ResponseEntity.status(200).body(despesas);
+        return ResponseEntity.status(400).build();
     }
 
 }

@@ -24,7 +24,6 @@ public abstract class Financas {
     @DecimalMin("0.1")
     @DecimalMax("100000000")
     private double valor;
-    @FutureOrPresent
     private LocalDate data;
     @Size(min = 3, max = 20)
     private String categoria;

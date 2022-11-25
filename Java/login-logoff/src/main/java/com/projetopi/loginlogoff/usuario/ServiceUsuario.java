@@ -16,10 +16,12 @@ import org.springframework.stereotype.Service;
 import com.projetopi.loginlogoff.usuario.ControllerUsuario;
 import com.projetopi.loginlogoff.usuario.UsuarioRepository;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAdjusters;
 import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.FormatterClosedException;
@@ -400,4 +402,49 @@ public class ServiceUsuario {
         }
         return "Arquivo lido com sucesso";
     }
+    public List<Receita> getHistoricoReceita(Integer idUsuario, Integer mes, Integer ano) {
+        LocalDate dataAtual = LocalDate.now();
+        if (ano != null && mes == null){
+            List<Receita> receitas = new ArrayList<>();
+            return  receitas;
+        }
+        else if (ano != null && mes != null){
+            dataAtual = dataAtual.withYear(ano);
+            System.out.println("if ano  e mes");
+            System.out.println(dataAtual);
+        }
+        if (mes != null){
+            dataAtual = dataAtual.withMonth(mes).with(TemporalAdjusters.lastDayOfMonth());
+            System.out.println(dataAtual);
+        }
+        System.out.println(dataAtual);
+        LocalDate aPartirDe = LocalDate.of(dataAtual.getYear(),dataAtual.getMonth(),01);
+        List<Receita> receitas = receitaRepository.findByUsuarioIdAndDataBetween(idUsuario, aPartirDe,dataAtual);
+        System.out.println("a partir de " + aPartirDe);
+        System.out.println(receitas);
+            return receitas;
+    }
+    public List<Despesa> getHistoricoDespesa(Integer idUsuario, Integer mes, Integer ano) {
+        LocalDate dataAtual = LocalDate.now();
+        if (ano != null && mes == null){
+            List<Despesa> despesas = new ArrayList<>();
+            return  despesas;
+        }
+        else if (ano != null && mes != null){
+            dataAtual = dataAtual.withYear(ano);
+            System.out.println("if ano  e mes");
+            System.out.println(dataAtual);
+        }
+        if (mes != null){
+            dataAtual = dataAtual.withMonth(mes).with(TemporalAdjusters.lastDayOfMonth());
+            System.out.println(dataAtual);
+        }
+        System.out.println(dataAtual);
+        LocalDate aPartirDe = LocalDate.of(dataAtual.getYear(),dataAtual.getMonth(),01);
+         List<Despesa> despesas = despesaRepository.findByUsuarioIdAndDataBetween(idUsuario, aPartirDe,dataAtual);
+        System.out.println("a partir de " + aPartirDe);
+        System.out.println(despesas);
+        return despesas;
+    }
+
 }
