@@ -1,20 +1,17 @@
 package com.projetopi.loginlogoff.usuario;
 
-import com.projetopi.loginlogoff.ListaObj;
 import com.projetopi.loginlogoff.financas.despesa.Despesa;
 import com.projetopi.loginlogoff.financas.despesa.DespesaRepository;
-import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import com.projetopi.loginlogoff.financas.objetivo.ObjetivoRepository;
 import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
-import com.projetopi.loginlogoff.usuario.ServiceUsuario;
+import com.projetopi.loginlogoff.financas.RelatorioMensal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
-import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
@@ -124,6 +121,13 @@ public class ControllerUsuario {
             return ResponseEntity.status(200).body(despesas);
         return ResponseEntity.status(400).build();
     }
+    @GetMapping("/valoresGraficoReceita/{idUsuario}")
+    public List<RelatorioMensal> datasReceitas(@PathVariable Integer idUsuario){
+            List<RelatorioMensal> relatorio = serviceUsuario.getRelatorioGeralByData(idUsuario);
+       return relatorio ;
+    }
+
+
 
 }
 
