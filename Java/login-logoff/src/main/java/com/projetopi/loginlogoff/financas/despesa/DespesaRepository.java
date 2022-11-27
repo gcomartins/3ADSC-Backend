@@ -7,9 +7,12 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 public interface DespesaRepository extends JpaRepository<Despesa, Integer> {
     List<Despesa> findByUsuarioIdOrderByData(int idUsuario);
+    Despesa findByUsuarioIdAndCodigo(int idUsuario, int codigo);
+
     int countByUsuarioId(int idUsuario);
 
     @Query("SELECT" +

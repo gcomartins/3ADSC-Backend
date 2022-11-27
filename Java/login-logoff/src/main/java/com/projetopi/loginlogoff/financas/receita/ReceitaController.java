@@ -28,13 +28,7 @@ public class ReceitaController {
     @GetMapping("/{idUsuario}")
     public ResponseEntity<List<Receita>> listarTodasReceitasDoUsuario(@PathVariable int idUsuario) {
         if (usuarioRepository.existsById(idUsuario)) {
-            List<Receita> todasReceitas = receitaRepository.findAll();
-            List<Receita> todasReceitasDoUsuario = new ArrayList<>();
-            for (Receita receitaAtual : todasReceitas) {
-                if (receitaAtual.getFkUsuario() == idUsuario) {
-                    todasReceitasDoUsuario.add(receitaAtual);
-                }
-            }
+            List<Receita> todasReceitasDoUsuario = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
             if (todasReceitasDoUsuario.isEmpty()) {
                 ResponseEntity respostaVazio = ResponseEntity.status(204).build();
                 String statusCode = respostaVazio.getStatusCode().toString();
@@ -59,30 +53,24 @@ public class ReceitaController {
     }
 
     @GetMapping("/{idUsuario}/{idReceita}")
-    public ResponseEntity<Receita> listarTodasReceitasDoUsuario(@PathVariable int idUsuario, @PathVariable int idReceita) {
+    public ResponseEntity<Receita> buscarReceitaDoUsuario(@PathVariable int idUsuario, @PathVariable int idReceita) {
         if (usuarioRepository.existsById(idUsuario) && receitaRepository.existsById(idReceita)) {
-            List<Receita> todasReceitas = receitaRepository.findAll();
-            for (Receita receitaAtual : todasReceitas) {
-                if (receitaAtual.getFkUsuario() == idUsuario && receitaAtual.getCodigo() == idReceita) {
-                    ResponseEntity respostaOk = ResponseEntity.status(200).body(receitaAtual);
-                    String statusCode = respostaOk.getStatusCode().toString();
-                    String logResposta = respostaOk.getStatusCode().series().toString();
-                    String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-                    log.gravaLog(textoLog);
-                    return respostaOk;
-                }
+            Optional receita = receitaRepository.findByUsuarioIdAndCodigo(idUsuario,idReceita);
+            if (receita.isPresent()){
+                ResponseEntity respostaOk = ResponseEntity.status(200).body(receita.get());
+                String statusCode = respostaOk.getStatusCode().toString();
+                String logResposta = respostaOk.getStatusCode().series().toString();
+                String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: "
+                        + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario + "\nidReceita: " + idReceita;
+                log.gravaLog(textoLog);
+                return respostaOk;
             }
-            ResponseEntity respostaVazio = ResponseEntity.status(204).build();
-            String statusCode = respostaVazio.getStatusCode().toString();
-            String logResposta = respostaVazio.getStatusCode().series().toString();
-            String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuario: " + idUsuario;
-            log.gravaLog(textoLog);
-            return respostaVazio;
         }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
         String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: "
+                + logResposta + "\nidUsuário: " + idUsuario + "\nidReceita: " + idReceita;
         log.gravaLog(textoLog);
         return respostaErro;
     }
@@ -158,18 +146,11 @@ public class ReceitaController {
         return respostaErro;
     }
 
-    @DeleteMapping("/deletarTodas/{idReceita}")
-    public ResponseEntity<List<Receita>> deletarTodasReceitas(@PathVariable int idReceita) {
-        if (usuarioRepository.existsById(idReceita)) {
-            List<Receita> todasReceitas = receitaRepository.findAll();
-            List<Receita> todasReceitassDeletadas = new ArrayList();
-            for (int i = 0; i < todasReceitas.size(); i++) {
-                if (todasReceitas.get(i).getFkUsuario() == idReceita) {
-                    todasReceitassDeletadas.add(todasReceitas.get(i));
-                    receitaRepository.deleteById(todasReceitas.get(i).getCodigo());
-                }
-            }
-            if (todasReceitassDeletadas.size() == 0) {
+    @DeleteMapping("/deletarTodas/{idUsuario}")
+    public ResponseEntity<List<Receita>> deletarTodasReceitas(@PathVariable int idUsuario) {
+        if (usuarioRepository.existsById(idUsuario)) {
+            List<Receita> todasReceitasDoUsuario = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
+            if (todasReceitasDoUsuario.size() == 0) {
                 ResponseEntity respostaVazio = ResponseEntity.status(202).build();
                 String statusCode = respostaVazio.getStatusCode().toString();
                 String logResposta = respostaVazio.getStatusCode().series().toString();
@@ -177,7 +158,10 @@ public class ReceitaController {
                 log.gravaLog(textoLog);
                 return respostaVazio;
             }
-            ResponseEntity respostaOk = ResponseEntity.status(200).body(todasReceitassDeletadas);
+            for (int i = 0; i < todasReceitasDoUsuario.size(); i++) {
+                receitaRepository.deleteById(todasReceitasDoUsuario.get(i).getCodigo());
+            }
+            ResponseEntity respostaOk = ResponseEntity.status(200).body(todasReceitasDoUsuario);
             String statusCode = respostaOk.getStatusCode().toString();
             String logResposta = respostaOk.getStatusCode().series().toString();
             String textoLog = "\n-------------------- \nENDPOINT: deletarTodasReceitas \nStatus Code: " + statusCode + "\nLog: " + logResposta;

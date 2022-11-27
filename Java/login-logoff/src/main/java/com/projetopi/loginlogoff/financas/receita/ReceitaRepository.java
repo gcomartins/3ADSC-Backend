@@ -8,11 +8,12 @@ import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface ReceitaRepository extends JpaRepository<Receita, Integer> {
     List<Receita> findByUsuarioIdOrderByData(int idUsuario);
     int countByUsuarioId(int idUsuario);
-
+    Optional<Receita> findByUsuarioIdAndCodigo(int idUsuario, int codigo);
     List<Receita> findByUsuarioIdAndDataBetween(int idUsuario, LocalDate dataInico, LocalDate dataFim);
 }

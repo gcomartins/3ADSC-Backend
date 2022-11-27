@@ -3,6 +3,7 @@ package com.projetopi.loginlogoff.financas.objetivo;
 import com.projetopi.loginlogoff.ListaObj;
 import com.projetopi.loginlogoff.Log;
 import com.projetopi.loginlogoff.PilhaObj;
+import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.usuario.Usuario;
 import com.projetopi.loginlogoff.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,29 +57,13 @@ public class ObjetivoController {
     public ResponseEntity<Objetivo> exibirObjetivoDoUsuario(@PathVariable int idUsuario, @PathVariable int idObjetivo) {
         if (usuarioRepository.existsById(idUsuario) && objetivoRepository.existsById(idObjetivo)) {
             List<Objetivo> objetivoUsuario = objetivoRepository.findByUsuarioIdAndCodigoOrderByData(idUsuario,idObjetivo);
-            if (objetivoUsuario.isEmpty()){
-                ResponseEntity respostaVazio = ResponseEntity.status(204).build();
-                String statusCode = respostaVazio.getStatusCode().toString();
-                String logResposta = respostaVazio.getStatusCode().series().toString();
-                String textoLog = "\n-------------------- \nENDPOINT: exibirObjetivoDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuario: " + idUsuario;
-                log.gravaLog(textoLog);
-                return respostaVazio;
-            }else {
                 ResponseEntity respostaOk = ResponseEntity.status(200).body(objetivoUsuario.get(0));
                 String statusCode = respostaOk.getStatusCode().toString();
                 String logResposta = respostaOk.getStatusCode().series().toString();
                 String textoLog = "\n-------------------- \nENDPOINT: exibirObjetivoDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
                 log.gravaLog(textoLog);
                 return respostaOk;
-            }
         }
-//        if (!usuarioRepository.existsById(idUsuario) && !objetivoRepository.existsById(idObjetivo)){
-//            log.gravaLog("Exibir objetivo do usuário: Usuário e Objetivo não identificados");
-//        }else if (!usuarioRepository.existsById(idUsuario)){
-//            log.gravaLog("Exibir objetivo do usuário: Usuário não identificado");
-//        }else if (!objetivoRepository.existsById(idObjetivo)){
-//            log.gravaLog("Exibir objetivo do usuário: Objetivo não identificado");
-//        }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
         String logResposta = respostaErro.getStatusCode().series().toString();
@@ -130,13 +115,6 @@ public class ObjetivoController {
             log.gravaLog(textoLog);
             return respostaOk;
         }
-//        if (!usuarioRepository.existsById(idUsuario) && !objetivoRepository.existsById(idObjetivo)){
-//            log.gravaLog("Atualizar objetivo para o usuário: Usuário e Objetivo não identificados");
-//        }else if (!usuarioRepository.existsById(idUsuario)){
-//            log.gravaLog("Atualizar objetivo para o usuário: Usuário não identificado");
-//        }else if (!objetivoRepository.existsById(idObjetivo)){
-//            log.gravaLog("Atualizar objetivo para o usuário: Objetivo não identificado");
-//        }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
         String logResposta = respostaErro.getStatusCode().series().toString();
@@ -157,13 +135,6 @@ public class ObjetivoController {
             log.gravaLog(textoLog);
             return respostaOk;
         }
-//        if (!usuarioRepository.existsById(idUsuario) && !objetivoRepository.existsById(idObjetivo)){
-//            log.gravaLog("Deletar objetivo para o usuário: Usuário e Objetivo não identificados");
-//        }else if (!usuarioRepository.existsById(idUsuario)){
-//            log.gravaLog("Deletar objetivo para o usuário: Usuário não identificado");
-//        }else if (!objetivoRepository.existsById(idObjetivo)){
-//            log.gravaLog("Deletar objetivo para o usuário: Objetivo não identificado");
-//        }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
         String logResposta = respostaErro.getStatusCode().series().toString();
@@ -175,15 +146,8 @@ public class ObjetivoController {
     @DeleteMapping("/deletarTodos/{idUsuario}")
     public ResponseEntity<List<Objetivo>> deletarTodosObjetivos(@PathVariable int idUsuario) {
         if (usuarioRepository.existsById(idUsuario)) {
-            List<Objetivo> todosObjetivos = objetivoRepository.findAll();
-            List<Objetivo> todosObjetivosDeletados = new ArrayList();
-            for (int i = 0; i < todosObjetivos.size(); i++) {
-                if (todosObjetivos.get(i).getFkUsuario() == idUsuario) {
-                    todosObjetivosDeletados.add(todosObjetivos.get(i));
-                    objetivoRepository.deleteById(todosObjetivos.get(i).getCodigo());
-                }
-            }
-            if (todosObjetivosDeletados.size() == 0) {
+            List<Objetivo> todosObjetivos = objetivoRepository.findByUsuarioIdOrderByData(idUsuario);
+            if (todosObjetivos.size() == 0) {
                 ResponseEntity respostaVazio = ResponseEntity.status(202).build();
                 String statusCode = respostaVazio.getStatusCode().toString();
                 String logResposta = respostaVazio.getStatusCode().series().toString();
@@ -191,7 +155,10 @@ public class ObjetivoController {
                 log.gravaLog(textoLog);
                 return respostaVazio;
             }
-            ResponseEntity respostaOk = ResponseEntity.status(200).body(todosObjetivosDeletados);
+            for (int i = 0; i < todosObjetivos.size(); i++) {
+                objetivoRepository.deleteById(todosObjetivos.get(i).getCodigo());
+            }
+            ResponseEntity respostaOk = ResponseEntity.status(200).body(todosObjetivos);
             String statusCode = respostaOk.getStatusCode().toString();
             String logResposta = respostaOk.getStatusCode().series().toString();
             String textoLog = "\n-------------------- \nENDPOINT: deletarTodosObjetivos \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
@@ -206,15 +173,27 @@ public class ObjetivoController {
         return respostaErro;
     }
     @DeleteMapping("/pilha/{idUsuario}")
-    public ResponseEntity<Objetivo> deletarObjetivo(@PathVariable int idUsuario) {
-        List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByCodigo(idUsuario);
-        PilhaObj<Objetivo> pilhaDeObjetivo= new PilhaObj<Objetivo>(objetivos.size());
-        for (int i = 0; i<objetivos.size();i++){
-            pilhaDeObjetivo.push(objetivos.get(i));
+    public ResponseEntity<Objetivo> deletarObjetivoPilha(@PathVariable int idUsuario) {
+        if (usuarioRepository.existsById(idUsuario) && objetivoRepository.countByUsuarioId(idUsuario) > 0){
+            List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByCodigo(idUsuario);
+            PilhaObj<Objetivo> pilhaDeObjetivo= new PilhaObj<Objetivo>(objetivos.size());
+            for (int i = 0; i<objetivos.size();i++){
+                pilhaDeObjetivo.push(objetivos.get(i));
+            }
+            Objetivo objetivoDeletado = pilhaDeObjetivo.peek();
+            objetivoRepository.deleteById(objetivoDeletado.getCodigo());
+            ResponseEntity respostaOk = ResponseEntity.status(200).body(pilhaDeObjetivo.pop());
+            String statusCode = respostaOk.getStatusCode().toString();
+            String logResposta = respostaOk.getStatusCode().series().toString();
+            String textoLog = "\n-------------------- \nENDPOINT: deletarObjetivo \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+            log.gravaLog(textoLog);
+            return respostaOk;
         }
-        objetivoRepository.deleteById(pilhaDeObjetivo.peek().getCodigo());
-        return ResponseEntity.status(200).body(pilhaDeObjetivo.pop());
+        ResponseEntity respostaErro = ResponseEntity.status(404).build();
+        String statusCode = respostaErro.getStatusCode().toString();
+        String logResposta = respostaErro.getStatusCode().series().toString();
+        String textoLog = "\n-------------------- \nENDPOINT: deletarObjetivo \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
+        log.gravaLog(textoLog);
+        return respostaErro;
     }
-
-
 }

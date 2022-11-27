@@ -2,6 +2,7 @@ package com.projetopi.loginlogoff.financas.despesa;
 
 import com.projetopi.loginlogoff.Log;
 import com.projetopi.loginlogoff.financas.despesa.dto.DespesaDto;
+import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import com.projetopi.loginlogoff.usuario.Usuario;
 import com.projetopi.loginlogoff.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,13 +35,8 @@ public class DespesaController {
     @GetMapping("/{idUsuario}")
     public ResponseEntity<List<Despesa>> listarTodasDespesasDoUsuario(@PathVariable int idUsuario) {
         if (usuarioRepository.existsById(idUsuario)) {
-            List<Despesa> todasDespesas = despesaRepository.findAll();
-            List<Despesa> todasDespesasDoUsuario = new ArrayList<>();
-            for (Despesa despesaAtual : todasDespesas) {
-                if (despesaAtual.getFkUsuario() == idUsuario) {
-                    todasDespesasDoUsuario.add(despesaAtual);
-                }
-            }
+            List<Despesa> todasDespesasDoUsuario = despesaRepository.findByUsuarioIdOrderByData(idUsuario);
+
             if (todasDespesasDoUsuario.isEmpty()) {
                 ResponseEntity respostaVazio = ResponseEntity.status(204).build();
                 String statusCode = respostaVazio.getStatusCode().toString();
@@ -65,25 +61,15 @@ public class DespesaController {
     }
 
     @GetMapping("/{idUsuario}/{idDespesa}")
-    public ResponseEntity<Despesa> listarTodasDespesasDoUsuario(@PathVariable int idUsuario, @PathVariable int idDespesa) {
+    public ResponseEntity<Despesa> buscarDespesaDoUsuario(@PathVariable int idUsuario, @PathVariable int idDespesa) {
         if (usuarioRepository.existsById(idUsuario) && despesaRepository.existsById(idDespesa)) {
-            List<Despesa> todasDespesas = despesaRepository.findAll();
-            for (Despesa despesaAtual : todasDespesas) {
-                if (despesaAtual.getFkUsuario() == idUsuario && despesaAtual.getCodigo() == idDespesa) {
-                    ResponseEntity respostaOk = ResponseEntity.status(200).body(despesaAtual);
+            Despesa despesaDoUsuario = despesaRepository.findByUsuarioIdAndCodigo(idUsuario, idDespesa);
+                    ResponseEntity respostaOk = ResponseEntity.status(200).body(despesaDoUsuario);
                     String statusCode = respostaOk.getStatusCode().toString();
                     String logResposta = respostaOk.getStatusCode().series().toString();
                     String textoLog = "\n-------------------- \nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
                     log.gravaLog(textoLog);
                     return respostaOk;
-                }
-            }
-            ResponseEntity respostaVazio = ResponseEntity.status(204).build();
-            String statusCode = respostaVazio.getStatusCode().toString();
-            String logResposta = respostaVazio.getStatusCode().series().toString();
-            String textoLog = "\n-------------------- \nENDPOINT: listarTodasDespesasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "idUsuario: " + idUsuario;
-            log.gravaLog(textoLog);
-            return respostaVazio;
         }
         ResponseEntity respostaErro = ResponseEntity.status(404).build();
         String statusCode = respostaErro.getStatusCode().toString();
@@ -164,18 +150,11 @@ public class DespesaController {
         return respostaErro;
     }
 
-    @DeleteMapping("/deletarTodas/{idDespesa}")
-    public ResponseEntity<List<Despesa>> deletarTodasDespesas(@PathVariable int idDespesa) {
-        if (usuarioRepository.existsById(idDespesa)) {
-            List<Despesa> todasDespesas = despesaRepository.findAll();
-            List<Despesa> todasDespesassDeletadas = new ArrayList();
-            for (int i = 0; i < todasDespesas.size(); i++) {
-                if (todasDespesas.get(i).getFkUsuario() == idDespesa) {
-                    todasDespesassDeletadas.add(todasDespesas.get(i));
-                    despesaRepository.deleteById(todasDespesas.get(i).getCodigo());
-                }
-            }
-            if (todasDespesassDeletadas.size() == 0) {
+    @DeleteMapping("/deletarTodas/{idUsuario}")
+    public ResponseEntity<List<Despesa>> deletarTodasDespesas(@PathVariable int idUsuario) {
+        if (usuarioRepository.existsById(idUsuario)) {
+            List<Despesa> todasDespesas = despesaRepository.findByUsuarioIdOrderByData(idUsuario);
+            if (todasDespesas.size() == 0) {
                 ResponseEntity respostaVazio = ResponseEntity.status(202).build();
                 String statusCode = respostaVazio.getStatusCode().toString();
                 String logResposta = respostaVazio.getStatusCode().series().toString();
@@ -183,7 +162,10 @@ public class DespesaController {
                 log.gravaLog(textoLog);
                 return respostaVazio;
             }
-            ResponseEntity respostaOk = ResponseEntity.status(200).body(todasDespesassDeletadas);
+            for (int i = 0; i < todasDespesas.size(); i++) {
+                despesaRepository.deleteById(todasDespesas.get(i).getCodigo());
+            }
+            ResponseEntity respostaOk = ResponseEntity.status(200).body(todasDespesas);
             String statusCode = respostaOk.getStatusCode().toString();
             String logResposta = respostaOk.getStatusCode().series().toString();
             String textoLog = "\n-------------------- \nENDPOINT: deletarTodasDespesas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
