@@ -1,11 +1,13 @@
 package com.projetopi.loginlogoff.usuario;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.projetopi.loginlogoff.financas.despesa.Despesa;
 import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import org.hibernate.validator.constraints.br.CPF;
 
 import javax.persistence.*;
+import javax.transaction.Transactional;
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -28,6 +30,8 @@ public class Usuario {
     @PastOrPresent
     private LocalDate dataNascimento;
     private Boolean isAutenticado;
+    @JsonIgnore
+    private Byte[] arquivoTxt;
 
 
     public Usuario(String nome, String email,

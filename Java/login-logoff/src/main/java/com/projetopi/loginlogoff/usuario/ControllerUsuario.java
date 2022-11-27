@@ -8,10 +8,12 @@ import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
 import com.projetopi.loginlogoff.financas.RelatorioMensal;
 import net.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.lang.annotation.Documented;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
@@ -138,7 +140,27 @@ public class ControllerUsuario {
             return ResponseEntity.status(200).body(serviceUsuario.getSaldoMensal(idUsuario));
     }
 
+    @PatchMapping(value = "arquivoTxt/{idUsuario}",   consumes = "text/**")
+    public ResponseEntity<Byte[]> uploadArquivoTxt(
+            Byte[] arquivoTxt,
+            @PathVariable Integer idUsuario
 
+    ){
+        System.out.println("arquivo txt");
+        usuarioRepository.setArquivoTxt(idUsuario,arquivoTxt);
+        return ResponseEntity.status(200).body(arquivoTxt);
+    }
+//    }
+
+    @GetMapping (value = "/relatorio/{nomeArquivo}/{idUsuario}", produces = "text/plain.openxmlformats-officedocument.spreadsheetml.sheet")
+    public ResponseEntity<Byte[]> dowloadArquivoTxt(@PathVariable int idUsuario,
+                                                @PathVariable String nomeArquivo){
+
+        nomeArquivo += "txt";
+        Byte[] relatorio = usuarioRepository.getArquivoTxt(idUsuario);
+        return ResponseEntity.status(200).header("content-disposition", "attachment; " +
+                "filename="+ nomeArquivo).body(relatorio);
+    }
 
 
 

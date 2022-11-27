@@ -24426,3 +24426,33 @@ ENDPOINT: listarTodasDespesasDoUsuario
 Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuário: 15 - 26-11-2022 23:09:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 27-11-2022 14:41:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 27-11-2022 14:41:04
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 15 - 27-11-2022 14:43:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 27-11-2022 14:43:18
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 27-11-2022 14:43:19
