@@ -7,19 +7,21 @@ import com.projetopi.loginlogoff.financas.despesa.DespesaRepository;
 import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import com.projetopi.loginlogoff.financas.objetivo.ObjetivoController;
 import com.projetopi.loginlogoff.financas.objetivo.ObjetivoRepository;
+import com.projetopi.loginlogoff.financas.RelatorioMensal;
 import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.receita.ReceitaController;
 import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
+import net.bytebuddy.asm.Advice;
+import org.apache.tomcat.jni.Local;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+import org.springframework.jdbc.core.JdbcOperationsExtensionsKt;
 import org.springframework.stereotype.Service;
-import com.projetopi.loginlogoff.usuario.ControllerUsuario;
-import com.projetopi.loginlogoff.usuario.UsuarioRepository;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Month;
+import java.time.Year;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
 import java.util.ArrayList;
@@ -45,14 +47,14 @@ public class ServiceUsuario {
     private DespesaController despesaController;
 
 
-    public  Boolean atualizarUsuario(String emailAntigo, String senhaAntiga,
-                                                     Usuario usuarioAtualizado ) {
+    public Boolean atualizarUsuario(String emailAntigo, String senhaAntiga,
+                                    Usuario usuarioAtualizado) {
         Boolean isAtualizado = false;
         Usuario usuario = usuarioRepository.findByEmailAndSenha(emailAntigo, senhaAntiga);
         if (usuario == null) return isAtualizado;
         if (usuarioAtualizado.getSenha().equals(senhaAntiga) &&
                 usuarioAtualizado.getEmail().equals(emailAntigo) &&
-                usuarioAtualizado.getNome().equals(usuario.getNome()) ) {
+                usuarioAtualizado.getNome().equals(usuario.getNome())) {
             return isAtualizado;
         }
         usuario.setSenha(usuarioAtualizado.getSenha());
@@ -63,7 +65,7 @@ public class ServiceUsuario {
         return isAtualizado;
     }
 
-    public String gerarCsv(int idUsuario, String nomeArquivo){
+    public String gerarCsv(int idUsuario, String nomeArquivo) {
         List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByData(idUsuario);
         List<Receita> receitas = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
         List<Despesa> despesas = despesaRepository.findByUsuarioIdOrderByData(idUsuario);
@@ -72,46 +74,47 @@ public class ServiceUsuario {
         ListaObj listaReceitas = new ListaObj<>(receitaRepository.countByUsuarioId(idUsuario));
         ListaObj listaObjetos = new ListaObj<>(objetivoRepository.countByUsuarioId(idUsuario));
         ListaObj listaDespesa = new ListaObj<>(despesaRepository.countByUsuarioId(idUsuario));
-        for (Receita receitaAtual: receitas){
+        for (Receita receitaAtual : receitas) {
             listaReceitas.adiciona(receitaAtual);
         }
-        for (Objetivo objetivoAtual : objetivos){
+        for (Objetivo objetivoAtual : objetivos) {
             listaObjetos.adiciona(objetivoAtual);
         }
 
-        for (Despesa despesaAtual: despesas ){
+        for (Despesa despesaAtual : despesas) {
             listaDespesa.adiciona(despesaAtual);
         }
         // gravando as informações nos arquivos
-        gravaArquivoCsvObjetivo(listaObjetos,listaReceitas,listaDespesa, nomeArquivo);
-        return gravaArquivoCsvObjetivo(listaObjetos,listaReceitas,listaDespesa, nomeArquivo);
+        gravaArquivoCsvObjetivo(listaObjetos, listaReceitas, listaDespesa, nomeArquivo);
+        return gravaArquivoCsvObjetivo(listaObjetos, listaReceitas, listaDespesa, nomeArquivo);
     }
 
-    public String gerarTxt(int idUsuario, String nomeArquivo){
+    public String gerarTxt(int idUsuario, String nomeArquivo) {
         nomeArquivo = nomeArquivo + ".txt";
         List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByData(idUsuario);
         List<Receita> receitas = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
         List<Despesa> despesas = despesaRepository.findByUsuarioIdOrderByData(idUsuario);
 
         ListaObj listaObjetivos = new ListaObj<>(objetivoRepository.countByUsuarioId(idUsuario));
-        for (Objetivo objetivoAtual: objetivos){
+        for (Objetivo objetivoAtual : objetivos) {
             listaObjetivos.adiciona(objetivoAtual);
         }
         ListaObj listaReceitas = new ListaObj<>(receitaRepository.countByUsuarioId(idUsuario));
-        for (Receita receitaAtual: receitas){
+        for (Receita receitaAtual : receitas) {
             listaReceitas.adiciona(receitaAtual);
         }
         ListaObj listaDespesas = new ListaObj<>(despesaRepository.countByUsuarioId(idUsuario));
-        for (Despesa despesaAtual: despesas ){
+        for (Despesa despesaAtual : despesas) {
             listaDespesas.adiciona(despesaAtual);
         }
-        return gravaArquivoTxt(listaObjetivos,listaReceitas,listaDespesas, nomeArquivo);
+        return gravaArquivoTxt(listaObjetivos, listaReceitas, listaDespesas, nomeArquivo);
 
 
     }
+
     public String gravaArquivoCsvObjetivo(ListaObj<Objetivo> listaObjetivo,
                                           ListaObj<Receita> listaReceita,
-                                          ListaObj<Despesa>listaDespesa,
+                                          ListaObj<Despesa> listaDespesa,
                                           String nomeArq) {
         if (listaDespesa.getTamanho() <= 0 && listaReceita.getTamanho() <= 0 && listaObjetivo.getTamanho() <= 0)
             return "Nenhuma informacao a colocar no arquivo";
@@ -198,14 +201,13 @@ public class ServiceUsuario {
     }
 
 
-    public   String gravaRegistro(String registro, String nomeArq) {
+    public String gravaRegistro(String registro, String nomeArq) {
         BufferedWriter saida = null;
 
         // try-catch para abrir o arquivo
         try {
             saida = new BufferedWriter(new FileWriter(nomeArq, true));
-        }
-        catch (IOException erro) {
+        } catch (IOException erro) {
             erro.printStackTrace();
         }
 
@@ -213,20 +215,19 @@ public class ServiceUsuario {
         try {
             saida.append(registro + "\n");
             saida.close();
-        }
-        catch (IOException erro) {
+        } catch (IOException erro) {
             erro.printStackTrace();
-            return  "Erro ao gravar o arquivo";
+            return "Erro ao gravar o arquivo";
 
         }
         return "arquivo gravado com sucesso";
     }
 
 
-    public  String gravaArquivoTxt(ListaObj<Objetivo> listaObjetivo,
-                                   ListaObj<Receita> listaReceita,
-                                   ListaObj<Despesa> listaDespesa,
-                                   String nomeArq) {
+    public String gravaArquivoTxt(ListaObj<Objetivo> listaObjetivo,
+                                  ListaObj<Receita> listaReceita,
+                                  ListaObj<Despesa> listaDespesa,
+                                  String nomeArq) {
         int contaRegDados = 0;
         if (listaDespesa.getTamanho() <= 0 && listaReceita.getTamanho() <= 0 && listaObjetivo.getTamanho() <= 0)
             return "Nenhuma informacao a colocar no arquivo";
@@ -241,7 +242,7 @@ public class ServiceUsuario {
         // Monta e grava os registros de corpo
         String corpo;
 
-        for (int i =0; i < listaObjetivo.getTamanho(); i++) {
+        for (int i = 0; i < listaObjetivo.getTamanho(); i++) {
             Objetivo objetivoAtual = listaObjetivo.getElemento(i);
             corpo = "02";
             corpo += String.format("%-50.50s", objetivoAtual.getNome()); //nome 50 espacos
@@ -256,31 +257,31 @@ public class ServiceUsuario {
             contaRegDados++;
             gravaRegistro(corpo, nomeArq);
         }
-        for (int i = 0; i < listaReceita.getTamanho(); i++){
+        for (int i = 0; i < listaReceita.getTamanho(); i++) {
             Receita receitaAtual = listaReceita.getElemento(i);
             corpo = "03";
             corpo += String.format("%-50.50s", receitaAtual.getNome()); // nome 50
             corpo += String.format("%-100.100s", receitaAtual.getDescricao());// descricao 100
             corpo += String.format("%011.2f", receitaAtual.getValor());// valor 11
             corpo += String.format("%-10.10s", receitaAtual.getData()); //data 10
-            corpo += String.format("%-20.20s",receitaAtual.getCategoria()); // categoria 20
-            corpo += String.format("%-5.5s",receitaAtual.isRecorrente()); //is recorrente 5
-            corpo += String.format("%02d",receitaAtual.getFrequencia()); // frequencia 2
+            corpo += String.format("%-20.20s", receitaAtual.getCategoria()); // categoria 20
+            corpo += String.format("%-5.5s", receitaAtual.isRecorrente()); //is recorrente 5
+            corpo += String.format("%02d", receitaAtual.getFrequencia()); // frequencia 2
             contaRegDados++;
-            gravaRegistro(corpo,nomeArq);
+            gravaRegistro(corpo, nomeArq);
         }
 
-        for (int i =0; i < listaDespesa.getTamanho(); i ++){
+        for (int i = 0; i < listaDespesa.getTamanho(); i++) {
             Despesa despesaAtual = listaDespesa.getElemento(i);
             corpo = "04";
             corpo += String.format("%-50.50s", despesaAtual.getNome()); // nome 50
             corpo += String.format("%-100.100s", despesaAtual.getDescricao()); // descricao 100
             corpo += String.format("%011.2f", despesaAtual.getValor()); //valor 11
             corpo += String.format("%-10.10s", despesaAtual.getData()); //data 10
-            corpo += String.format("%-20.20s",despesaAtual.getCategoria()); //categoria 20
-            corpo += String.format("%-5.5s",despesaAtual.isPago()); //is pago 5
-            corpo += String.format("%03d",despesaAtual.getQtdParcelas());
-            gravaRegistro(corpo,nomeArq);
+            corpo += String.format("%-20.20s", despesaAtual.getCategoria()); //categoria 20
+            corpo += String.format("%-5.5s", despesaAtual.isPago()); //is pago 5
+            corpo += String.format("%03d", despesaAtual.getQtdParcelas());
+            gravaRegistro(corpo, nomeArq);
         }
 
         // Monta e grava o registro de trailer
@@ -288,6 +289,7 @@ public class ServiceUsuario {
         trailer += String.format("%010d", contaRegDados);
         return gravaRegistro(trailer, nomeArq);
     }
+
     public String leArquivoTxt(String nomeArq, int idUsuario) {
         nomeArq = nomeArq + ".txt";
         BufferedReader entrada = null;
@@ -297,7 +299,7 @@ public class ServiceUsuario {
         Double valorObjetivo, valorAtualObjetivo;
         String dataObjetivo, dataFinalObjetivo;
         Integer dataObjetivoAno, dataObjetivoMes, dataObjetivoDia,
-                dataFinalObjetivoDia,dataFinalObjetivoMes,dataFinalObjeitoAno;
+                dataFinalObjetivoDia, dataFinalObjetivoMes, dataFinalObjeitoAno;
         Integer contaRegDadoLido = 0;
         Integer qtdRegDadoGravadoTrailer;
         List<Objetivo> listaLidaObjetivos = new ArrayList<Objetivo>();
@@ -308,7 +310,7 @@ public class ServiceUsuario {
             entrada = new BufferedReader(new FileReader(nomeArq));
         } catch (IOException erro) {
             erro.printStackTrace();
-            return "Erro ao abrir o arquivo!" ;
+            return "Erro ao abrir o arquivo!";
 
         }
 
@@ -343,18 +345,18 @@ public class ServiceUsuario {
                     dataObjetivoDia = Integer.valueOf(registro.substring(171, 173));
                     categoriaObjetivo = registro.substring(174, 192).trim();
                     valorAtualObjetivo = Double.valueOf(registro.substring(193, 204).replace(',', '.'));
-                    dataFinalObjeitoAno = Integer.valueOf(registro.substring(204,208));
-                    dataFinalObjetivoMes = Integer.valueOf(registro.substring(209,211));
-                    dataFinalObjetivoDia = Integer.valueOf(registro.substring(212,214));
-                    LocalDate dataObjetivoOficial = LocalDate.of(dataObjetivoAno,dataObjetivoMes,dataObjetivoDia);
+                    dataFinalObjeitoAno = Integer.valueOf(registro.substring(204, 208));
+                    dataFinalObjetivoMes = Integer.valueOf(registro.substring(209, 211));
+                    dataFinalObjetivoDia = Integer.valueOf(registro.substring(212, 214));
+                    LocalDate dataObjetivoOficial = LocalDate.of(dataObjetivoAno, dataObjetivoMes, dataObjetivoDia);
                     LocalDate dataFinalObjetivoOficial = LocalDate.of(dataFinalObjeitoAno, dataFinalObjetivoMes, dataFinalObjetivoDia);
                     Objetivo objetivo = new Objetivo(nomeObjetivo, descricaoObjetivo, valorObjetivo, dataObjetivoOficial
-                            , categoriaObjetivo, valorAtualObjetivo,dataFinalObjetivoOficial);
-                    objetivoController.criarObjetivo(idUsuario,objetivo);
-                } else if (tipoRegistro.equals("03")){
+                            , categoriaObjetivo, valorAtualObjetivo, dataFinalObjetivoOficial);
+                    objetivoController.criarObjetivo(idUsuario, objetivo);
+                } else if (tipoRegistro.equals("03")) {
                     String nomeReceita, descricaoReceita, categoriaReceita, dataReceita, recorrenciaReceita;
                     Double valorReceita;
-                    Integer dataReceitaAno, dataReceitaMes, dataReceitaDia,frequenciaReceita;
+                    Integer dataReceitaAno, dataReceitaMes, dataReceitaDia, frequenciaReceita;
                     nomeReceita = registro.substring(2, 52).trim();
                     descricaoReceita = registro.substring(52, 152).trim();
                     valorReceita = Double.valueOf(registro.substring(152, 163).replace(',', '.'));
@@ -362,14 +364,14 @@ public class ServiceUsuario {
                     dataReceitaMes = Integer.valueOf(registro.substring(168, 170));
                     dataReceitaDia = Integer.valueOf(registro.substring(171, 173));
                     categoriaReceita = registro.substring(173, 192).trim();
-                    recorrenciaReceita = registro.substring(193,198);
-                    frequenciaReceita = Integer.valueOf(registro.substring(198,200));
-                    LocalDate dataReceitaFinal = LocalDate.of(dataReceitaAno,dataReceitaMes,dataReceitaDia);
+                    recorrenciaReceita = registro.substring(193, 198);
+                    frequenciaReceita = Integer.valueOf(registro.substring(198, 200));
+                    LocalDate dataReceitaFinal = LocalDate.of(dataReceitaAno, dataReceitaMes, dataReceitaDia);
                     Boolean isRecorrente = false;
                     if (recorrenciaReceita.contains("true")) isRecorrente = true;
-                    Receita receita = new Receita(nomeReceita,descricaoReceita,valorReceita, dataReceitaFinal,
-                            categoriaReceita,isRecorrente,frequenciaReceita);
-                    receitaController.criarReceita(idUsuario,receita);
+                    Receita receita = new Receita(nomeReceita, descricaoReceita, valorReceita, dataReceitaFinal,
+                            categoriaReceita, isRecorrente, frequenciaReceita);
+                    receitaController.criarReceita(idUsuario, receita);
                     contaRegDadoLido++;
                 } else if (tipoRegistro.equals("04")) {
                     String nomeDespesa, descricaoDespesa, categoriaDespesa, dataDespesa, pago;
@@ -383,14 +385,14 @@ public class ServiceUsuario {
                     dataDespesaMes = Integer.valueOf(registro.substring(168, 170));
                     dataDespesaDia = Integer.valueOf(registro.substring(171, 173));
                     categoriaDespesa = registro.substring(173, 192).trim();
-                    pago = registro.substring(193,198);
-                    parcelas = Integer.valueOf(registro.substring(198,201));
+                    pago = registro.substring(193, 198);
+                    parcelas = Integer.valueOf(registro.substring(198, 201));
                     Boolean isPago = false;
-                    LocalDate dataFinalDespesa = LocalDate.of(dataDespesaAno,dataDespesaMes,dataDespesaDia);
+                    LocalDate dataFinalDespesa = LocalDate.of(dataDespesaAno, dataDespesaMes, dataDespesaDia);
                     if (pago.contains("true")) isPago = true;
-                    Despesa despesa = new Despesa(nomeDespesa,descricaoDespesa,valorDespesa,dataFinalDespesa,categoriaDespesa
-                            ,isPago,parcelas);
-                    despesaController.criarDespesa(idUsuario,despesa);
+                    Despesa despesa = new Despesa(nomeDespesa, descricaoDespesa, valorDespesa, dataFinalDespesa, categoriaDespesa
+                            , isPago, parcelas);
+                    despesaController.criarDespesa(idUsuario, despesa);
                 }
                 // Lê o próximo registro
                 registro = entrada.readLine();
@@ -402,49 +404,97 @@ public class ServiceUsuario {
         }
         return "Arquivo lido com sucesso";
     }
+
     public List<Receita> getHistoricoReceita(Integer idUsuario, Integer mes, Integer ano) {
         LocalDate dataAtual = LocalDate.now();
-        if (ano != null && mes == null){
+        if (ano != null && mes == null) {
             List<Receita> receitas = new ArrayList<>();
-            return  receitas;
-        }
-        else if (ano != null && mes != null){
+            return receitas;
+        } else if (ano != null && mes != null) {
             dataAtual = dataAtual.withYear(ano);
             System.out.println("if ano  e mes");
             System.out.println(dataAtual);
         }
-        if (mes != null){
+        if (mes != null) {
             dataAtual = dataAtual.withMonth(mes).with(TemporalAdjusters.lastDayOfMonth());
             System.out.println(dataAtual);
         }
         System.out.println(dataAtual);
-        LocalDate aPartirDe = LocalDate.of(dataAtual.getYear(),dataAtual.getMonth(),01);
-        List<Receita> receitas = receitaRepository.findByUsuarioIdAndDataBetween(idUsuario, aPartirDe,dataAtual);
+        LocalDate aPartirDe = LocalDate.of(dataAtual.getYear(), dataAtual.getMonth(), 01);
+        List<Receita> receitas = receitaRepository.findByUsuarioIdAndDataBetween(idUsuario, aPartirDe, dataAtual);
         System.out.println("a partir de " + aPartirDe);
         System.out.println(receitas);
-            return receitas;
+        return receitas;
     }
+
     public List<Despesa> getHistoricoDespesa(Integer idUsuario, Integer mes, Integer ano) {
         LocalDate dataAtual = LocalDate.now();
-        if (ano != null && mes == null){
+        if (ano != null && mes == null) {
             List<Despesa> despesas = new ArrayList<>();
-            return  despesas;
-        }
-        else if (ano != null && mes != null){
+            return despesas;
+        } else if (ano != null && mes != null) {
             dataAtual = dataAtual.withYear(ano);
             System.out.println("if ano  e mes");
             System.out.println(dataAtual);
         }
-        if (mes != null){
+        if (mes != null) {
             dataAtual = dataAtual.withMonth(mes).with(TemporalAdjusters.lastDayOfMonth());
             System.out.println(dataAtual);
         }
         System.out.println(dataAtual);
-        LocalDate aPartirDe = LocalDate.of(dataAtual.getYear(),dataAtual.getMonth(),01);
-         List<Despesa> despesas = despesaRepository.findByUsuarioIdAndDataBetween(idUsuario, aPartirDe,dataAtual);
+        LocalDate aPartirDe = LocalDate.of(dataAtual.getYear(), dataAtual.getMonth(), 01);
+        List<Despesa> despesas = despesaRepository.findByUsuarioIdAndDataBetween(idUsuario, aPartirDe, dataAtual);
         System.out.println("a partir de " + aPartirDe);
         System.out.println(despesas);
         return despesas;
+    }
+
+
+    public List<RelatorioMensal> getValorGroupByDateReceita(int idUsuario) {
+        List<RelatorioMensal> valoresReceita = receitaRepository.getValorAgrupadoPorData(idUsuario);
+        return valoresReceita;
+
+    }
+
+    public List<RelatorioMensal> getValorGroupByDateDespesa(int idUsuario) {
+        List<RelatorioMensal> valoresDespesa = despesaRepository.getValorAgrupadoPorData(idUsuario);
+        return valoresDespesa;
+
+    }
+    public List<RelatorioMensal> getRelatorioGeralByData(int idUsuario){
+        List<RelatorioMensal> receitas = getValorGroupByDateReceita(idUsuario);
+
+        List<RelatorioMensal> despesas = getValorGroupByDateDespesa(idUsuario);
+        despesas.forEach(e -> e.setValor(e.getValor() * -1) );
+        List<RelatorioMensal> geral = new ArrayList<>();
+        for (RelatorioMensal r : receitas){
+            geral.add(r);
+        }
+        for (RelatorioMensal d: despesas){
+            geral.add(d);
+        }
+
+        for (int i = 0; i < geral.size(); i++){
+            RelatorioMensal relatorio1 = geral.get(i);
+            int mes1 = relatorio1.getMes();
+            int ano1 = relatorio1.getAno();
+            Double valor1 = relatorio1.getValor();
+            for (int a = i+1; a < geral.size();a++){
+                RelatorioMensal relatorio = geral.get(a);
+                int mes = relatorio.getMes();
+                int ano = relatorio.getAno();
+                Double valor = relatorio.getValor();
+
+                if (mes1 == mes && ano1 == ano){
+                    Double valorFinal = valor1 + valor;
+                    relatorio1.setValor(valorFinal);
+                    geral.remove(a);
+
+
+                }
+            }
+        }
+     return  geral;
     }
 
 }
