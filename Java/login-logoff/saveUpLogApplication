@@ -16920,3 +16920,7509 @@ ENDPOINT: criarReceita
 Status Code: 201 CREATED
 Log: SUCCESSFUL
 idUsuário: 15 - 26-11-2022 19:02:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:07
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:13
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:14
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:17:29
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:28:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:28:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:28:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:28:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:28:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:28:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:28:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:28:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:31:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:31:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:31:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:31:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:31:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:31:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:31:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:31:29
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:18
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:31
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:32
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:47
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:32:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:33:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:33:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:33:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:33:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:33:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:31
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:40
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:41
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:35:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:14
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:36
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:36:44
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:38:50
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:38:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:38:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:39:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:39:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:39:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:39:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:39:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:40:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:40:31
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:40:31
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:40:39
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:40:41
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:40:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:40:50
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:40:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:31
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:36
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:45
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:50
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:42:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:25
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:25
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:34
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:52
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:43:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:44:07
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:44:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:45:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:45:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:45:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:45:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:45:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:45:56
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:45:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:04
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:07
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:40
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:41
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:46
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:52
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:46:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:45
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:53
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:54
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:47:57
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:04
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:13
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:14
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:18
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:25
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:30
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:48:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:49:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:49:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:49:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:49:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:49:44
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:49:50
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:49:52
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:49:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:49:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:45
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:50:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:51:08
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:51:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:51:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:51:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:51:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:51:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:51:45
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:51:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:51:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:26
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:39
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:45
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:53
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:52:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:31
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:53:45
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:56:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:57:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:57:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:57:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:57:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:57:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:57:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:57:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:57:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:57:58
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:57:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:58:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:58:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:58:08
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:58:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 20:58:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:01:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:18
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:31
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:37
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:48
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:54
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:59
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:02:59
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:25
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:26
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:36
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:45
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:52
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:03:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:04
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:13
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:25
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:04:52
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:03
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:32
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:05:53
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:06:03
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:30
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:32
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:37
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:52
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:54:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:04
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:55:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:34
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:42
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:53
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:56:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:57:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:57:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:57:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:57:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:57:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:57:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:57:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:58:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:58:13
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:58:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:58:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:58:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:58:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:58:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:58:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:59:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:59:42
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:59:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:59:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 21:59:53
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:07
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:15
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:33
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:00:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:01:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:01:03
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:01:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:01:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:01:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:01:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:01:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:03:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:03:39
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:03:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:03:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:03:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:03:50
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:26
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:53
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:04:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:04
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:15
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:15
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:30
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:30
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:31
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:32
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:42
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:46
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:52
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:53
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:57
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:05:57
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:04
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:07
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:14
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:26
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:45
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:45
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:45
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:50
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:58
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:58
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:58
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:58
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:06:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:07
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:15
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:25
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:48
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:07:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:15
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:25
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:32
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:37
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:08:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:04
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:34
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:41
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:41
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:48
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:09:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:15
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:26
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:36
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:42
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:52
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:10:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:26
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:40
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:11:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:03
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:07
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:08
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:14
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:18
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:34
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:34
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:34
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:12:53
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:04
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:14
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:30
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:13:58
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:40
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:41
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:50
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:14:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:03
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:29
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:50
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:52
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:52
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:15:57
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:18
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:25
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:25
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:25
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:32
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:33
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:52
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:52
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:53
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:16:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:45
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:56
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:17:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:18:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:18:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:18:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:18:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:18:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:18:34
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:18:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:18:57
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:18:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:52
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:19:54
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:04
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:33
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:41
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:20:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:31
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:32
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:21:53
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:03
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:39
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:22:52
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:31
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:23:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:46
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:24:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:25:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:31
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:52
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:52
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:26:59
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:34
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:47
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:56
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:27:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:28:07
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:28:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:28:18
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:28:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:28:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:28:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:28:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:28:44
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:28:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:28:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:29:04
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:29:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:29:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:29:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:29:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:29:31
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:29:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:30:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:30:46
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:30:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:30:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:45
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:31:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:32:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:32:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:32:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:32:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:32:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:32:29
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:32:40
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:32:41
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:32:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:32:52
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:03
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:47
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:33:57
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:13
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:13
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:33
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:53
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:34:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:35:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:35:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:35:12
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:35:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:35:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:35:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:35:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:35:36
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:35:45
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:35:48
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:36:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:38:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:38:31
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:38:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:38:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:38:36
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:38:46
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:38:58
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:39:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:15
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:40:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:25
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:29
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:33
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:46
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:41:59
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:18
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:30
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:45
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:48
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:42:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:08
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:43:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:08
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:33
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:54
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:54
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:44:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:45:52
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:04
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:14
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:25
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:31
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:36
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:47
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:56
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:46:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:47:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:47:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:47:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:47:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:47:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:47:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:47:30
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:47:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:47:54
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:57:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:57:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:57:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:57:46
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:57:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:57:57
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:29
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:41
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:48
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:58:53
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:59:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:59:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:59:31
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:59:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:59:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:59:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:59:53
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 22:59:54
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:03
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:25
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:25
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:47
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:00:59
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:39
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:39
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:45
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:01:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:02:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:25
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:31
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:32
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:36
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:42
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:47
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:48
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:52
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:03:59
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:31
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:33
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:42
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:48
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:04:52
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:04
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:04
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:27
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:32
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:36
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:45
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:54
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:57
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:05:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:07
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:42
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:54
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:06:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:26
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:37
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:46
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:50
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:07:58
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:05
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:30
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:53
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:08:53
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:08
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:26
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 26-11-2022 23:09:36

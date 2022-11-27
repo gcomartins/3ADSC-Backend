@@ -38,4 +38,13 @@ public class RelatorioMensal {
     public void setAno(int ano) {
         this.ano = ano;
     }
+
+    @Override
+    public String toString() {
+        return "RelatorioMensal{" +
+                "valor=" + valor +
+                ", mes=" + mes +
+                ", ano=" + ano +
+                '}';
+    }
 }

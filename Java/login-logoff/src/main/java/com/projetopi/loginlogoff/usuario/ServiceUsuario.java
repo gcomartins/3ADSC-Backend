@@ -14,6 +14,7 @@ import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
 import net.bytebuddy.asm.Advice;
 import org.apache.tomcat.jni.Local;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.JdbcOperationsExtensionsKt;
 import org.springframework.stereotype.Service;
 
@@ -494,7 +495,51 @@ public class ServiceUsuario {
                 }
             }
         }
-     return  geral;
+//        List<RelatorioMensal> relatorio = this.organizarVetor(geral);
+        return  geral;
+    }
+    public List<RelatorioMensal> organizarVetor( List<RelatorioMensal> array){
+//
+        int indMenor;
+        LocalDate menorData;
+        for (int i = 0; i < array.size() - 1; i++) {
+            RelatorioMensal lista1 = array.get(i);
+            int mes1 = lista1.getMes();
+            int ano1 = lista1.getAno();
+            LocalDate data1= LocalDate.of(ano1,mes1,01);
+            menorData = data1;
+            indMenor = i;
+            for (int j = i + 1; j < array.size(); j++) {
+                RelatorioMensal lista =array.get(j);
+                int mes = lista.getMes();
+                int ano = lista.getAno();
+                LocalDate data= LocalDate.of(ano,mes,01);
+                if (data.isBefore(menorData)) {
+                    menorData = data1;
+                    indMenor = j;
+                }
+            }
+            RelatorioMensal aux;
+            aux = array.get(i);
+            array.set(i, array.get(indMenor));
+            array.set(indMenor, aux);
+        }
+    return array;
+    }
+
+    public  Double getSaldoMensal(int idUsuario){
+        LocalDate dataAtual = LocalDate.now();
+        Month dataAtualMes = dataAtual.getMonth();
+        Integer dataAtualAno = dataAtual.getYear();
+        List<RelatorioMensal> relatorio = getRelatorioGeralByData(idUsuario);
+        System.out.println(relatorio);
+        for (RelatorioMensal r: relatorio){
+            if (r.getMes().equals(11) && dataAtualAno.equals(r.getAno())){
+                return (r.getValor());
+            }
+        }
+        return 0.0;
+
     }
 
 }

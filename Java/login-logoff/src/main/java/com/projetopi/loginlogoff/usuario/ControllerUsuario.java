@@ -6,12 +6,14 @@ import com.projetopi.loginlogoff.financas.objetivo.ObjetivoRepository;
 import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
 import com.projetopi.loginlogoff.financas.RelatorioMensal;
+import net.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
+import java.time.Month;
 import java.util.List;
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
@@ -117,15 +119,26 @@ public class ControllerUsuario {
                                                           @RequestParam(required = false) Integer mes,
                                                           @RequestParam(required = false) Integer ano){
         List<Despesa> despesas = serviceUsuario.getHistoricoDespesa(idUsuario,mes,ano);
-        if (!despesas.isEmpty())
             return ResponseEntity.status(200).body(despesas);
-        return ResponseEntity.status(400).build();
     }
+
+
+
     @GetMapping("/valoresGraficoReceita/{idUsuario}")
     public List<RelatorioMensal> datasReceitas(@PathVariable Integer idUsuario){
             List<RelatorioMensal> relatorio = serviceUsuario.getRelatorioGeralByData(idUsuario);
        return relatorio ;
     }
+
+    @GetMapping("/valorSaldoMensal/{idUsuario}")
+    public ResponseEntity<Double> historicoReceitaUnica(@PathVariable Integer idUsuario,
+                                                          @RequestParam(required = false) Integer mes,
+                                                          @RequestParam(required = false) Integer ano){
+
+            return ResponseEntity.status(200).body(serviceUsuario.getSaldoMensal(idUsuario));
+    }
+
+
 
 
 
