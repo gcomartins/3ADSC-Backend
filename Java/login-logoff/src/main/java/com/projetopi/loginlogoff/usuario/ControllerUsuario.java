@@ -1,7 +1,9 @@
 package com.projetopi.loginlogoff.usuario;
 
+import com.projetopi.loginlogoff.ListaObj;
 import com.projetopi.loginlogoff.financas.despesa.Despesa;
 import com.projetopi.loginlogoff.financas.despesa.DespesaRepository;
+import com.projetopi.loginlogoff.financas.objetivo.Objetivo;
 import com.projetopi.loginlogoff.financas.objetivo.ObjetivoRepository;
 import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
@@ -137,11 +139,6 @@ public class ControllerUsuario {
 
             return ResponseEntity.status(200).body(serviceUsuario.getSaldoMensal(idUsuario));
     }
-
-
-
-
-
 }
 
 
