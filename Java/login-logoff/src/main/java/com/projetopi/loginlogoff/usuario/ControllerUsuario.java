@@ -6,17 +6,17 @@ import com.projetopi.loginlogoff.financas.objetivo.ObjetivoRepository;
 import com.projetopi.loginlogoff.financas.receita.Receita;
 import com.projetopi.loginlogoff.financas.receita.ReceitaRepository;
 import com.projetopi.loginlogoff.financas.RelatorioMensal;
-import net.bytebuddy.asm.Advice;
+import nonapi.io.github.classgraph.utils.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import javax.validation.Valid;
-import java.lang.annotation.Documented;
-import java.time.LocalDate;
-import java.time.Month;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
+
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
 @RequestMapping("/usuarios")
@@ -52,7 +52,7 @@ public class ControllerUsuario {
         return ResponseEntity.status(200).body(usuarios);
     }
 
-    @PutMapping("login/{email}/{senha}")
+    @PutMapping("/login/{email}/{senha}")
     public ResponseEntity<Usuario> login(@PathVariable String email, @PathVariable String senha) {
         Usuario usuario = usuarioRepository.findByEmailAndSenha(email,senha);
 
@@ -64,7 +64,7 @@ public class ControllerUsuario {
         return ResponseEntity.status(404).build();
     }
 
-    @PutMapping("logoff/{email}/{senha}")
+    @PutMapping("/logoff/{email}/{senha}")
     public ResponseEntity<Usuario> logoff(@PathVariable String email, @PathVariable String senha) {
         Usuario usuario = usuarioRepository.findByEmailAndSenha(email,senha);
         if (usuario == null) return ResponseEntity.status(404).build();
@@ -140,27 +140,32 @@ public class ControllerUsuario {
             return ResponseEntity.status(200).body(serviceUsuario.getSaldoMensal(idUsuario));
     }
 
-    @PatchMapping(value = "arquivoTxt/{idUsuario}",   consumes = "text/**")
-    public ResponseEntity<Byte[]> uploadArquivoTxt(
-            Byte[] arquivoTxt,
-            @PathVariable Integer idUsuario
+  @PostMapping(value = "upload/{nomeArquivo}/{idUsuario}", consumes = "text/plain")
+    public  ResponseEntity uploadTxt(@PathVariable Integer idUsuario,
+                                            @PathVariable String nomeArquivo,
+                                            @RequestBody byte[] arquivoTxt)throws IOException {
+        nomeArquivo += ".txt";
+      System.out.println("chamou");
+      String registro = new String(arquivoTxt);
+      final CountDownLatch latch = new CountDownLatch(1);
+        serviceUsuario.gravaRegistro(registro,nomeArquivo,true);
+        latch.countDown();
+        serviceUsuario.leArquivoTxt(nomeArquivo,idUsuario);
+        File file = new File(nomeArquivo);
+        file.delete();
+        serviceUsuario.gerarTxt(idUsuario,nomeArquivo);
+        return ResponseEntity.status(200).build();
+  }
+//    }
 
-    ){
-        System.out.println("arquivo txt");
-        usuarioRepository.setArquivoTxt(idUsuario,arquivoTxt);
-        return ResponseEntity.status(200).body(arquivoTxt);
+    @GetMapping (value = "/relatorio/{nomeArquivo}/{idUsuario}", produces = "text/plain.openxmlformats-officedocument.spreadsheetml.sheet")
+    public ResponseEntity<byte[]> dowloadArquivoTxt(@PathVariable int idUsuario,
+                                                @PathVariable String nomeArquivo){
+        nomeArquivo += ".txt";
+        byte[] relatorio = usuarioRepository.getArquivoTxt(idUsuario);
+        return ResponseEntity.status(200).header("content-disposition", "attachment; " +
+                "filename="+ nomeArquivo).body(relatorio);
     }
-//    }
-
-//    @GetMapping (value = "/relatorio/{nomeArquivo}/{idUsuario}", produces = "text/plain.openxmlformats-officedocument.spreadsheetml.sheet")
-//    public ResponseEntity<Byte[]> dowloadArquivoTxt(@PathVariable int idUsuario,
-//                                                @PathVariable String nomeArquivo){
-//
-//        nomeArquivo += "txt";
-//        Byte[] relatorio = usuarioRepository.getArquivoTxt(idUsuario);
-//        return ResponseEntity.status(200).header("content-disposition", "attachment; " +
-//                "filename="+ nomeArquivo).body(relatorio);
-//    }
 
 
 

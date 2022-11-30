@@ -31,7 +31,7 @@ public class Usuario {
     private LocalDate dataNascimento;
     private Boolean isAutenticado;
     @JsonIgnore
-    private Byte[] arquivoTxt;
+    private byte[] arquivoTxt;
 
 
     public Usuario(String nome, String email,

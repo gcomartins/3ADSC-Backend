@@ -108,6 +108,7 @@ public class ServiceUsuario {
         for (Despesa despesaAtual : despesas) {
             listaDespesas.adiciona(despesaAtual);
         }
+
         return gravaArquivoTxt(listaObjetivos, listaReceitas, listaDespesas, nomeArquivo);
 
 
@@ -202,7 +203,7 @@ public class ServiceUsuario {
     }
 
 
-    public String gravaRegistro(String registro, String nomeArq) {
+    public String gravaRegistro(String registro, String nomeArq, Boolean isUpload) {
         BufferedWriter saida = null;
 
         // try-catch para abrir o arquivo
@@ -238,7 +239,7 @@ public class ServiceUsuario {
         header += LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
         header += "01";
         // Grava o registro de header
-        gravaRegistro(header, nomeArq);
+        gravaRegistro(header, nomeArq,false);
 
         // Monta e grava os registros de corpo
         String corpo;
@@ -256,7 +257,7 @@ public class ServiceUsuario {
             corpo += String.format("%011.2f", objetivoAtual.getValorAtual()); //valor atual 11 espacos
             corpo += String.format("%-10.10s", objetivoAtual.getDataFinal()); //data final 10 espacos
             contaRegDados++;
-            gravaRegistro(corpo, nomeArq);
+            gravaRegistro(corpo, nomeArq, false);
         }
         for (int i = 0; i < listaReceita.getTamanho(); i++) {
             Receita receitaAtual = listaReceita.getElemento(i);
@@ -269,7 +270,7 @@ public class ServiceUsuario {
             corpo += String.format("%-5.5s", receitaAtual.isRecorrente()); //is recorrente 5
             corpo += String.format("%02d", receitaAtual.getFrequencia()); // frequencia 2
             contaRegDados++;
-            gravaRegistro(corpo, nomeArq);
+            gravaRegistro(corpo, nomeArq,false);
         }
 
         for (int i = 0; i < listaDespesa.getTamanho(); i++) {
@@ -282,17 +283,17 @@ public class ServiceUsuario {
             corpo += String.format("%-20.20s", despesaAtual.getCategoria()); //categoria 20
             corpo += String.format("%-5.5s", despesaAtual.isPago()); //is pago 5
             corpo += String.format("%03d", despesaAtual.getQtdParcelas());
-            gravaRegistro(corpo, nomeArq);
+            gravaRegistro(corpo, nomeArq,false);
         }
 
         // Monta e grava o registro de trailer
         String trailer = "01";
         trailer += String.format("%010d", contaRegDados);
-        return gravaRegistro(trailer, nomeArq);
+        return gravaRegistro(trailer, nomeArq,false);
     }
 
     public String leArquivoTxt(String nomeArq, int idUsuario) {
-        nomeArq = nomeArq + ".txt";
+        System.out.println("comecou a ler");
         BufferedReader entrada = null;
         String registro, tipoRegistro;
         //dados Objetivo
@@ -317,15 +318,17 @@ public class ServiceUsuario {
 
         // try-catch para ler e fechar o arquivo
         try {
+
             registro = entrada.readLine();       // Lê o 1o registro
 
             while (registro != null) {
-                tipoRegistro = registro.substring(0, 2);
+                   tipoRegistro = registro.substring(0, 2);
+
                 if (tipoRegistro.equals("00")) {
-//                    System.out.println("Registro de header");
-//                    System.out.println("Tipo de arquivo: " + registro.substring(2, 13));
-//                    System.out.println("Data e hora de gravação: " + registro.substring(13, 32));
-//                    System.out.println("Versão do documento: " + registro.substring(32, 34));
+                    System.out.println("Registro de header");
+                    System.out.println("Tipo de arquivo: " + registro.substring(2, 10));
+                    System.out.println("Data e hora de gravação: " + registro.substring(10, 29));
+                    System.out.println("Versão do documento: " + registro.substring(30, 31));
 
                 } else if (tipoRegistro.equals("01")) {
                     System.out.println("Registro de trailer");

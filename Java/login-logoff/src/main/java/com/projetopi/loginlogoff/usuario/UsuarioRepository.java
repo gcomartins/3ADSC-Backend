@@ -17,9 +17,9 @@ public interface UsuarioRepository extends JpaRepository<Usuario,Integer> {
     @Modifying
     @Transactional
     @Query(" update Usuario u set u.arquivoTxt = ?2 where u.id = ?1 ")
-    void setArquivoTxt(Integer id, Byte[] arquivoTxt);
+    void setArquivoTxt(Integer id, byte[] arquivoTxt);
 
     @Query("select u.arquivoTxt from Usuario u where u.id = ?1")
-    Byte[] getArquivoTxt(Integer idUsuario);
+    byte[] getArquivoTxt(Integer idUsuario);
 
 }
