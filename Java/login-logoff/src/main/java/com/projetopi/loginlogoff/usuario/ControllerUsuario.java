@@ -152,15 +152,15 @@ public class ControllerUsuario {
     }
 //    }
 
-    @GetMapping (value = "/relatorio/{nomeArquivo}/{idUsuario}", produces = "text/plain.openxmlformats-officedocument.spreadsheetml.sheet")
-    public ResponseEntity<Byte[]> dowloadArquivoTxt(@PathVariable int idUsuario,
-                                                @PathVariable String nomeArquivo){
-
-        nomeArquivo += "txt";
-        Byte[] relatorio = usuarioRepository.getArquivoTxt(idUsuario);
-        return ResponseEntity.status(200).header("content-disposition", "attachment; " +
-                "filename="+ nomeArquivo).body(relatorio);
-    }
+//    @GetMapping (value = "/relatorio/{nomeArquivo}/{idUsuario}", produces = "text/plain.openxmlformats-officedocument.spreadsheetml.sheet")
+//    public ResponseEntity<Byte[]> dowloadArquivoTxt(@PathVariable int idUsuario,
+//                                                @PathVariable String nomeArquivo){
+//
+//        nomeArquivo += "txt";
+//        Byte[] relatorio = usuarioRepository.getArquivoTxt(idUsuario);
+//        return ResponseEntity.status(200).header("content-disposition", "attachment; " +
+//                "filename="+ nomeArquivo).body(relatorio);
+//    }
 
 
 
