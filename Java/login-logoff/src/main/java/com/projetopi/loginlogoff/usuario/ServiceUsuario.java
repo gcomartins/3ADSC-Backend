@@ -470,8 +470,8 @@ public class ServiceUsuario {
                 }
             }
         }
-//        List<RelatorioMensal> relatorio = this.organizarVetor(geral);
-        return  geral;
+        List<RelatorioMensal> relatorio = this.organizarVetor(geral);
+        return  relatorio;
     }
     public List<RelatorioMensal> organizarVetor( List<RelatorioMensal> array){
 //
@@ -490,7 +490,7 @@ public class ServiceUsuario {
                 int ano = lista.getAno();
                 LocalDate data= LocalDate.of(ano,mes,01);
                 if (data.isBefore(menorData)) {
-                    menorData = data1;
+                    menorData = data;
                     indMenor = j;
                 }
             }

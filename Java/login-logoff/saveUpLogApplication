@@ -35847,3 +35847,15 @@ ENDPOINT: listarTodasReceitasDoUsuario
 Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuário: 40 - 30-11-2022 23:39:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 01-12-2022 12:15:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 15 - 01-12-2022 12:15:02
