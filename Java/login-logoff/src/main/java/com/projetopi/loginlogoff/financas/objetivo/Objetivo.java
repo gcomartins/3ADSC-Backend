@@ -1,14 +1,12 @@
 package com.projetopi.loginlogoff.financas.objetivo;
 
-import com.projetopi.loginlogoff.ListaObj;
 import com.projetopi.loginlogoff.financas.Financas;
-import com.projetopi.loginlogoff.usuario.Usuario;
-import org.apache.tomcat.jni.Local;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.*;
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.FutureOrPresent;
 import java.time.LocalDate;
-import java.util.Date;
 @Entity
 public class Objetivo extends Financas {
     @DecimalMin("0.1")

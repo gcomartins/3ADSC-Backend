@@ -39,6 +39,7 @@ Log: CLIENT_ERROR
 idUsuário: 1 - 03-11-2022 20:40:33
 
 -------------------- 
+<<<<<<< Updated upstream
 ENDPOINT: criarObjetivo 
 Status Code: 201 CREATED
 Log: SUCCESSFUL
@@ -57,10 +58,13 @@ Log: SUCCESSFUL
 idUsuário: 1 - 17-11-2022 22:08:02
 
 -------------------- 
+=======
+>>>>>>> Stashed changes
 ENDPOINT: atualizarObjetivo 
 Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuario: 1
+<<<<<<< Updated upstream
 idUObjetivo: 1 - 17-11-2022 22:10:22
 
 -------------------- 
@@ -334,11 +338,57 @@ ENDPOINT: listarTodasDespesasDoUsuario
 Status Code: 204 NO_CONTENT
 Log: SUCCESSFUL
 idUsuario: 1 - 20-11-2022 21:07:46
+=======
+idUObjetivo: 1 - 17-11-2022 22:09:34
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 1 - 17-11-2022 22:10:29
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 1 - 17-11-2022 22:12:45
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 1 - 17-11-2022 22:18:38
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 1 - 17-11-2022 22:23:11
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuario: 1
+idUObjetivo: 1 - 19-11-2022 22:45:16
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuario: 1
+idUObjetivo: 1 - 19-11-2022 22:46:48
+>>>>>>> Stashed changes
 
 -------------------- 
 ENDPOINT: criarObjetivo 
 Status Code: 201 CREATED
 Log: SUCCESSFUL
+<<<<<<< Updated upstream
 idUsuário: 1 - 20-11-2022 21:08:03
 
 -------------------- 
@@ -352,11 +402,15 @@ ENDPOINT: listarTodasReceitasDoUsuario
 Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuário: 1 - 20-11-2022 21:08:18
+=======
+idUsuário: 1 - 21-11-2022 17:44:35
+>>>>>>> Stashed changes
 
 -------------------- 
 ENDPOINT: listarTodosObjetivosDoUsuario 
 Status Code: 200 OK
 Log: SUCCESSFUL
+<<<<<<< Updated upstream
 idUsuário: 1 - 20-11-2022 21:09:24
 
 -------------------- 
@@ -24426,17 +24480,198 @@ ENDPOINT: listarTodasDespesasDoUsuario
 Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuário: 15 - 26-11-2022 23:09:36
+<<<<<<< HEAD
 
 -------------------- 
 ENDPOINT: listarTodasReceitasDoUsuario 
 Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuário: 15 - 27-11-2022 14:41:03
+=======
+=======
+idUsuário: 1 - 21-11-2022 17:45:35
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 23 - 21-11-2022 17:46:02
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 23 - 21-11-2022 17:53:46
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 23 - 21-11-2022 17:57:48
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 23 - 21-11-2022 18:10:54
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 23 - 21-11-2022 18:46:46
+>>>>>>> Stashed changes
+
+-------------------- 
+ENDPOINT: exibirObjetivoDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 18:52:00
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 19:02:54
+
+-------------------- 
+ENDPOINT: exibirObjetivoDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 19:03:09
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 24 - 29-11-2022 19:12:02
+
+-------------------- 
+ENDPOINT: exibirObjetivoDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 19:13:54
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 19:14:27
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 24 - 29-11-2022 19:14:47
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:02
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:02
+
+-------------------- 
+ENDPOINT: deletarDespesa 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:02
+
+-------------------- 
+ENDPOINT: deletarDespesa 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: deletarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: atualizarDespesa 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: atualizarDespesa 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: deletarTodasDespesas 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: deletarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:03
+>>>>>>> develop
 
 -------------------- 
 ENDPOINT: listarTodasDespesasDoUsuario 
 Status Code: 200 OK
 Log: SUCCESSFUL
+<<<<<<< HEAD
 idUsuário: 15 - 27-11-2022 14:41:04
 
 -------------------- 
@@ -24450,11 +24685,15 @@ ENDPOINT: listarTodasReceitasDoUsuario
 Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuário: 15 - 27-11-2022 14:43:18
+=======
+idUsuário: 1 - 29-11-2022 20:37:03
+>>>>>>> develop
 
 -------------------- 
 ENDPOINT: listarTodasDespesasDoUsuario 
 Status Code: 200 OK
 Log: SUCCESSFUL
+<<<<<<< HEAD
 idUsuário: 15 - 27-11-2022 14:43:19
 
 -------------------- 
@@ -24690,11 +24929,160 @@ ENDPOINT: listarTodasReceitasDoUsuario
 Status Code: 204 NO_CONTENT
 Log: SUCCESSFUL
 idUsuario: 11 - 30-11-2022 10:18:51
+=======
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: deletarTodasDespesas 
+Status Code: 202 ACCEPTED
+Log: SUCCESSFUL - 29-11-2022 20:37:03
+
+-------------------- 
+ENDPOINT: atualizarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:04
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:05
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:05
+
+-------------------- 
+ENDPOINT: deletarTodasDespesas 
+Status Code: 200 OK
+Log: SUCCESSFUL - 29-11-2022 20:37:05
+
+-------------------- 
+ENDPOINT: deletarTodasDespesas 
+Status Code: 200 OK
+Log: SUCCESSFUL - 29-11-2022 20:37:05
+
+-------------------- 
+ENDPOINT: atualizarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:05
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 2 - 29-11-2022 20:37:56
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuario: 1
+idUObjetivo: 2 - 29-11-2022 20:37:56
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:56
+
+-------------------- 
+ENDPOINT: deletarTodosObjetivos 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:56
+
+-------------------- 
+ENDPOINT: deletarTodosObjetivos 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:56
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1
+idObjetivo: 2 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: exibirObjetivoDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: exibirObjetivoDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: deletarTodosObjetivos 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1
+idObjetivo: 2 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:57
+>>>>>>> develop
 
 -------------------- 
 ENDPOINT: listarTodosObjetivosDoUsuario 
 Status Code: 204 NO_CONTENT
 Log: SUCCESSFUL
+<<<<<<< HEAD
 idUsuario: 11 - 30-11-2022 10:19:00
 
 -------------------- 
@@ -24930,11 +25318,15 @@ ENDPOINT: listarTodasReceitasDoUsuario
 Status Code: 204 NO_CONTENT
 Log: SUCCESSFUL
 idUsuario: 11 - 30-11-2022 10:21:03
+=======
+idUsuario: 1 - 29-11-2022 20:37:57
+>>>>>>> develop
 
 -------------------- 
 ENDPOINT: listarTodosObjetivosDoUsuario 
 Status Code: 204 NO_CONTENT
 Log: SUCCESSFUL
+<<<<<<< HEAD
 idUsuario: 11 - 30-11-2022 10:21:07
 
 -------------------- 
@@ -35274,15 +35666,106 @@ ENDPOINT: listarTodasReceitasDoUsuario
 Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuário: 40 - 30-11-2022 21:09:29
+=======
+idUsuario: 1 - 29-11-2022 20:37:57
+>>>>>>> develop
 
 -------------------- 
 ENDPOINT: criarObjetivo 
 Status Code: 201 CREATED
 Log: SUCCESSFUL
+<<<<<<< HEAD
 idUsuário: 1 - 30-11-2022 21:11:45
+=======
+idUsuário: 1 - 29-11-2022 20:37:57
+>>>>>>> develop
 
 -------------------- 
 ENDPOINT: criarObjetivo 
 Status Code: 201 CREATED
 Log: SUCCESSFUL
+<<<<<<< HEAD
 idUsuário: 40 - 30-11-2022 21:11:52
+=======
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuario: 1
+idObjetivo: 2 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: deletarTodosObjetivos 
+Status Code: 202 ACCEPTED
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: exibirObjetivoDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuario: 1
+idObjetivo: 2 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: exibirObjetivoDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuario: 1
+idObjetivo: 2 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: exibirObjetivoDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuario: 1
+idObjetivo: 2 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: exibirObjetivoDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuario: 1
+idObjetivo: 2 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: listarTodosObjetivosDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: criarObjetivo 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: atualizarObjetivo 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuario: 1
+idObjetivo: 2 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1
+idObjetivo: 2 - 29-11-2022 20:37:57
+
+-------------------- 
+ENDPOINT: deletarObjetivo 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1
+idObjetivo: 2 - 29-11-2022 20:37:57
+>>>>>>> develop

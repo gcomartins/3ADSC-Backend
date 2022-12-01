@@ -1,6 +1,9 @@
 package com.projetopi.loginlogoff.financas.despesa;
 
 
+import com.projetopi.loginlogoff.financas.despesa.Despesa;
+import com.projetopi.loginlogoff.financas.despesa.DespesaController;
+import com.projetopi.loginlogoff.financas.despesa.DespesaRepository;
 import com.projetopi.loginlogoff.financas.despesa.dto.DespesaDto;
 import com.projetopi.loginlogoff.usuario.Usuario;
 import com.projetopi.loginlogoff.usuario.UsuarioRepository;
