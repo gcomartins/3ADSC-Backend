@@ -19,6 +19,7 @@ import org.springframework.jdbc.core.JdbcOperationsExtensionsKt;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
+import java.nio.file.Files;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
@@ -29,6 +30,7 @@ import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.FormatterClosedException;
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
 
 @Service
 public class ServiceUsuario {
@@ -91,7 +93,7 @@ public class ServiceUsuario {
     }
 
     public String gerarTxt(int idUsuario, String nomeArquivo) {
-        nomeArquivo = nomeArquivo + ".txt";
+        System.out.println("gerarTxt");
         List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByData(idUsuario);
         List<Receita> receitas = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
         List<Despesa> despesas = despesaRepository.findByUsuarioIdOrderByData(idUsuario);
@@ -320,8 +322,7 @@ public class ServiceUsuario {
         try {
 
             registro = entrada.readLine();       // Lê o 1o registro
-
-            while (registro != null) {
+           while (registro != null){
                    tipoRegistro = registro.substring(0, 2);
 
                 if (tipoRegistro.equals("00")) {
@@ -398,7 +399,7 @@ public class ServiceUsuario {
                             , isPago, parcelas);
                     despesaController.criarDespesa(idUsuario, despesa);
                 }
-                // Lê o próximo registro
+
                 registro = entrada.readLine();
             }
             entrada.close();
@@ -542,6 +543,34 @@ public class ServiceUsuario {
             }
         }
         return 0.0;
+
+    }
+
+    public void recebendoArquivoEGrandoInfoBanco( Integer idUsuario, String nomeArquivo, byte[] arquivoTxt) throws IOException {
+        nomeArquivo += ".txt";
+        System.out.println("chamou");
+        String registro = new String(arquivoTxt);
+        final CountDownLatch latch = new CountDownLatch(1);
+        gravaRegistro(registro,nomeArquivo,true);
+        leArquivoTxt(nomeArquivo,idUsuario);
+        System.out.println("leu o primeiro arquivo com sucesso");
+        File file = new File(nomeArquivo);
+        file.delete();
+//        gerarTxt(idUsuario,nomeArquivo);
+//        System.out.println("gerou o segundo arquivo");
+        System.out.println("chamou a segunda funcao");
+        gerandoArquivoCompletoEGravandoBanco(idUsuario,nomeArquivo);
+    }
+
+    public void gerandoArquivoCompletoEGravandoBanco(Integer idUsuario,String nomeArquivo)
+            throws IOException{
+        System.out.println("gerando o segundo arquivo");
+        gerarTxt(idUsuario,"nomeArquivo");
+        File file = new File("nomeArquivo");
+        byte[] arr = Files.readAllBytes(file.toPath());
+        file.delete();
+
+        usuarioRepository.setArquivoTxt(idUsuario,arr);
 
     }
 

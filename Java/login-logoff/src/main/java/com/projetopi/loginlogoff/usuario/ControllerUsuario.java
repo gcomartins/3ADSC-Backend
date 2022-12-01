@@ -143,26 +143,19 @@ public class ControllerUsuario {
   @PostMapping(value = "upload/{nomeArquivo}/{idUsuario}", consumes = "text/plain")
     public  ResponseEntity uploadTxt(@PathVariable Integer idUsuario,
                                             @PathVariable String nomeArquivo,
-                                            @RequestBody byte[] arquivoTxt)throws IOException {
-        nomeArquivo += ".txt";
-      System.out.println("chamou");
-      String registro = new String(arquivoTxt);
-      final CountDownLatch latch = new CountDownLatch(1);
-        serviceUsuario.gravaRegistro(registro,nomeArquivo,true);
-        latch.countDown();
-        serviceUsuario.leArquivoTxt(nomeArquivo,idUsuario);
-        File file = new File(nomeArquivo);
-        file.delete();
-        serviceUsuario.gerarTxt(idUsuario,nomeArquivo);
-        return ResponseEntity.status(200).build();
+                                            @RequestBody byte[] arquivoTxt) throws IOException {
+       serviceUsuario.recebendoArquivoEGrandoInfoBanco(idUsuario,nomeArquivo,arquivoTxt);
+       return ResponseEntity.status(200).build();
   }
 //    }
 
     @GetMapping (value = "/relatorio/{nomeArquivo}/{idUsuario}", produces = "text/plain.openxmlformats-officedocument.spreadsheetml.sheet")
     public ResponseEntity<byte[]> dowloadArquivoTxt(@PathVariable int idUsuario,
-                                                @PathVariable String nomeArquivo){
+                                                @PathVariable String nomeArquivo) throws IOException {
         nomeArquivo += ".txt";
+        serviceUsuario.gerandoArquivoCompletoEGravandoBanco(idUsuario, nomeArquivo);
         byte[] relatorio = usuarioRepository.getArquivoTxt(idUsuario);
+        System.out.println(relatorio);
         return ResponseEntity.status(200).header("content-disposition", "attachment; " +
                 "filename="+ nomeArquivo).body(relatorio);
     }
