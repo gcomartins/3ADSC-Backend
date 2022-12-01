@@ -157,7 +157,6 @@ public class ControllerUsuario {
         nomeArquivo += ".txt";
         serviceUsuario.gerandoArquivoCompletoEGravandoBanco(idUsuario, nomeArquivo);
         byte[] relatorio = usuarioRepository.getArquivoTxt(idUsuario);
-        System.out.println(relatorio);
         return ResponseEntity.status(200).header("content-disposition", "attachment; " +
                 "filename="+ nomeArquivo).body(relatorio);
     }
