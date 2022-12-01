@@ -93,7 +93,6 @@ public class ServiceUsuario {
     }
 
     public String gerarTxt(int idUsuario, String nomeArquivo) {
-        System.out.println("gerarTxt");
         List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByData(idUsuario);
         List<Receita> receitas = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
         List<Despesa> despesas = despesaRepository.findByUsuarioIdOrderByData(idUsuario);
@@ -295,7 +294,6 @@ public class ServiceUsuario {
     }
 
     public String leArquivoTxt(String nomeArq, int idUsuario) {
-        System.out.println("comecou a ler");
         BufferedReader entrada = null;
         String registro, tipoRegistro;
         //dados Objetivo
@@ -325,23 +323,8 @@ public class ServiceUsuario {
            while (registro != null){
                    tipoRegistro = registro.substring(0, 2);
 
-                if (tipoRegistro.equals("00")) {
-                    System.out.println("Registro de header");
-                    System.out.println("Tipo de arquivo: " + registro.substring(2, 10));
-                    System.out.println("Data e hora de gravação: " + registro.substring(10, 29));
-                    System.out.println("Versão do documento: " + registro.substring(30, 31));
 
-                } else if (tipoRegistro.equals("01")) {
-                    System.out.println("Registro de trailer");
-                    qtdRegDadoGravadoTrailer = Integer.valueOf(registro.substring(2, 12));
-                    if (contaRegDadoLido == qtdRegDadoGravadoTrailer) {
-                        System.out.println("Quantidade de registros lidos compatível com " +
-                                "quantidade de registros gravados");
-                    } else {
-                        System.out.println("Quantidade de registros lidos incompatível com " +
-                                "quantidade de registros gravados");
-                    }
-                } else if (tipoRegistro.equals("02")) {
+                  if (tipoRegistro.equals("02")) {
                     nomeObjetivo = registro.substring(2, 52).trim();
                     descricaoObjetivo = registro.substring(52, 152).trim();
                     valorObjetivo = Double.valueOf(registro.substring(152, 163).replace(',', '.'));
@@ -417,18 +400,12 @@ public class ServiceUsuario {
             return receitas;
         } else if (ano != null && mes != null) {
             dataAtual = dataAtual.withYear(ano);
-            System.out.println("if ano  e mes");
-            System.out.println(dataAtual);
         }
         if (mes != null) {
             dataAtual = dataAtual.withMonth(mes).with(TemporalAdjusters.lastDayOfMonth());
-            System.out.println(dataAtual);
         }
-        System.out.println(dataAtual);
         LocalDate aPartirDe = LocalDate.of(dataAtual.getYear(), dataAtual.getMonth(), 01);
         List<Receita> receitas = receitaRepository.findByUsuarioIdAndDataBetween(idUsuario, aPartirDe, dataAtual);
-        System.out.println("a partir de " + aPartirDe);
-        System.out.println(receitas);
         return receitas;
     }
 
@@ -439,18 +416,12 @@ public class ServiceUsuario {
             return despesas;
         } else if (ano != null && mes != null) {
             dataAtual = dataAtual.withYear(ano);
-            System.out.println("if ano  e mes");
-            System.out.println(dataAtual);
         }
         if (mes != null) {
             dataAtual = dataAtual.withMonth(mes).with(TemporalAdjusters.lastDayOfMonth());
-            System.out.println(dataAtual);
         }
-        System.out.println(dataAtual);
         LocalDate aPartirDe = LocalDate.of(dataAtual.getYear(), dataAtual.getMonth(), 01);
         List<Despesa> despesas = despesaRepository.findByUsuarioIdAndDataBetween(idUsuario, aPartirDe, dataAtual);
-        System.out.println("a partir de " + aPartirDe);
-        System.out.println(despesas);
         return despesas;
     }
 
@@ -536,7 +507,6 @@ public class ServiceUsuario {
         Month dataAtualMes = dataAtual.getMonth();
         Integer dataAtualAno = dataAtual.getYear();
         List<RelatorioMensal> relatorio = getRelatorioGeralByData(idUsuario);
-        System.out.println(relatorio);
         for (RelatorioMensal r: relatorio){
             if (r.getMes().equals(11) && dataAtualAno.equals(r.getAno())){
                 return (r.getValor());
@@ -548,23 +518,17 @@ public class ServiceUsuario {
 
     public void recebendoArquivoEGrandoInfoBanco( Integer idUsuario, String nomeArquivo, byte[] arquivoTxt) throws IOException {
         nomeArquivo += ".txt";
-        System.out.println("chamou");
         String registro = new String(arquivoTxt);
         final CountDownLatch latch = new CountDownLatch(1);
         gravaRegistro(registro,nomeArquivo,true);
         leArquivoTxt(nomeArquivo,idUsuario);
-        System.out.println("leu o primeiro arquivo com sucesso");
         File file = new File(nomeArquivo);
         file.delete();
-//        gerarTxt(idUsuario,nomeArquivo);
-//        System.out.println("gerou o segundo arquivo");
-        System.out.println("chamou a segunda funcao");
         gerandoArquivoCompletoEGravandoBanco(idUsuario,nomeArquivo);
     }
 
     public void gerandoArquivoCompletoEGravandoBanco(Integer idUsuario,String nomeArquivo)
             throws IOException{
-        System.out.println("gerando o segundo arquivo");
         gerarTxt(idUsuario,"nomeArquivo");
         File file = new File("nomeArquivo");
         byte[] arr = Files.readAllBytes(file.toPath());

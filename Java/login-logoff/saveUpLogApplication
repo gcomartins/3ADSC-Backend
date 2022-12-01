@@ -35769,3 +35769,81 @@ Log: SUCCESSFUL
 idUsuário: 1
 idObjetivo: 2 - 29-11-2022 20:37:57
 >>>>>>> develop
+
+-------------------- 
+ENDPOINT: criarObjetivo 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:31:54
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:31:56
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:31:58
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:32:00
+
+-------------------- 
+ENDPOINT: criarObjetivo 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:34:21
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:34:23
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:34:25
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:34:27
+
+-------------------- 
+ENDPOINT: criarObjetivo 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:36:30
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:36:32
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:36:34
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:36:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 40 - 30-11-2022 23:39:12
