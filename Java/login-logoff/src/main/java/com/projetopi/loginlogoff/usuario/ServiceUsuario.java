@@ -538,4 +538,17 @@ public class ServiceUsuario {
 
     }
 
-}
+    public Usuario logoff(String email, String senha){
+        // se o usuario existir ele verifica se o mesmo está logado, desloga ele e retorna o usuario para a controller
+        Usuario usuario = usuarioRepository.findByEmailAndSenha(email, senha);
+        if (usuario == null) return null;
+        if(usuario.getAutenticado()) {
+            usuario.setAutenticado(false);
+            usuarioRepository.save(usuario);
+            return usuario;
+        } else  {
+            return null;
+        }
+    }
+};
+

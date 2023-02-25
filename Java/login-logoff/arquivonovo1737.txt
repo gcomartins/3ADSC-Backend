@@ -1,2 +1,0 @@
-00FINANCAS30-11-2022 17:37:1301
-03string                                            string                                                                                              00000025,002022-07-26Comida              false01

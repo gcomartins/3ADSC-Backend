@@ -35859,3 +35859,9 @@ ENDPOINT: listarTodasDespesasDoUsuario
 Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuário: 15 - 01-12-2022 12:15:02
+
+-------------------- 
+ENDPOINT: criarObjetivo 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 25-02-2023 20:00:02
