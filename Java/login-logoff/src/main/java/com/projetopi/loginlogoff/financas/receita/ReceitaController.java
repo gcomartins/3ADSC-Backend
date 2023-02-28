@@ -22,157 +22,57 @@ public class ReceitaController {
 
     @Autowired
     UsuarioRepository usuarioRepository;
+    @Autowired
+    private ReceitaService receitaService;
     Log log = new Log();
 
     @GetMapping("/{idUsuario}")
     public ResponseEntity<List<Receita>> listarTodasReceitasDoUsuario(@PathVariable int idUsuario) {
-        if (usuarioRepository.existsById(idUsuario)) {
-            List<Receita> todasReceitasDoUsuario = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
-            if (todasReceitasDoUsuario.isEmpty()) {
-                ResponseEntity respostaVazio = ResponseEntity.status(204).build();
-                String statusCode = respostaVazio.getStatusCode().toString();
-                String logResposta = respostaVazio.getStatusCode().series().toString();
-                String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuario: " + idUsuario;
-                log.gravaLog(textoLog);
-                return respostaVazio;
-            }
-            ResponseEntity respostaOk = ResponseEntity.status(200).body(todasReceitasDoUsuario);
-            String statusCode = respostaOk.getStatusCode().toString();
-            String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-            log.gravaLog(textoLog);
-            return respostaOk;
+        List<Receita> resposta = receitaService.listarTodasReceitasDoUsuario(idUsuario);
+        if (resposta != null) {
+            return resposta.isEmpty() ? ResponseEntity.status(204).build() : ResponseEntity.status(200).body(resposta);
+
         }
-        ResponseEntity respostaErro = ResponseEntity.status(404).build();
-        String statusCode = respostaErro.getStatusCode().toString();
-        String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-        log.gravaLog(textoLog);
-        return respostaErro;
+        return ResponseEntity.status(404).build();
+
     }
 
     @GetMapping("/{idUsuario}/{idReceita}")
-    public ResponseEntity<Receita> buscarReceitaDoUsuario(@PathVariable int idUsuario, @PathVariable int idReceita) {
-        if (usuarioRepository.existsById(idUsuario) && receitaRepository.existsById(idReceita)) {
-            Optional receita = receitaRepository.findByUsuarioIdAndCodigo(idUsuario,idReceita);
-            if (receita.isPresent()){
-                ResponseEntity respostaOk = ResponseEntity.status(200).body(receita.get());
-                String statusCode = respostaOk.getStatusCode().toString();
-                String logResposta = respostaOk.getStatusCode().series().toString();
-                String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: "
-                        + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario + "\nidReceita: " + idReceita;
-                log.gravaLog(textoLog);
-                return respostaOk;
-            }
+    public ResponseEntity <Receita> buscarReceitaDoUsuario(@PathVariable int idUsuario, @PathVariable int idReceita) {
+        Optional<Receita> resposta = receitaService.buscarReceitaDoUsuario(idUsuario, idReceita);
+        if (resposta != null) {
+            return resposta.isEmpty() ? ResponseEntity.status(204).build() : ResponseEntity.status(200).body(resposta.get());
         }
-        ResponseEntity respostaErro = ResponseEntity.status(404).build();
-        String statusCode = respostaErro.getStatusCode().toString();
-        String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\n-------------------- \nENDPOINT: listarTodasReceitasDoUsuario \nStatus Code: " + statusCode + "\nLog: "
-                + logResposta + "\nidUsuário: " + idUsuario + "\nidReceita: " + idReceita;
-        log.gravaLog(textoLog);
-        return respostaErro;
+        return ResponseEntity.status(404).build();
     }
+
 
     @PostMapping("/{idUsuario}")
     public ResponseEntity<Receita> criarReceita(@Valid @PathVariable int idUsuario, @RequestBody Receita receita) {
-        if (usuarioRepository.existsById(idUsuario)) {
-            Optional<Usuario> usuario = usuarioRepository.findById(idUsuario);
-            receita.setUsuario(usuario.get());
-            ResponseEntity respostaOk = ResponseEntity.status(201).body(receitaRepository.save(receita));
-            String statusCode = respostaOk.getStatusCode().toString();
-            String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\n-------------------- \nENDPOINT: criarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-            log.gravaLog(textoLog);
-            return respostaOk;
-        }
-        ResponseEntity respostaErro = ResponseEntity.status(404).build();
-        String statusCode = respostaErro.getStatusCode().toString();
-        String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\n-------------------- \nENDPOINT: criarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-        log.gravaLog(textoLog);
-        return respostaErro;
+        Receita resposta = receitaService.criarReceita(idUsuario, receita);
+        return resposta != null ? ResponseEntity.status(201).body(receita) : ResponseEntity.status(400).build();
     }
 
     @PutMapping("/{idUsuario}/{idReceita}")
     public ResponseEntity<Receita> atualizarReceita(@Valid @PathVariable int idUsuario, @PathVariable int idReceita,
                                                     @RequestBody Receita receita) {
-        if (usuarioRepository.existsById(idUsuario) && receitaRepository.existsById(idReceita)) {
-            Receita receitaAtualizada = new Receita(
-                    idReceita,
-                    receita.getNome(),
-                    receita.getDescricao(),
-                    receita.getValor(),
-                    receita.getData(),
-                    receita.getCategoria(),
-                    receita.isRecorrente(),
-                    receita.getFrequencia()
-            );
-            Optional<Usuario> usuario = usuarioRepository.findById(idUsuario);
-            receitaAtualizada.setUsuario(usuario.get());
-            ResponseEntity respostaOk = ResponseEntity.status(200).body(receitaRepository.save(receitaAtualizada));
-            String statusCode = respostaOk.getStatusCode().toString();
-            String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\n-------------------- \nENDPOINT: atualizarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-            log.gravaLog(textoLog);
-            return respostaOk;
-        }
-        ResponseEntity respostaErro = ResponseEntity.status(404).build();
-        String statusCode = respostaErro.getStatusCode().toString();
-        String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\n-------------------- \nENDPOINT: atualizarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-        log.gravaLog(textoLog);
-        return respostaErro;
+        Receita resposta = receitaService.atualizarReceita(idUsuario, idReceita, receita);
+        if (resposta != null) return ResponseEntity.status(200).body(resposta);
+        return ResponseEntity.status(404).build();
     }
 
     @DeleteMapping("/{idUsuario}/{idReceita}")
-    public ResponseEntity<Receita> deletarReceita(@PathVariable int idUsuario, @PathVariable int idReceita) {
-        if (usuarioRepository.existsById(idUsuario) && receitaRepository.existsById(idReceita)) {
-            Optional<Receita> receita = receitaRepository.findById(idReceita);
-            receitaRepository.deleteById(idReceita);
-            ResponseEntity respostaOk = ResponseEntity.status(200).body(receita.get());
-            String statusCode = respostaOk.getStatusCode().toString();
-            String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\n-------------------- \nENDPOINT: deletarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-            log.gravaLog(textoLog);
-            return respostaOk;
-        }
-        ResponseEntity respostaErro = ResponseEntity.status(404).build();
-        String statusCode = respostaErro.getStatusCode().toString();
-        String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\n-------------------- \nENDPOINT: deletarReceita \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-        log.gravaLog(textoLog);
-        return respostaErro;
+    public ResponseEntity<Receita>  deletarReceita(@PathVariable int idUsuario, @PathVariable int idReceita) {
+        Optional<Receita> resposta = receitaService.deletarReceita(idUsuario, idReceita);
+        return resposta != null ? ResponseEntity.status(200).body(resposta.get()) : ResponseEntity.status(404).build();
     }
 
     @DeleteMapping("/deletarTodas/{idUsuario}")
     public ResponseEntity<List<Receita>> deletarTodasReceitas(@PathVariable int idUsuario) {
-        if (usuarioRepository.existsById(idUsuario)) {
-            List<Receita> todasReceitasDoUsuario = receitaRepository.findByUsuarioIdOrderByData(idUsuario);
-            if (todasReceitasDoUsuario.size() == 0) {
-                ResponseEntity respostaVazio = ResponseEntity.status(202).build();
-                String statusCode = respostaVazio.getStatusCode().toString();
-                String logResposta = respostaVazio.getStatusCode().series().toString();
-                String textoLog = "\n-------------------- \nENDPOINT: deletarTodasReceitas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
-                log.gravaLog(textoLog);
-                return respostaVazio;
-            }
-            for (int i = 0; i < todasReceitasDoUsuario.size(); i++) {
-                receitaRepository.deleteById(todasReceitasDoUsuario.get(i).getCodigo());
-            }
-            ResponseEntity respostaOk = ResponseEntity.status(200).body(todasReceitasDoUsuario);
-            String statusCode = respostaOk.getStatusCode().toString();
-            String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\n-------------------- \nENDPOINT: deletarTodasReceitas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
-            log.gravaLog(textoLog);
-            return respostaOk;
-        }
-        ResponseEntity respostaErro = ResponseEntity.status(404).build();
-        String statusCode = respostaErro.getStatusCode().toString();
-        String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\n-------------------- \nENDPOINT: deletarTodasReceitas \nStatus Code: " + statusCode + "\nLog: " + logResposta;
-        log.gravaLog(textoLog);
-        return respostaErro;
+        List<Receita> resposta = receitaService.deletarTodasReceitas(idUsuario);
+        if (resposta != null) return resposta.isEmpty() ? ResponseEntity.status(202).build() :
+                ResponseEntity.status(200).body(resposta);
+        else return ResponseEntity.status(404).build();
     }
 
 }

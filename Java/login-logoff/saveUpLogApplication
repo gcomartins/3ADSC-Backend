@@ -35859,3 +35859,66 @@ ENDPOINT: listarTodasDespesasDoUsuario
 Status Code: 200 OK
 Log: SUCCESSFUL
 idUsuário: 15 - 01-12-2022 12:15:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 27-02-2023 21:40:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1
+idReceita: 46 - 27-02-2023 21:41:09
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 27-02-2023 21:42:07
+
+-------------------- 
+ENDPOINT: atualizarReceita 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 27-02-2023 21:42:44
+
+-------------------- 
+ENDPOINT: deletarReceita 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 27-02-2023 21:43:07
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 27-02-2023 21:43:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1
+idReceita: 444 - 27-02-2023 21:43:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 390 - 27-02-2023 21:44:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 44444 - 27-02-2023 21:45:44
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1
+idReceita: 7777 - 27-02-2023 21:45:51
