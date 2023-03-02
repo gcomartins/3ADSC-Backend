@@ -76,29 +76,5 @@ public class ObjetivoController {
         else return ResponseEntity.status(404).build();
 
     }
-
-    @DeleteMapping("/pilha/{idUsuario}")
-    public ResponseEntity<Objetivo> deletarObjetivoPilha(@PathVariable int idUsuario) {
-        if (usuarioRepository.existsById(idUsuario) && objetivoRepository.countByUsuarioId(idUsuario) > 0) {
-            List<Objetivo> objetivos = objetivoRepository.findByUsuarioIdOrderByCodigo(idUsuario);
-            PilhaObj<Objetivo> pilhaDeObjetivo = new PilhaObj<Objetivo>(objetivos.size());
-            for (int i = 0; i < objetivos.size(); i++) {
-                pilhaDeObjetivo.push(objetivos.get(i));
-            }
-            Objetivo objetivoDeletado = pilhaDeObjetivo.peek();
-            objetivoRepository.deleteById(objetivoDeletado.getCodigo());
-            ResponseEntity respostaOk = ResponseEntity.status(200).body(pilhaDeObjetivo.pop());
-            String statusCode = respostaOk.getStatusCode().toString();
-            String logResposta = respostaOk.getStatusCode().series().toString();
-            String textoLog = "\n-------------------- \nENDPOINT: deletarObjetivo \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-            log.gravaLog(textoLog);
-            return respostaOk;
-        }
-        ResponseEntity respostaErro = ResponseEntity.status(404).build();
-        String statusCode = respostaErro.getStatusCode().toString();
-        String logResposta = respostaErro.getStatusCode().series().toString();
-        String textoLog = "\n-------------------- \nENDPOINT: deletarObjetivo \nStatus Code: " + statusCode + "\nLog: " + logResposta + "\nidUsuário: " + idUsuario;
-        log.gravaLog(textoLog);
-        return respostaErro;
-    }
+    
 }
