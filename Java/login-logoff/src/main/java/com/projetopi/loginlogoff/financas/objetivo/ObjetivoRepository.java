@@ -17,4 +17,5 @@ public interface ObjetivoRepository extends JpaRepository<Objetivo,Integer> {
     List<Objetivo> findByUsuarioIdOrderByCodigo(int usuarioId);
 
 
+
 }

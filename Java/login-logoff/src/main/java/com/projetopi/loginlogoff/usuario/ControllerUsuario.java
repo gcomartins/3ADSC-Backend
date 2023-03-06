@@ -68,16 +68,11 @@ public class ControllerUsuario {
 
     @PutMapping("/logoff/{email}/{senha}")
     public ResponseEntity<Usuario> logoff(@PathVariable String email, @PathVariable String senha) {
-        Usuario usuario = usuarioRepository.findByEmailAndSenha(email,senha);
-        if (usuario == null) return ResponseEntity.status(404).build();
-        if(usuario.getAutenticado()) {
-            usuario.setAutenticado(false);
-            usuarioRepository.save(usuario);
-            return ResponseEntity.status(200).body(usuario);
-        } else if (!usuario.getAutenticado()) {
-            return ResponseEntity.status(401).build();
+        Usuario usuarioOff = serviceUsuario.logoff(email,senha);
+        if (usuarioOff != null){
+            return ResponseEntity.status(200).body(usuarioOff);
         }
-        return ResponseEntity.status(404).build();
+        return ResponseEntity.status(401).build();
     }
 
     @PutMapping("/{senhaAntiga}/{emailAntigo}")
