@@ -36119,3 +36119,325 @@ ENDPOINT: listarTodosObjetivosDoUsuario
 Status Code: 204 NO_CONTENT
 Log: SUCCESSFUL
 idUsuario: 1 - 26-02-2023 22:10:51
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: deletarDespesa 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: deletarDespesa 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: deletarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: atualizarDespesa 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: atualizarDespesa 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: deletarTodasDespesas 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: deletarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: deletarTodasDespesas 
+Status Code: 202 ACCEPTED
+Log: SUCCESSFUL - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: atualizarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: deletarTodasDespesas 
+Status Code: 200 OK
+Log: SUCCESSFUL - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: deletarTodasDespesas 
+Status Code: 200 OK
+Log: SUCCESSFUL - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: atualizarDespesa 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:22
+
+-------------------- 
+ENDPOINT: deletarReceita 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: deletarReceita 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: deletarReceita 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: deletarTodasReceitas 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: atualizarReceita 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: atualizarReceita 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: deletarReceita 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: deletarTodasReceitas 
+Status Code: 200 OK
+Log: SUCCESSFUL - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: deletarTodasReceitas 
+Status Code: 200 OK
+Log: SUCCESSFUL - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1
+idReceita: 2 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1
+idReceita: 2 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: atualizarReceita 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: deletarTodasReceitas 
+Status Code: 202 ACCEPTED
+Log: SUCCESSFUL - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1
+idReceita: 2 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1
+idReceita: 2 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1
+idReceita: 2 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1
+idReceita: 2 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: atualizarReceita 
+Status Code: 404 NOT_FOUND
+Log: CLIENT_ERROR
+idUsuário: 1 - 10-04-2023 21:36:27
