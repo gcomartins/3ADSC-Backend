@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
-@CrossOrigin(originPatterns = {"52.21.234.127", "34.193.115.180"}, maxAge = 3600)
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/usuarios")
 public class ControllerUsuario {
