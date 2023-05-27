@@ -27,6 +27,6 @@
 		</junit>
 	</target>
 	<target name="jar" depends="test">
-		<jar destfile="target/projeto-orm-ads-0.0.1-SNAPSHOT.jar" basedir="target/classes/" />
+		<jar destfile="Java/login-logoff/target/projeto-orm-ads-0.0.1-SNAPSHOT.jar" basedir="target/classes/" />
 	</target>
 </project>
