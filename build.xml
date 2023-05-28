@@ -1,5 +1,8 @@
 <project name="Projecto de Exemplo para BUILD via Jenkins">
 	
+	<property name="src.dir" location="src" />
+	<property name="build.dir" location="bin" />
+	
 	<path id="tests.classpath" path=".">
 		<fileset dir="lib/">
 			<include name="*.jar" />
@@ -10,7 +13,7 @@
 	<target name="compile">
 		<mkdir dir="target/classes/"/>
 		<mkdir dir="target/classes-test/"/>
-		<javac destdir="target/classes/" srcdir="Java/login-logoff/src/main/java/" debug="true" encoding="UTF-8" />
+		<javac destdir="${build.dir}" srcdir="${src.dir}" debug="true" encoding="UTF-8" />
 		<javac destdir="target/classes-test/" srcdir="Java/login-logoff/src/main/java/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
 	</target>
 	
