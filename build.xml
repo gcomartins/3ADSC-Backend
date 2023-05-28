@@ -1,35 +1,32 @@
 <project name="Projecto de Exemplo para BUILD via Jenkins">
 	
-	<property name="src.dir" location="src" />
-	<property name="build.dir" location="bin" />
-	
 	<path id="tests.classpath" path=".">
 		<fileset dir="lib/">
 			<include name="*.jar" />
 		</fileset>
-		<pathelement path="target/classes/" />
+		<pathelement path="Java/login-logoff/target/classes/" />
 	</path>
 	
 	<target name="compile">
-		<mkdir dir="target/classes/"/>
-		<mkdir dir="target/classes-test/"/>
-		<javac destdir="${build.dir}" srcdir="${src.dir}" debug="true" encoding="UTF-8" />
-		<javac destdir="target/classes-test/" srcdir="Java/login-logoff/src/main/java/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
+		<mkdir dir="Java/login-logoff/target/classes/"/>
+		<mkdir dir="Java/login-logoff/target/classes-test/"/>
+		<javac destdir="Java/login-logoff/target/classes" srcdir="Java/login-logoff/src/main/java/" debug="true" encoding="UTF-8" />
+		<javac destdir="Java/login-logoff/target/classes-test/" srcdir="Java/login-logoff/src/main/java/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
 	</target>
 	
 	<target name="test" depends="compile">
 		<junit fork="yes" forkmode="once"  printsummary="true" showoutput="true" failureproperty="failed-test" haltonfailure="true" >
 			<formatter type="plain" usefile="false" />
-			<classpath location="target/classes-test/" />
+			<classpath location="Java/login-logoff/target/classes-test/" />
 			<classpath refid="tests.classpath" />
 			<batchtest fork="yes" todir="${artifacts.dir}/reports">
-				<fileset dir="target/classes-test/" >
+				<fileset dir="Java/login-logoff/target/classes-test/" >
 					<include name="**/*Test.class" />
 				</fileset>
 			</batchtest>
 		</junit>
 	</target>
 	<target name="jar" depends="test">
-		<jar destfile="Java/login-logoff/target/projeto-orm-ads-0.0.1-SNAPSHOT.jar" basedir="target/classes/" />
+		<jar destfile="Java/login-logoff/target/" basedir="Java/login-logoff/target/classes/" />
 	</target>
 </project>
