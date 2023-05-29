@@ -10,8 +10,8 @@
 	<target name="compile">
 		<mkdir dir="Java/login-logoff/target/"/>
 		<mkdir dir="Java/login-logoff/target/"/>
-		<javac destdir="Java/login-logoff/target/classes" srcdir="Java/login-logoff/target/" debug="true" encoding="UTF-8" />
-		<javac destdir="Java/login-logoff/target/classes-test/" srcdir="Java/login-logoff/target/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
+		<javac destdir="Java/login-logoff/target/" srcdir="Java/login-logoff/target/" debug="true" encoding="UTF-8" />
+		<javac destdir="Java/login-logoff/target/" srcdir="Java/login-logoff/target/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
 	</target>
 	
 	<target name="test" depends="compile">
