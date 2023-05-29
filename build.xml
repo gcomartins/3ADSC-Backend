@@ -4,29 +4,29 @@
 		<fileset dir="lib/">
 			<include name="*.jar" />
 		</fileset>
-		<pathelement path="Java/login-logoff/target/classes/" />
+		<pathelement path="Java/login-logoff/target/" />
 	</path>
 	
 	<target name="compile">
-		<mkdir dir="Java/login-logoff/target/classes/"/>
-		<mkdir dir="Java/login-logoff/target/classes-test/"/>
-		<javac destdir="Java/login-logoff/target/classes" srcdir="Java/login-logoff/src/main/java/" debug="true" encoding="UTF-8" />
-		<javac destdir="Java/login-logoff/target/classes-test/" srcdir="Java/login-logoff/src/main/java/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
+		<mkdir dir="Java/login-logoff/target/"/>
+		<mkdir dir="Java/login-logoff/target/"/>
+		<javac destdir="Java/login-logoff/target/classes" srcdir="Java/login-logoff/target/" debug="true" encoding="UTF-8" />
+		<javac destdir="Java/login-logoff/target/classes-test/" srcdir="Java/login-logoff/target/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
 	</target>
 	
 	<target name="test" depends="compile">
 		<junit fork="yes" forkmode="once"  printsummary="true" showoutput="true" failureproperty="failed-test" haltonfailure="true" >
 			<formatter type="plain" usefile="false" />
-			<classpath location="Java/login-logoff/target/classes-test/" />
+			<classpath location="Java/login-logoff/target/" />
 			<classpath refid="tests.classpath" />
 			<batchtest fork="yes" todir="${artifacts.dir}/reports">
-				<fileset dir="Java/login-logoff/target/classes-test/" >
+				<fileset dir="Java/login-logoff/target/" >
 					<include name="**/*Test.class" />
 				</fileset>
 			</batchtest>
 		</junit>
 	</target>
 	<target name="jar" depends="test">
-		<jar destfile="Java/login-logoff/target/" basedir="Java/login-logoff/target/classes/" />
+		<jar destfile="Java/login-logoff/target/" basedir="Java/login-logoff/target/" />
 	</target>
 </project>
