@@ -36441,3 +36441,1773 @@ ENDPOINT: atualizarReceita
 Status Code: 404 NOT_FOUND
 Log: CLIENT_ERROR
 idUsuário: 1 - 10-04-2023 21:36:27
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 15:04:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 15:04:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 15:09:08
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 15:09:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 15:10:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 15:10:28
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 15:11:45
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 15:11:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 15:11:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 15:11:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 15:12:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 15:12:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:10:13
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:12:56
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:14:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:14:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:16:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:16:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:37:04
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:37:04
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:44:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:44:42
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:45:35
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:45:36
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:45:38
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:45:39
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:45:46
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:45:46
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:45:49
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:45:51
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:45:52
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:45:59
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:46:00
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:46:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:48:40
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:48:40
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:49:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:49:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:50:04
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:50:04
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:50:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 16:50:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:05:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:05:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:09:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:09:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:10:42
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:10:42
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:11:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:11:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:13:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:13:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:14:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:14:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:15:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:15:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:16:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:16:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:17:09
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:17:09
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:17:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:17:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:18:35
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:18:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:19:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:19:59
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:20:03
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:20:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:22:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:22:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:28:08
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:28:08
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:30:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:42:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:42:22
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:42:22
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:42:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:42:37
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:42:37
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:42:37
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:42:37
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:48:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:48:11
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:48:11
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:48:11
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:49:41
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:49:41
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:49:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:49:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:50:33
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:50:33
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:50:33
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:50:33
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:52:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:52:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:52:01
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 17:52:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:02:43
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:02:43
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:02:43
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:02:43
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:02:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:02:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:08:17
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:08:17
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:09:25
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:09:25
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:09:51
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:09:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:11:04
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:11:04
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:11:45
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:11:47
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:11:49
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:11:50
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:11:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:11:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:12:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:12:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:14:03
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:14:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:20:13
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:20:13
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:24:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:24:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:27:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:27:26
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:27:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:27:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:29:41
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:29:41
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:30:03
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:30:03
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:30:54
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:30:56
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:30:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:31:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:31:10
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:31:48
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:31:50
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:31:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:32:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:32:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:32:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:32:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:34:30
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:34:30
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 18:48:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 18:48:06
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:03
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:10
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:15
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:22
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:32
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 18:50:39
+
+-------------------- 
+ENDPOINT: criarDespesa 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:54
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:56
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:56
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:56
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:50:57
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:51:01
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:51:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:51:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:51:37
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:52:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:52:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:52:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:52:58
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:53:18
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:53:18
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:55:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:55:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:56:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:56:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:57:53
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:57:53
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:58:47
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 18:58:47
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:02:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:02:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:04:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:04:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:05:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:05:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:06:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:06:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:08:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:08:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:09:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:09:01
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:09:44
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:09:44
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:10:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:10:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:11:53
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:11:53
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:12:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:12:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:16:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:16:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:22:10
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:22:10
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:26:23
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:26:29
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:26:36
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:26:47
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:26:51
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:26:55
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:26:57
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:26:58
+
+-------------------- 
+ENDPOINT: criarReceita 
+Status Code: 201 CREATED
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:27:08
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:27:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:27:10
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:27:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:27:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:27:32
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:27:32
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:27:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:27:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:29:16
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:29:16
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:30:31
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:30:31
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:32:00
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:32:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:32:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:32:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:33:23
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:33:23
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:34:20
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:34:20
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:34:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:34:54
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:37:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:37:36
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:37:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:37:57
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:40:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:40:55
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:41:24
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:41:24
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:45:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:45:58
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:46:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:46:51
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:48:21
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:48:21
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:48:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:48:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:49:14
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:49:14
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:49:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:49:35
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:50:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:50:29
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:51:19
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:51:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:51:38
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:51:38
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:52:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:52:36
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:53:06
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:53:06
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:54:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:54:00
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:54:46
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:54:46
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:57:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:57:12
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 19:57:56
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 19:57:56
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:01:28
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:01:28
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:07:15
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:07:15
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:08:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:08:11
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:11:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:11:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:11:22
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:11:22
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:11:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:11:34
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:11:49
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:11:49
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:12:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:12:15
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:14:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:14:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:15:02
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:15:02
+
+-------------------- 
+ENDPOINT: listarTodasReceitasDoUsuario 
+Status Code: 200 OK
+Log: SUCCESSFUL
+idUsuário: 1 - 04-06-2023 20:15:19
+
+-------------------- 
+ENDPOINT: listarTodasDespesasDoUsuario 
+Status Code: 204 NO_CONTENT
+Log: SUCCESSFUL
+idUsuario: 1 - 04-06-2023 20:15:19

@@ -1,0 +1,47 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mschool.sptech:projeto-orm-ads[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding projeto-orm-ads 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:2.7.4:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mprojeto-orm-ads[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mprojeto-orm-ads[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] Copying 0 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mprojeto-orm-ads[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 29 source files to /home/ubuntu/3ADSC-Backend/Java/login-logoff/target/classes
+[[1;34mINFO[m] /home/ubuntu/3ADSC-Backend/Java/login-logoff/src/main/java/com/projetopi/loginlogoff/financas/objetivo/ObjetivoSubject.java: Some input files use unchecked or unsafe operations.
+[[1;34mINFO[m] /home/ubuntu/3ADSC-Backend/Java/login-logoff/src/main/java/com/projetopi/loginlogoff/financas/objetivo/ObjetivoSubject.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mprojeto-orm-ads[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/3ADSC-Backend/Java/login-logoff/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mprojeto-orm-ads[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 4 source files to /home/ubuntu/3ADSC-Backend/Java/login-logoff/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:2.7.4:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mprojeto-orm-ads[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.7.4:run[m [1m(default-cli)[m @ [36mprojeto-orm-ads[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.4)
+
+2023-06-05 00:41:38.746  INFO 2775 --- [           main] c.p.loginlogoff.LoginLogoffApplication   : Starting LoginLogoffApplication using Java 11.0.19 on ip-172-31-25-11 with PID 2775 (/home/ubuntu/3ADSC-Backend/Java/login-logoff/target/classes started by ubuntu in /home/ubuntu/3ADSC-Backend/Java/login-logoff)
+2023-06-05 00:41:38.749  INFO 2775 --- [           main] c.p.loginlogoff.LoginLogoffApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 00:41:40.327  INFO 2775 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 00:41:40.443  INFO 2775 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 4 JPA repository interfaces.
