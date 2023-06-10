@@ -55,14 +55,10 @@ public class ServiceUsuario {
         Boolean isAtualizado = false;
         Usuario usuario = usuarioRepository.findByEmailAndSenha(emailAntigo, senhaAntiga);
         if (usuario == null) return isAtualizado;
-        if (usuarioAtualizado.getSenha().equals(senhaAntiga) &&
-                usuarioAtualizado.getEmail().equals(emailAntigo) &&
-                usuarioAtualizado.getNome().equals(usuario.getNome())) {
-            return isAtualizado;
-        }
-        usuario.setSenha(usuarioAtualizado.getSenha());
-        usuario.setEmail(usuarioAtualizado.getEmail());
-        usuario.setNome(usuarioAtualizado.getNome());
+        usuario.setSenha(usuarioAtualizado.getSenha() != null ? usuarioAtualizado.getSenha() : usuario.getSenha());
+        usuario.setEmail(usuarioAtualizado.getEmail() != null ? usuarioAtualizado.getEmail() : usuario.getEmail());
+        usuario.setNome(usuarioAtualizado.getNome() != null ? usuarioAtualizado.getNome() : usuario.getNome());
+        usuario.setDataNascimento(usuarioAtualizado.getDataNascimento() != null ? usuarioAtualizado.getDataNascimento() : usuario.getDataNascimento());
         usuarioRepository.save(usuario);
         isAtualizado = true;
         return isAtualizado;
