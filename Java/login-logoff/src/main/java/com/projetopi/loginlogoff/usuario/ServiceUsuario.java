@@ -60,9 +60,10 @@ public class ServiceUsuario {
                 usuarioAtualizado.getNome().equals(usuario.getNome())) {
             return isAtualizado;
         }
+        usuario.setNome(usuarioAtualizado.getNome());
         usuario.setSenha(usuarioAtualizado.getSenha());
         usuario.setEmail(usuarioAtualizado.getEmail());
-        usuario.setNome(usuarioAtualizado.getNome());
+        usuario.setDataNascimento(usuarioAtualizado.getDataNascimento());
         usuarioRepository.save(usuario);
         isAtualizado = true;
         return isAtualizado;
